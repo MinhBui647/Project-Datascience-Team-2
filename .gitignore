@@ -1,0 +1,6 @@
+# Data (crawled / generated - recreate with the scripts, see Data_crawling_and_Preprocessing.md)
+data/
+
+# Python cache
+__pycache__/
+*.py[cod]
