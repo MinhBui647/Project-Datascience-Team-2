@@ -70,18 +70,10 @@ jobs:
         run: |
           python crawler_pipeline/uploader/qa_validator.py
 
-      - name: Commit & Push Updated Data to Git
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.push_git == true }}
+      - name: Verify Hugging Face Dataset Sync
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          SEASON="${{ github.event.inputs.season || '2026_2027' }}"
-          git add "data/${SEASON}" data/00_master_entities/
-          if git diff --staged --quiet; then
-            echo "No data changes to commit."
-          else
-            git commit -m "Auto-update Premier League data for ${{ github.event.inputs.season || '2026_2027' }} [skip ci]"
-            git push
-          fi
+          echo "[+] Dataset storage is fully centralized on Hugging Face Hub: ${{ vars.HF_REPO_ID || 'Toibinguz/epl-premier-league-dataset' }}"
+          echo "[+] Local and CI data directories remain gitignored to prevent Git repository size limits."
 
       - name: Generate Pipeline Summary Report
         if: always()

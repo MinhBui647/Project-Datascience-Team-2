@@ -24,6 +24,7 @@ wheels/
 *.egg
 
 # Data raw cache & scratch
+data/
 raw/
 raw_data/
 scratch/
