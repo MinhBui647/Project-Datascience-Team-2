@@ -1,0 +1,30 @@
+club_id,name_standard,name_football_data,name_transfermarkt,name_understat,name_fpl,name_fotmob,tm_club_id,fpl_team_code,fotmob_team_id,stadium_name,stadium_capacity,latitude,longitude
+ARS,Arsenal,Arsenal,Arsenal FC,Arsenal,Arsenal,Arsenal,11,3,9825,Emirates Stadium,60704,51.5549,-0.1084
+AVL,Aston Villa,Aston Villa,Aston Villa,Aston Villa,Aston Villa,Aston Villa,405,7,10252,Villa Park,43205,52.5091,-1.8848
+BOU,Bournemouth,Bournemouth,AFC Bournemouth,Bournemouth,Bournemouth,AFC Bournemouth,989,91,8678,Vitality Stadium,11307,50.7352,-1.8383
+BRE,Brentford,Brentford,Brentford FC,Brentford,Brentford,Brentford,1148,94,9937,Gtech Community Stadium,17250,51.4908,-0.2887
+BHA,Brighton,Brighton,Brighton & Hove Albion,Brighton,Brighton,Brighton & Hove Albion,1237,36,10204,AMEX Stadium,31876,50.8616,-0.0837
+BUR,Burnley,Burnley,Burnley FC,Burnley,Burnley,Burnley,1132,90,8191,Turf Moor,21994,53.789,-2.2302
+CHE,Chelsea,Chelsea,Chelsea FC,Chelsea,Chelsea,Chelsea,631,8,8455,Stamford Bridge,41631,51.4816,-0.1909
+CRY,Crystal Palace,Crystal Palace,Crystal Palace,Crystal Palace,Crystal Palace,Crystal Palace,873,31,9826,Selhurst Park,25486,51.3983,-0.0855
+EVE,Everton,Everton,Everton FC,Everton,Everton,Everton,29,11,8668,Goodison Park,52769,53.4389,-2.9664
+FUL,Fulham,Fulham,Fulham FC,Fulham,Fulham,Fulham,931,54,9879,Craven Cottage,29589,51.4749,-0.2217
+IPS,Ipswich,Ipswich,Ipswich Town,Ipswich,Ipswich,Ipswich Town,677,40,9902,Portman Road,30056,52.0553,1.1448
+LEE,Leeds,Leeds,Leeds United,Leeds,Leeds,Leeds United,399,2,8463,Elland Road,37890,53.7778,-1.5722
+LEI,Leicester,Leicester,Leicester City,Leicester,Leicester,Leicester City,1003,13,8197,King Power Stadium,32259,52.6203,-1.1422
+LIV,Liverpool,Liverpool,Liverpool FC,Liverpool,Liverpool,Liverpool,31,14,8650,Anfield,61276,53.4308,-2.9608
+LUT,Luton,Luton,Luton Town,Luton,Luton,Luton Town,1031,102,8346,Kenilworth Road,11850,51.8841,-0.4316
+MCI,Manchester City,Man City,Manchester City,Manchester City,Man City,Manchester City,281,43,8456,Etihad Stadium,61000,53.4831,-2.2004
+MUN,Manchester United,Man United,Manchester United,Manchester United,Man Utd,Manchester United,985,1,10260,Old Trafford,74879,53.4631,-2.2913
+NEW,Newcastle,Newcastle,Newcastle United,Newcastle United,Newcastle,Newcastle United,762,4,10261,St James' Park,52258,54.9756,-1.6217
+NOR,Norwich,Norwich,Norwich City,Norwich,Norwich,Norwich City,1123,68,9850,Carrow Road,27244,52.6221,1.309
+NFO,Nottingham Forest,Nott'm Forest,Nottingham Forest,Nottingham Forest,Nott'm Forest,Nottingham Forest,703,17,10203,The City Ground,30404,52.94,-1.1328
+SHU,Sheffield United,Sheffield United,Sheffield United,Sheffield United,Sheffield Utd,Sheffield United,350,21,8657,Bramall Lane,32702,53.3703,-1.4709
+SOU,Southampton,Southampton,Southampton FC,Southampton,Southampton,Southampton,180,20,8466,St Mary's Stadium,32384,50.9058,-1.3911
+SUN,Sunderland,Sunderland,Sunderland AFC,Sunderland,Sunderland,Sunderland,289,56,8472,Stadium of Light,48707,54.9144,-1.3883
+TOT,Tottenham,Tottenham,Tottenham Hotspur,Tottenham,Spurs,Tottenham Hotspur,148,6,8586,Tottenham Hotspur Stadium,62850,51.6042,-0.0662
+WAT,Watford,Watford,Watford FC,Watford,Watford,Watford,1010,57,9817,Vicarage Road,21577,51.6498,-0.4015
+WHU,West Ham,West Ham,West Ham United,West Ham,West Ham,West Ham United,379,21,8654,London Stadium,62500,51.5387,-0.0166
+WOL,Wolves,Wolves,Wolverhampton Wanderers,Wolverhampton Wanderers,Wolves,Wolverhampton Wanderers,543,39,8602,Molineux Stadium,31750,52.5902,-2.1304
+COV,Coventry,Coventry,Coventry City,Coventry,Coventry City,Coventry City,990,9,8669,CBS Arena,32609,52.4481,-1.4955
+HUL,Hull,Hull,Hull City,Hull,Hull City,Hull City,3008,88,8667,MKM Stadium,25586,53.7461,-0.3678
