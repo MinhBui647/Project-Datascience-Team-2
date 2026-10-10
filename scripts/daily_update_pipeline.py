@@ -779,7 +779,7 @@ def main():
     parser = argparse.ArgumentParser(description="EPL Daily Update Crawler & Hugging Face Sync Pipeline")
     parser.add_argument("--season", default="2026_2027", help="Target EPL season (default: 2026_2027)")
     parser.add_argument("--sync-hf", action="store_true", help="Sync datasets to Hugging Face Hub")
-    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "toibinguz/epl-premier-league-dataset"), help="Hugging Face Dataset repo ID")
+    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "Toibinguz/epl-premier-league-dataset"), help="Hugging Face Dataset repo ID")
     parser.add_argument("--token", default=os.environ.get("HF_TOKEN"), help="Hugging Face API token")
     args = parser.parse_args()
 

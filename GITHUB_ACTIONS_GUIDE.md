@@ -62,7 +62,7 @@ Hệ thống crawl tự động sinh ra đầy đủ 9 bảng dữ liệu với 
    - Nhấp **Add secret**.
 
 ### Bước 3 (Tùy chọn): Thiết lập Tên Repo Hugging Face
-Mặc định hệ thống sẽ dùng repo: `toibinguz/epl-premier-league-dataset`. Nếu bạn muốn dùng tên repo khác:
+Mặc định hệ thống sẽ dùng repo: `Toibinguz/epl-premier-league-dataset`. Nếu bạn muốn dùng tên repo khác:
 1. Cũng tại trang **Secrets and variables** > **Actions**, chuyển sang tab **Variables**.
 2. Nhấp **New repository variable**:
    - **Name**: `HF_REPO_ID`

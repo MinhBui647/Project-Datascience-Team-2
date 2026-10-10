@@ -53,7 +53,7 @@ jobs:
       - name: Run EPL Daily Pipeline & Feature Engine
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_REPO_ID: ${{ vars.HF_REPO_ID || 'toibinguz/epl-premier-league-dataset' }}
+          HF_REPO_ID: ${{ vars.HF_REPO_ID || 'Toibinguz/epl-premier-league-dataset' }}
         run: |
           SEASON="${{ github.event.inputs.season || '2026_2027' }}"
           SYNC_FLAG=""
