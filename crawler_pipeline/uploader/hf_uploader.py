@@ -10,7 +10,7 @@ from huggingface_hub import HfApi
 from crawler_pipeline.config import DATA_DIR, MASTER_DIR, DEFAULT_HF_REPO_ID
 
 
-def sync_to_huggingface(repo_id: str = DEFAULT_HF_REPO_ID, token: str = None, season: str = "2026_2027", all_seasons: bool = False) -> None:
+def sync_to_huggingface(repo_id: str = DEFAULT_HF_REPO_ID, token: str = None, season: str = "2026_2027", all_seasons: bool = False, sync_raw: bool = False) -> None:
     """Sync target season (or all seasons) and master entities directly to Hugging Face Datasets repository."""
     print("=" * 80)
     print(f"SYNCING TO HUGGING FACE DATASET: {repo_id}")
@@ -39,6 +39,16 @@ def sync_to_huggingface(repo_id: str = DEFAULT_HF_REPO_ID, token: str = None, se
                 repo_id=repo_id,
                 repo_type="dataset",
                 commit_message=f"Sync complete EPL dataset (2000-2027) - {now_str}",
+            )
+        
+        if sync_raw:
+            print(f"[*] Uploading raw_data (all 7 feeds) to Hugging Face...")
+            api.upload_folder(
+                folder_path=str(RAW_DIR),
+                path_in_repo="raw_data",
+                repo_id=repo_id,
+                repo_type="dataset",
+                commit_message=f"Sync raw_data (all 7 feeds) - {now_str}",
             )
         else:
             commit_msg = f"Automated Daily EPL Update {season} - {now_str}"
