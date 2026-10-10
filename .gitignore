@@ -31,7 +31,7 @@ scratch/
 *.tmp
 *.log
 
-# Environment variables & secrets
+# Environment variables & secrets (PROTECT FROM TOKEN SCANNERS)
 .env
 .env.*
 secrets.json
