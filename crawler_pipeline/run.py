@@ -15,7 +15,7 @@ ROOT_DIR = CURRENT_DIR.parent
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from crawler_pipeline.config import DEFAULT_HF_REPO_ID, TOKEN_FILE
+from crawler_pipeline.config import DEFAULT_HF_REPO_ID, TOKEN_FILE, TOKEN_FALLBACK
 from crawler_pipeline.integrators.season_builder import build_season
 from crawler_pipeline.uploader.qa_validator import run_qa_suite
 from crawler_pipeline.uploader.hf_uploader import sync_to_huggingface
@@ -32,12 +32,16 @@ def main():
 
     # Resolve Hugging Face Token
     token = args.token or os.environ.get("HF_TOKEN")
-    if not token and TOKEN_FILE.exists():
-        try:
-            with open(TOKEN_FILE, "r", encoding="utf-8") as f:
-                token = f.read().strip()
-        except Exception:
-            pass
+    if not token:
+        for t_path in [TOKEN_FILE, TOKEN_FALLBACK]:
+            if t_path.exists():
+                try:
+                    with open(t_path, "r", encoding="utf-8") as f:
+                        token = f.read().strip()
+                        if token:
+                            break
+                except Exception:
+                    pass
 
     # 1. Run Crawl & Integration
     build_season(season=args.season)

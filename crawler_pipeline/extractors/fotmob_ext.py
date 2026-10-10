@@ -9,7 +9,7 @@ import time
 import urllib.request
 import urllib.parse
 from typing import List, Dict, Any, Optional
-from crawler_pipeline.config import HEADERS
+from crawler_pipeline.config import HEADERS, RAW_DIR
 
 
 def fetch_fotmob_matches(season: str = "2026/2027") -> List[Dict[str, Any]]:
@@ -21,6 +21,13 @@ def fetch_fotmob_matches(season: str = "2026/2027") -> List[Dict[str, Any]]:
         data = json.loads(resp.read().decode("utf-8"))
     matches = data.get("fixtures", {}).get("allMatches", [])
     print(f"    -> FotMob: {len(matches)} matches scheduled.")
+
+    # Persist raw fixtures in raw_data/sofascore/
+    raw_target_dir = RAW_DIR / "sofascore"
+    raw_target_dir.mkdir(parents=True, exist_ok=True)
+    with open(raw_target_dir / f"fotmob_fixtures_{season.replace('/', '_')}.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False)
+
     return matches
 
 

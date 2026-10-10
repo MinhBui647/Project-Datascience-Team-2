@@ -6,7 +6,7 @@ Fetches match scores, half-time results, fouls, cards, and bookmaker odds from F
 import io
 import urllib.request
 import pandas as pd
-from crawler_pipeline.config import HEADERS
+from crawler_pipeline.config import HEADERS, RAW_DIR
 
 
 def fetch_football_data(season_code: str = "2627") -> pd.DataFrame:
@@ -20,7 +20,12 @@ def fetch_football_data(season_code: str = "2627") -> pd.DataFrame:
         df = pd.read_csv(io.BytesIO(content), encoding="utf-8")
     except Exception:
         df = pd.read_csv(io.BytesIO(content), encoding="cp1252")
-    df = df.dropna(how="all")
-    print(f"    -> Downloaded {len(df)} matches, {len(df.columns)} columns.")
+    # Persist raw dump in raw_data/
+    raw_target_dir = RAW_DIR / "football_data_co_uk"
+    raw_target_dir.mkdir(parents=True, exist_ok=True)
+    raw_file = raw_target_dir / f"football_data_raw_{season_code}.csv"
+    with open(raw_file, "wb") as f:
+        f.write(content)
+    print(f"    -> Saved raw dump to {raw_file}")
     return df
 

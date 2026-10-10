@@ -11,8 +11,9 @@ PIPELINE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = PIPELINE_DIR.parent
 DATA_DIR = ROOT_DIR / "data"
 MASTER_DIR = DATA_DIR / "00_master_entities"
-RAW_DIR = ROOT_DIR / "raw"
-TOKEN_FILE = ROOT_DIR / "access_token_hf.txt"
+RAW_DIR = ROOT_DIR / "raw_data"
+TOKEN_FILE = PIPELINE_DIR / "hf_access_key.txt"
+TOKEN_FALLBACK = ROOT_DIR / "access_token_hf.txt"
 
 # Default Repository ID for Hugging Face
 DEFAULT_HF_REPO_ID = os.environ.get("HF_REPO_ID", "Toibinguz/epl-premier-league-dataset")

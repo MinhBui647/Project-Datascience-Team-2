@@ -25,6 +25,7 @@ wheels/
 
 # Data raw cache & scratch
 raw/
+raw_data/
 scratch/
 .cache/
 *.tmp
@@ -35,7 +36,9 @@ scratch/
 .env.*
 secrets.json
 *token*.txt
+*access_key*.txt
 access_token_hf.txt
+crawler_pipeline/hf_access_key.txt
 
 # IDE & OS
 .vscode/
