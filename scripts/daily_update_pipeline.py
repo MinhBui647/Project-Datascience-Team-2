@@ -745,8 +745,8 @@ def build_and_update_season(season="2026_2027"):
     print("=" * 80)
 
 
-def sync_to_huggingface(repo_id: str, token: str):
-    """Sync the data directory directly to Hugging Face Datasets repository."""
+def sync_to_huggingface(repo_id: str, token: str, season: str = "2026_2027"):
+    """Sync target season and master entities directly to Hugging Face Datasets repository (isolated & safe)."""
     print("=" * 80)
     print(f"SYNCING TO HUGGING FACE DATASET: {repo_id}")
     print("=" * 80)
@@ -762,14 +762,29 @@ def sync_to_huggingface(repo_id: str, token: str):
             print(f"[*] Creating repository '{repo_id}' on Hugging Face...")
             api.create_repo(repo_id=repo_id, repo_type="dataset", private=False)
 
-        commit_msg = f"Automated Daily EPL Update - {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}"
-        print(f"[*] Uploading data/ folder to Hugging Face...")
+        commit_msg = f"Automated Daily EPL Update {season} - {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}"
+        
+        # 1. Upload target season folder only (ISOLATED: never touches historical seasons)
+        s_folder = os.path.join(DATA_DIR, season)
+        print(f"[*] Uploading target season '{season}' to Hugging Face...")
         api.upload_folder(
-            folder_path=DATA_DIR,
+            folder_path=s_folder,
+            path_in_repo=season,
             repo_id=repo_id,
             repo_type="dataset",
             commit_message=commit_msg,
         )
+
+        # 2. Upload master entities (clubs, players mapping) to keep them in sync
+        print(f"[*] Uploading 00_master_entities to Hugging Face...")
+        api.upload_folder(
+            folder_path=MASTER_DIR,
+            path_in_repo="00_master_entities",
+            repo_id=repo_id,
+            repo_type="dataset",
+            commit_message=f"Sync master entities - {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
+        )
+
         print(f"\nSUCCESS: Data synced to https://huggingface.co/datasets/{repo_id}")
     except Exception as e:
         print(f"[!] Hugging Face sync error: {e}")
@@ -794,7 +809,7 @@ def main():
     # 3. Sync to Hugging Face
     if args.sync_hf or args.token:
         if args.token:
-            sync_to_huggingface(repo_id=args.repo_id, token=args.token)
+            sync_to_huggingface(repo_id=args.repo_id, token=args.token, season=args.season)
         else:
             print("\n[!] Note: --sync-hf requested but no HF_TOKEN found in arguments or environment.")
             print("    Please set the HF_TOKEN secret in GitHub repository settings to enable automated push.")

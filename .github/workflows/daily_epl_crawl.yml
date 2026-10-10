@@ -74,8 +74,8 @@ jobs:
         if: ${{ github.event_name == 'schedule' || github.event.inputs.push_git == true }}
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add data/
+          SEASON="${{ github.event.inputs.season || '2026_2027' }}"
+          git add "data/${SEASON}" data/00_master_entities/
           if git diff --staged --quiet; then
             echo "No data changes to commit."
           else
