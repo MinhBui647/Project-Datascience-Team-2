@@ -1,23 +1,18 @@
 """
-scripts/validate_normalized_data.py
-Phase 4 Automated Verification & Quality Assurance Suite
-
-Validates:
-1. Master entities: clubs.csv, club_mapping.csv, players.csv, player_mapping.csv
-2. Cross-season schema consistency across all 5 seasons (2021_2022 to 2025_2026)
-3. Referential foreign key integrity: match_id, club_id, player_id
-4. Numerical boundaries & domain constraints (FDR 1-5, overrounds > 1.0, shot coordinates)
+crawler_pipeline/uploader/qa_validator.py
+Quality Assurance & Referential Integrity Verification Suite (278 automated checks).
 """
 
 import os
-import glob
-import pandas as pd
-import numpy as np
-
+import sys
 from pathlib import Path
-ROOT_DIR = str(Path(__file__).resolve().parent.parent)
-DATA_DIR = os.path.join(ROOT_DIR, "data")
-MASTER_DIR = os.path.join(DATA_DIR, "00_master_entities")
+
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+import pandas as pd
+from crawler_pipeline.config import DATA_DIR, MASTER_DIR
 
 SEASONS = [
     "2021_2022",
@@ -29,7 +24,7 @@ SEASONS = [
 ONGOING_SEASON = "2026_2027"
 
 
-def run_qa_suite():
+def run_qa_suite() -> bool:
     print("=" * 80)
     print("RUNNING AUTOMATED QA & DATA INTEGRITY VERIFICATION SUITE")
     print("=" * 80)
@@ -66,7 +61,7 @@ def run_qa_suite():
     check(players_df["player_id"].is_unique, "players.csv player_id is strictly unique primary key")
     check(len(player_map_df) >= 1645, f"player_mapping.csv contains all master player mappings (actual: {len(player_map_df)})")
     check(player_map_df["player_id"].is_unique, "player_mapping.csv player_id is strictly unique primary key")
-    
+
     fotmob_cov = player_map_df["fotmob_id"].notna().mean()
     check(fotmob_cov >= 0.95, f"FotMob ID coverage >= 95% (actual: {fotmob_cov:.1%})")
     understat_cov = player_map_df["understat_id"].notna().mean()
@@ -81,7 +76,7 @@ def run_qa_suite():
     # TEST GROUP 2: RECURSIVE SEASON TABLES INTEGRITY
     # -------------------------------------------------------------------------
     print("\n--- TEST GROUP 2: 5-SEASON DATASET SCHEMAS & REFERENTIAL INTEGRITY ---")
-    
+
     table_requirements = {
         "matches/match_context.csv": {"rows": 380, "min_cols": 40},
         "matches/match_betting_odds.csv": {"rows": 380, "min_cols": 90},
@@ -131,7 +126,6 @@ def run_qa_suite():
         bo_df = pd.read_csv(bo_path)
         check(set(bo_df["match_id"]) == s_mids, f"{season} betting odds match_id matches match_context 100%")
         check((bo_df["overround_open"] > 1.0).all(), f"{season} betting odds overround_open > 1.00")
-
 
         # Club performance verification
         cp_path = os.path.join(s_dir, "clubs", "club_match_performance.csv")
@@ -238,10 +232,14 @@ def run_qa_suite():
         print("\nFailed Tests:")
         for f in failures:
             print(f"  - {f}")
+        return False
     else:
         print("\nALL AUTOMATED QUALITY ASSURANCE TESTS PASSED WITH 100% SUCCESS!")
-    print("=" * 80)
+        print("=" * 80)
+        return True
 
 
 if __name__ == "__main__":
-    run_qa_suite()
+    success = run_qa_suite()
+    if not success:
+        exit(1)

@@ -1,203 +1,32 @@
 """
-scripts/daily_update_pipeline.py
-Automated Daily Incremental Crawler & Feature Pipeline for Premier League (Season 2026-2027 & ongoing)
-
-Performs:
-1. Daily crawling of latest matches from Football-Data, Understat, FPL API, FotMob, Open-Meteo.
-2. Full feature extraction & normalization matching all 9 standardized tables:
-   - matches/match_context.csv (44 cols)
-   - matches/match_betting_odds.csv (114-124 cols)
-   - matches/match_lineups.csv (8 cols)
-   - clubs/club_season_profile.csv (9 cols)
-   - clubs/club_match_performance.csv (54 cols)
-   - players/player_valuations.csv (6 cols)
-   - players/player_match_stats.csv (32 cols)
-   - players/player_season_understat.csv (19 cols)
-   - events/match_shots.csv (29 cols)
-3. Automated validation of referential integrity.
-4. Automatic upload & sync to Hugging Face Hub Dataset repo (via HfApi).
+crawler_pipeline/integrators/season_builder.py
+Coordinates extractors, merges cross-source data, and builds all 9 standardized tables for a season.
 """
 
 import os
-import sys
-import io
-import re
-import json
-import gzip
-import time
-import argparse
-import datetime
-import urllib.request
-import urllib.parse
-from pathlib import Path
-from collections import defaultdict
+from typing import Dict, Any
 import pandas as pd
 import numpy as np
 
-ROOT_DIR = str(Path(__file__).resolve().parent.parent)
-if ROOT_DIR not in sys.path:
-    sys.path.insert(0, ROOT_DIR)
-
-DATA_DIR = os.path.join(ROOT_DIR, "data")
-MASTER_DIR = os.path.join(DATA_DIR, "00_master_entities")
-RAW_DIR = os.path.join(ROOT_DIR, "raw")
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Accept": "application/json, text/plain, */*",
-}
-
-
-def load_master_entities():
-    """Load Master Clubs, Club Mapping, Master Players, and Player Mapping."""
-    clubs_df = pd.read_csv(os.path.join(MASTER_DIR, "clubs.csv"))
-    club_map_df = pd.read_csv(os.path.join(MASTER_DIR, "club_mapping.csv"))
-    players_df = pd.read_csv(os.path.join(MASTER_DIR, "players.csv"))
-    player_map_df = pd.read_csv(os.path.join(MASTER_DIR, "player_mapping.csv"))
-
-    # Mapping dictionaries
-    fd_to_cid = dict(zip(club_map_df["name_football_data"], club_map_df["club_id"]))
-    u_to_cid = dict(zip(club_map_df["name_understat"], club_map_df["club_id"]))
-    fm_to_cid = dict(zip(club_map_df["name_fotmob"], club_map_df["club_id"]))
-    fpl_to_cid = dict(zip(club_map_df["name_fpl"], club_map_df["club_id"]))
-
-    # Additional standard fallbacks
-    fd_to_cid.update({"Man City": "MCI", "Man United": "MUN", "Nott'm Forest": "NFO", "Tottenham": "TOT", "Coventry": "COV", "Hull": "HUL"})
-    u_to_cid.update({"Manchester City": "MCI", "Manchester United": "MUN", "Newcastle United": "NEW", "Tottenham": "TOT", "Coventry": "COV", "Hull": "HUL"})
-    fm_to_cid.update({"Tottenham": "TOT", "Tottenham Hotspur": "TOT", "Coventry City": "COV", "Hull City": "HUL"})
-    fpl_to_cid.update({"Spurs": "TOT", "Man Utd": "MUN", "Man City": "MCI", "Coventry City": "COV", "Hull City": "HUL"})
-
-    return {
-        "clubs": clubs_df,
-        "club_map": club_map_df,
-        "players": players_df,
-        "player_map": player_map_df,
-        "fd_to_cid": fd_to_cid,
-        "u_to_cid": u_to_cid,
-        "fm_to_cid": fm_to_cid,
-        "fpl_to_cid": fpl_to_cid,
-    }
+from crawler_pipeline.config import DATA_DIR, RAW_DIR
+from crawler_pipeline.extractors import (
+    fetch_football_data,
+    fetch_understat_data,
+    fetch_fotmob_matches,
+    fetch_fotmob_match_detail,
+    fetch_fpl_data,
+    fetch_weather,
+)
+from crawler_pipeline.integrators.master_mapper import (
+    load_master_entities,
+    auto_register_new_players,
+)
 
 
-def fetch_football_data(season_code="2627"):
-    """Fetch live Football-Data.co.uk CSV."""
-    url = f"https://www.football-data.co.uk/mmz4281/{season_code}/E0.csv"
-    print(f"[*] Fetching Football-Data from: {url}")
-    req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        content = resp.read()
-    try:
-        df = pd.read_csv(io.BytesIO(content), encoding="utf-8")
-    except Exception:
-        df = pd.read_csv(io.BytesIO(content), encoding="cp1252")
-    df = df.dropna(how="all")
-    print(f"    -> Downloaded {len(df)} matches, {len(df.columns)} columns.")
-    return df
-
-
-def fetch_understat_data(year=2026):
-    """Fetch live Understat league JSON."""
-    url = f"https://understat.com/getLeagueData/EPL/{year}"
-    print(f"[*] Fetching Understat data from: {url}")
-    req = urllib.request.Request(
-        url,
-        headers={**HEADERS, "X-Requested-With": "XMLHttpRequest", "Accept-Encoding": "gzip"}
-    )
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        raw = resp.read()
-        try:
-            content = gzip.decompress(raw).decode("utf-8")
-        except Exception:
-            content = raw.decode("utf-8")
-        data = json.loads(content)
-    print(f"    -> Downloaded Understat: {len(data.get('dates', []))} dates, {len(data.get('players', []))} players.")
-    return data
-
-
-def fetch_fpl_data():
-    """Fetch live FPL bootstrap and fixtures."""
-    print("[*] Fetching Fantasy Premier League API data...")
-    # 1. Bootstrap
-    b_url = "https://fantasy.premierleague.com/api/bootstrap-static/"
-    req = urllib.request.Request(b_url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        bootstrap = json.loads(resp.read().decode("utf-8"))
-    
-    # 2. Fixtures
-    f_url = "https://fantasy.premierleague.com/api/fixtures/"
-    req2 = urllib.request.Request(f_url, headers=HEADERS)
-    with urllib.request.urlopen(req2, timeout=20) as resp2:
-        fixtures = json.loads(resp2.read().decode("utf-8"))
-
-    print(f"    -> FPL: {len(bootstrap.get('teams', []))} teams, {len(bootstrap.get('elements', []))} players, {len(fixtures)} fixtures.")
-    return bootstrap, fixtures
-
-
-def fetch_fotmob_data(season="2026/2027"):
-    """Fetch FotMob fixtures list."""
-    url = f"https://www.fotmob.com/api/data/leagues?id=47&season={urllib.parse.quote(season)}"
-    print(f"[*] Fetching FotMob season schedule from: {url}")
-    req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
-    matches = data.get("fixtures", {}).get("allMatches", [])
-    print(f"    -> FotMob: {len(matches)} matches scheduled.")
-    return matches
-
-
-def fetch_fotmob_match_detail(match_id: int, cache_dir: str):
-    """Fetch detailed match stats, lineups, and shots for a finished match."""
-    os.makedirs(cache_dir, exist_ok=True)
-    cache_path = os.path.join(cache_dir, f"{match_id}.json")
-    if os.path.exists(cache_path):
-        try:
-            with open(cache_path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            pass
-
-    url = f"https://www.fotmob.com/api/data/matchDetails?matchId={match_id}"
-    req = urllib.request.Request(url, headers=HEADERS)
-    for _ in range(3):
-        try:
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                with open(cache_path, "w", encoding="utf-8") as f:
-                    json.dump(data, f, ensure_ascii=False)
-                return data
-        except Exception as e:
-            time.sleep(1.0)
-    return None
-
-
-def fetch_weather(lat: float, lon: float, date_str: str, hour: int = 15):
-    """Fetch hourly weather from Open-Meteo archive / forecast."""
-    url = (
-        f"https://archive-api.open-meteo.com/v1/archive?"
-        f"latitude={lat:.4f}&longitude={lon:.4f}&start_date={date_str}&end_date={date_str}"
-        f"&hourly=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,wind_speed_10m,weather_code"
-    )
-    req = urllib.request.Request(url, headers=HEADERS)
-    try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            hourly = data.get("hourly", {})
-            h_idx = min(hour, len(hourly.get("temperature_2m", [])) - 1)
-            return {
-                "temp": hourly.get("temperature_2m", [None])[h_idx],
-                "humidity": hourly.get("relative_humidity_2m", [None])[h_idx],
-                "precipitation": hourly.get("precipitation", [0.0])[h_idx],
-                "wind": hourly.get("wind_speed_10m", [None])[h_idx],
-                "weather_code": hourly.get("weather_code", [0])[h_idx],
-            }
-    except Exception:
-        return {"temp": 15.0, "humidity": 70.0, "precipitation": 0.0, "wind": 12.0, "weather_code": 0}
-
-
-def build_and_update_season(season="2026_2027"):
+def build_season(season: str = "2026_2027") -> None:
     """Run full crawl, ETL feature engineering, and normalization for the target season."""
     print("=" * 80)
-    print(f"RUNNING DAILY INCREMENTAL PIPELINE FOR EPL SEASON: {season}")
+    print(f"RUNNING CRAWLER & INGESTION PIPELINE FOR EPL SEASON: {season}")
     print("=" * 80)
 
     season_dir = os.path.join(DATA_DIR, season)
@@ -225,7 +54,7 @@ def build_and_update_season(season="2026_2027"):
     fd_df = fetch_football_data(season_code)
     understat_data = fetch_understat_data(int(season.split("_")[0]))
     fpl_bootstrap, fpl_fixtures = fetch_fpl_data()
-    fotmob_matches = fetch_fotmob_data(f"{season.split('_')[0]}/{season.split('_')[1]}")
+    fotmob_matches = fetch_fotmob_matches(f"{season.split('_')[0]}/{season.split('_')[1]}")
 
     # Process FPL Teams & FDR Lookups
     fpl_team_id_to_cid = {}
@@ -326,10 +155,9 @@ def build_and_update_season(season="2026_2027"):
 
         # FotMob stats
         fmd = fm_match_details.get((h_id, a_id), {})
-        fm_general = fmd.get("general", {})
         fm_content = fmd.get("content", {})
         fm_stats = fm_content.get("stats", {}).get("Periods", {}).get("All", {}).get("stats", [])
-        
+
         stat_dict = {}
         for sec in fm_stats:
             for itm in sec.get("statsItems", []):
@@ -423,7 +251,6 @@ def build_and_update_season(season="2026_2027"):
             "odds_drift_d": round(b365_cd - b365_d, 4) if pd.notna(b365_cd) and pd.notna(b365_d) else 0.0,
             "odds_drift_a": round(b365_ca - b365_a, 4) if pd.notna(b365_ca) and pd.notna(b365_a) else 0.0,
         }
-        # Copy remaining raw bookmaker odds
         for c in fd_df.columns:
             if c not in ["Date", "Time", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "HTHG", "HTAG", "HTR", "Referee"]:
                 o_dict[c] = r[c]
@@ -525,61 +352,9 @@ def build_and_update_season(season="2026_2027"):
                 })
 
     # Auto-register newly discovered players into master entities
-    master_p_path = os.path.join(MASTER_DIR, "players.csv")
-    master_map_path = os.path.join(MASTER_DIR, "player_mapping.csv")
-    curr_players = pd.read_csv(master_p_path)
-    curr_maps = pd.read_csv(master_map_path)
-    known_pids = set(curr_players["player_id"])
+    auto_register_new_players(lineup_rows, entities)
 
-    new_p_records = []
-    new_m_records = []
-    seen_new = set()
-    for lp in lineup_rows:
-        pid = int(lp["player_id"])
-        if pid not in known_pids and pid not in seen_new:
-            seen_new.add(pid)
-            pname = lp["player_name"] or f"Player {pid}"
-            parts = pname.split()
-            first = parts[0] if len(parts) > 1 else ""
-            last = " ".join(parts[1:]) if len(parts) > 1 else pname
-            new_p_records.append({
-                "player_id": pid,
-                "first_name": first,
-                "last_name": last,
-                "full_name": pname,
-                "date_of_birth": None,
-                "country_of_birth": None,
-                "country_of_citizenship": None,
-                "height_cm": None,
-                "preferred_foot": "right",
-                "main_position": "Midfield",
-                "sub_position": None,
-                "peak_market_value_eur": 10000000.0,
-                "contract_expiration_date": None,
-                "international_caps": None,
-                "international_goals": None
-            })
-            new_m_records.append({
-                "player_id": pid,
-                "player_name": pname,
-                "fotmob_id": pid,
-                "fotmob_name": pname,
-                "understat_id": None,
-                "understat_name": None,
-                "opta_id": None,
-                "fpl_name": pname
-            })
-
-    if new_p_records:
-        curr_players = pd.concat([curr_players, pd.DataFrame(new_p_records)], ignore_index=True).drop_duplicates(subset=["player_id"])
-        curr_maps = pd.concat([curr_maps, pd.DataFrame(new_m_records)], ignore_index=True).drop_duplicates(subset=["player_id"])
-        curr_players.to_csv(master_p_path, index=False)
-        curr_maps.to_csv(master_map_path, index=False)
-        entities["players"] = curr_players
-        entities["player_map"] = curr_maps
-        print(f"[+] Auto-registered {len(new_p_records)} new player master entities.")
-
-    # Save Tables 1, 2, 5
+    # Save Tables 1, 2, 5, 3
     pd.DataFrame(context_rows).to_csv(os.path.join(s_matches_dir, "match_context.csv"), index=False)
     pd.DataFrame(odds_rows).to_csv(os.path.join(s_matches_dir, "match_betting_odds.csv"), index=False)
     pd.DataFrame(perf_rows).to_csv(os.path.join(s_clubs_dir, "club_match_performance.csv"), index=False)
@@ -613,8 +388,11 @@ def build_and_update_season(season="2026_2027"):
     # -------------------------------------------------------------------------
     # BUILD TABLE 7: events/match_shots.csv
     # -------------------------------------------------------------------------
+    valid_mids = set(c["match_id"] for c in context_rows)
     shot_rows = []
     for s in fm_shots_all:
+        if s.get("match_id") not in valid_mids:
+            continue
         fmid = s.get("player_id") or s.get("id")
         shot_rows.append({
             "shot_id": s.get("id"),
@@ -683,26 +461,21 @@ def build_and_update_season(season="2026_2027"):
     # -------------------------------------------------------------------------
     # BUILD TABLE 6 & 9: players/player_valuations.csv & player_match_stats.csv
     # -------------------------------------------------------------------------
-    # Valuations snapshot
     val_rows = []
-    for pid, p in entities["players"].iterrows():
+    for _, p in entities["players"].iterrows():
         val_rows.append({
             "player_id": p["player_id"],
             "date": "2026-08-01",
-            "market_value_in_eur": p.get("peak_market_value_eur", 20000000),
+            "market_value_in_eur": p.get("peak_market_value_eur", 10000000.0),
             "current_club_name": p.get("main_position", ""),
             "current_club_id": 11,
             "player_club_domestic_competition_id": "GB1"
         })
     pd.DataFrame(val_rows).to_csv(os.path.join(s_players_dir, "player_valuations.csv"), index=False)
 
-    # Match stats from lineups
     match_stats_rows = []
     for lp in lineup_rows:
-        if lp["lineup_type"] == "starter":
-            mins = 90
-        else:
-            mins = 20
+        mins = 90 if lp["lineup_type"] == "starter" else 20
         match_stats_rows.append({
             "match_id": lp["match_id"],
             "player_id": lp["player_id"],
@@ -744,76 +517,3 @@ def build_and_update_season(season="2026_2027"):
     print(f"SUCCESS: ALL 9 STANDARDIZED TABLES CREATED FOR SEASON {season}!")
     print("=" * 80)
 
-
-def sync_to_huggingface(repo_id: str, token: str, season: str = "2026_2027"):
-    """Sync target season and master entities directly to Hugging Face Datasets repository (isolated & safe)."""
-    print("=" * 80)
-    print(f"SYNCING TO HUGGING FACE DATASET: {repo_id}")
-    print("=" * 80)
-    try:
-        from huggingface_hub import HfApi
-        api = HfApi(token=token)
-        
-        # Check if repo exists, create if not
-        try:
-            api.repo_info(repo_id=repo_id, repo_type="dataset")
-            print(f"[+] Repository '{repo_id}' found on Hugging Face.")
-        except Exception:
-            print(f"[*] Creating repository '{repo_id}' on Hugging Face...")
-            api.create_repo(repo_id=repo_id, repo_type="dataset", private=False)
-
-        commit_msg = f"Automated Daily EPL Update {season} - {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}"
-        
-        # 1. Upload target season folder only (ISOLATED: never touches historical seasons)
-        s_folder = os.path.join(DATA_DIR, season)
-        print(f"[*] Uploading target season '{season}' to Hugging Face...")
-        api.upload_folder(
-            folder_path=s_folder,
-            path_in_repo=season,
-            repo_id=repo_id,
-            repo_type="dataset",
-            commit_message=commit_msg,
-        )
-
-        # 2. Upload master entities (clubs, players mapping) to keep them in sync
-        print(f"[*] Uploading 00_master_entities to Hugging Face...")
-        api.upload_folder(
-            folder_path=MASTER_DIR,
-            path_in_repo="00_master_entities",
-            repo_id=repo_id,
-            repo_type="dataset",
-            commit_message=f"Sync master entities - {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
-        )
-
-        print(f"\nSUCCESS: Data synced to https://huggingface.co/datasets/{repo_id}")
-    except Exception as e:
-        print(f"[!] Hugging Face sync error: {e}")
-
-
-def main():
-    parser = argparse.ArgumentParser(description="EPL Daily Update Crawler & Hugging Face Sync Pipeline")
-    parser.add_argument("--season", default="2026_2027", help="Target EPL season (default: 2026_2027)")
-    parser.add_argument("--sync-hf", action="store_true", help="Sync datasets to Hugging Face Hub")
-    parser.add_argument("--repo-id", default=os.environ.get("HF_REPO_ID", "Toibinguz/epl-premier-league-dataset"), help="Hugging Face Dataset repo ID")
-    parser.add_argument("--token", default=os.environ.get("HF_TOKEN"), help="Hugging Face API token")
-    args = parser.parse_args()
-
-    # 1. Run Pipeline
-    build_and_update_season(season=args.season)
-
-    # 2. Run Quality Assurance Suite
-    print("\nRunning automated QA checks...")
-    from scripts.validate_normalized_data import run_qa_suite
-    run_qa_suite()
-
-    # 3. Sync to Hugging Face
-    if args.sync_hf or args.token:
-        if args.token:
-            sync_to_huggingface(repo_id=args.repo_id, token=args.token, season=args.season)
-        else:
-            print("\n[!] Note: --sync-hf requested but no HF_TOKEN found in arguments or environment.")
-            print("    Please set the HF_TOKEN secret in GitHub repository settings to enable automated push.")
-
-
-if __name__ == "__main__":
-    main()

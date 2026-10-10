@@ -61,14 +61,14 @@ jobs:
             SYNC_FLAG="--sync-hf"
           fi
           
-          python scripts/daily_update_pipeline.py \
+          python crawler_pipeline/run.py \
             --season "$SEASON" \
             $SYNC_FLAG \
             --repo-id "${HF_REPO_ID}"
 
       - name: Validate Referential Integrity & Schemas
         run: |
-          python scripts/validate_normalized_data.py
+          python crawler_pipeline/uploader/qa_validator.py
 
       - name: Commit & Push Updated Data to Git
         if: ${{ github.event_name == 'schedule' || github.event.inputs.push_git == true }}
