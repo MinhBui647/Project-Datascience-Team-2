@@ -34,9 +34,9 @@ Tài liệu này tóm tắt công dụng của 5 file Python dùng để thu th�
 ### Cách chạy hằng tuần (sau mỗi vòng đấu)
 
 ```bash
-python build_dataset.py        # cập nhật kết quả mới, tính thuộc tính, cập nhật epl_dataset.csv
-python update_epl_final.py     # (tùy chọn) làm mới data/features/ nếu dùng bộ 51 thuộc tính
-python crawl_epl_season.py 2026   # (tùy chọn) cập nhật thống kê tổng hợp của mùa đang diễn ra
+python crawler_pipeline/build_dataset.py        # cập nhật kết quả mới, tính thuộc tính, cập nhật epl_dataset.csv
+python crawler_pipeline/update_epl_final.py     # (tùy chọn) làm mới data/features/ nếu dùng bộ 51 thuộc tính
+python crawler_pipeline/crawl_epl_season.py 2026   # (tùy chọn) cập nhật thống kê tổng hợp của mùa đang diễn ra
 ```
 
 Cài thư viện (chỉ cần một lần): `pip install requests pandas lxml`

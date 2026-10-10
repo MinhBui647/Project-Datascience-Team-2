@@ -16,10 +16,15 @@ import shutil
 import sys
 from pathlib import Path
 
+CURRENT_DIR = Path(__file__).resolve().parent
+if str(CURRENT_DIR) not in sys.path:
+    sys.path.insert(0, str(CURRENT_DIR))
+
 import pandas as pd
 import requests
 
-DATA_DIR = Path(__file__).parent / "data"
+ROOT_DIR = CURRENT_DIR.parent
+DATA_DIR = ROOT_DIR / "data"
 EPL_FINAL = DATA_DIR / "epl_final.csv"
 CURRENT_SEASON = 2026
 FIRST_SEASON = 2000

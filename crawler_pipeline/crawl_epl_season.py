@@ -7,7 +7,8 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-DATA_DIR = Path(__file__).parent / "data"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT_DIR / "data"
 UA = {"User-Agent": "Mozilla/5.0"}
 TM_DUMP = "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/{}.csv.gz"
 TM_POSITION_ORDER = [

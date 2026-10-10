@@ -11,7 +11,8 @@ import sys
 import argparse
 from pathlib import Path
 
-ROOT_DIR = Path(__file__).resolve().parent
+CURRENT_DIR = Path(__file__).resolve().parent
+ROOT_DIR = CURRENT_DIR.parent
 DATA_DIR = ROOT_DIR / "data"
 
 DEFAULT_REPO_ID = os.environ.get("HF_REPO_ID", "Toibinguz/epl-premier-league-dataset")
@@ -81,3 +82,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

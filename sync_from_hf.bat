@@ -20,7 +20,7 @@ if %ERRORLEVEL% neq 0 (
 cd /d "%~dp0"
 
 echo [*] Đang kiểm tra thư viện và tiến hành tải bộ dữ liệu...
-python sync_from_hf.py
+python crawler_pipeline\sync_from_hf.py
 
 if %ERRORLEVEL% equ 0 (
     echo.
@@ -35,3 +35,4 @@ echo ===========================================================================
 echo   Bấm phím bất kỳ để đóng cửa sổ này...
 echo ===============================================================================
 pause > nul
+

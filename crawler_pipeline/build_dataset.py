@@ -15,6 +15,11 @@ that has been played moves from "upcoming" to "played".
 Every feature uses only matches played before the match itself (no leakage).
 """
 import sys
+from pathlib import Path
+
+CURRENT_DIR = Path(__file__).resolve().parent
+if str(CURRENT_DIR) not in sys.path:
+    sys.path.insert(0, str(CURRENT_DIR))
 
 import pandas as pd
 

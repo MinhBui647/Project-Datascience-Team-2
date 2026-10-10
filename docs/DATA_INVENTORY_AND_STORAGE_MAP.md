@@ -215,3 +215,4 @@ data/<season>/
   - `shot_type`: Chân thuận, chân không thuận, hoặc đánh đầu (`RightFoot`, `LeftFoot`, `Header`).
   - `situation`: Tình huống dứt điểm (`OpenPlay`, `SetPiece`, `FromCorner`, `Penalty`).
   - `is_on_target`, `is_blocked`, `is_from_inside_box`: Phân loại kết quả cú sút.
+

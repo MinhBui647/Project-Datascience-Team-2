@@ -5,7 +5,8 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-DATA_DIR = Path(__file__).parent / "data"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT_DIR / "data"
 CURRENT_SEASON = 2026
 UA = {"User-Agent": "Mozilla/5.0"}
 
