@@ -146,9 +146,8 @@ TỔNG CỘNG                 : 10,909 files | ~1.80 GB Dữ liệu vi mô sạc
 ### 7. `raw_data/open_meteo/` (Dữ Liệu Khí Tượng & Thời Tiết)
 * **Phạm vi thời gian**: 2000 đến 2026.
 * **Đặc trưng**:
-  * `epl_weather_1900_matches.csv`: Thời tiết chính xác tại thời điểm bóng lăn (kickoff) cho từng trận đấu trên từng sân vận động từ 2021 đến 2026 (nhiệt độ °C, độ ẩm %, lượng mưa mm, tốc độ gió km/h).
   * `epl_weather_archive_2000_2021.csv`: 68,481 bản ghi thời tiết ngày tại 9 khu vực địa lý UK lớn từ năm 2000 đến 2021 (từ mô hình ERA5 Reanalysis).
-  * `stadiums/`: Tọa độ GPS (Vĩ độ / Kinh độ) của hơn 25 sân vận động Premier League.
+  * `stadiums/`: Tọa độ GPS (Vĩ độ / Kinh độ) của hơn 25 sân vận động Premier League dùng để truy vấn thời tiết real-time.
 
 ---
 
