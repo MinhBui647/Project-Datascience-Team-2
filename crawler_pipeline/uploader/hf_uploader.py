@@ -7,7 +7,7 @@ Strictly isolates target season and avoids touching old seasons.
 import os
 import datetime
 from huggingface_hub import HfApi
-from crawler_pipeline.config import DATA_DIR, MASTER_DIR, DEFAULT_HF_REPO_ID
+from crawler_pipeline.config import DATA_DIR, MASTER_DIR, RAW_DIR, DEFAULT_HF_REPO_ID
 
 
 def sync_to_huggingface(repo_id: str = DEFAULT_HF_REPO_ID, token: str = None, season: str = "2026_2027", all_seasons: bool = False, sync_raw: bool = False) -> None:

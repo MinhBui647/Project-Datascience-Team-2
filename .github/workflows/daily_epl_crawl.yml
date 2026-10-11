@@ -1,4 +1,4 @@
-name: Daily Premier League Data Pipeline & Hugging Face Sync
+name: Daily Premier League Raw Data Pipeline & Hugging Face Sync
 
 on:
   schedule:
@@ -6,23 +6,14 @@ on:
     - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
-      season:
-        description: 'Season identifier to update (e.g. 2026_2027)'
-        required: true
-        default: '2026_2027'
       sync_hf:
-        description: 'Upload & synchronize datasets to Hugging Face Hub'
-        type: boolean
-        required: true
-        default: true
-      push_git:
-        description: 'Commit updated CSV datasets back to Git repo'
+        description: 'Upload & synchronize season 2026_2027_new to Hugging Face Hub'
         type: boolean
         required: true
         default: true
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: epl-pipeline-${{ github.ref }}
@@ -30,14 +21,14 @@ concurrency:
 
 jobs:
   crawl-and-sync:
-    name: Crawl, Normalize, Validate & Sync
+    name: Daily Incremental Crawl & Season 2026/27 Sync
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -50,43 +41,30 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run EPL Daily Pipeline & Feature Engine
+      - name: Run EPL Daily Incremental Raw Crawler & Sync Current Season
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_REPO_ID: ${{ vars.HF_REPO_ID || 'Toibinguz/epl-premier-league-dataset' }}
         run: |
-          SEASON="${{ github.event.inputs.season || '2026_2027' }}"
           SYNC_FLAG=""
-          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.sync_hf }}" = "true" ]; then
-            SYNC_FLAG="--sync-hf"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.sync_hf }}" = "false" ]; then
+            SYNC_FLAG="--no-sync"
           fi
-          
-          python crawler_pipeline/run.py \
-            --season "$SEASON" \
-            $SYNC_FLAG \
-            --repo-id "${HF_REPO_ID}"
+          python crawler_pipeline/daily_raw_crawler.py $SYNC_FLAG
 
-      - name: Validate Referential Integrity & Schemas
-        run: |
-          python crawler_pipeline/uploader/qa_validator.py
-
-      - name: Verify Hugging Face Dataset Sync
-        run: |
-          echo "[+] Dataset storage is fully centralized on Hugging Face Hub: ${{ vars.HF_REPO_ID || 'Toibinguz/epl-premier-league-dataset' }}"
-          echo "[+] Local and CI data directories remain gitignored to prevent Git repository size limits."
-
-      - name: Generate Pipeline Summary Report
+      - name: Generate Pipeline Execution Summary
         if: always()
         run: |
-          echo "### Premier League Daily Data Pipeline Execution Report ⚽" >> $GITHUB_STEP_SUMMARY
+          echo "### Premier League Daily Raw Data Pipeline Report ⚽" >> $GITHUB_STEP_SUMMARY
           echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Timestamp**: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
-          echo "- **Target Season**: ${{ github.event.inputs.season || '2026_2027' }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Dataset Hub Sync**: ${{ secrets.HF_TOKEN != '' && 'Enabled' || 'Skipped (No HF_TOKEN configured)' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Target Season**: 2026/27 Active Season (Folder: \`2026_2027_new\`)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Hugging Face Hub Sync**: ${{ secrets.HF_TOKEN != '' && 'Enabled (Toibinguz/epl-premier-league-dataset)' || 'Skipped (No secret configured)' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Table | Record Count | Location |" >> $GITHUB_STEP_SUMMARY
-          echo "| :--- | :--- | :--- |" >> $GITHUB_STEP_SUMMARY
-          find data/2026_2027 -name "*.csv" | sort | while read -r f; do
-            count=$(wc -l < "$f" | awk '{print $1-1}')
-            echo "| \`$(basename "$f")\` | $count rows | \`$f\` |" >> $GITHUB_STEP_SUMMARY
-          done
+          echo "| 2026_2027_new Item | Path / Location |" >> $GITHUB_STEP_SUMMARY
+          echo "| :--- | :--- |" >> $GITHUB_STEP_SUMMARY
+          echo "| Match Outcomes & Odds | \`2026_2027_new/football_data_raw_2627.csv\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| FPL Players & Fixtures | \`2026_2027_new/fpl_bootstrap_latest.json\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Understat Overview | \`2026_2027_new/understat_raw_2026_2027.json\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| FotMob Fixtures | \`2026_2027_new/fotmob_fixtures_2026_2027.json\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Match Details (Understat) | \`2026_2027_new/matches/understat/*.json\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Match Details (FotMob) | \`2026_2027_new/matches/fotmob/*.json\` |" >> $GITHUB_STEP_SUMMARY

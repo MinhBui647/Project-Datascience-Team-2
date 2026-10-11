@@ -27,6 +27,7 @@ wheels/
 data/
 raw/
 raw_data/
+2026_2027_new/
 scratch/
 .cache/
 *.tmp
