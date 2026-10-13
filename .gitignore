@@ -22,6 +22,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+clean/
 
 # Data raw cache & scratch
 raw/
@@ -30,6 +31,8 @@ scratch/
 .cache/
 *.tmp
 *.log
+data/
+download.py
 
 # Environment variables & secrets (PROTECT FROM TOKEN SCANNERS)
 .env
