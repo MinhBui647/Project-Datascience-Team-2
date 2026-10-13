@@ -40,11 +40,11 @@ def main():
     start_t = time.time()
 
     try:
-        print("[*] Downloading raw_data and 2026_2027_new from Hugging Face...")
+        print("[*] Downloading raw_data, 2026_2027_new, and clean from Hugging Face...")
         downloaded_path = snapshot_download(
             repo_id=REPO_ID,
             repo_type="dataset",
-            allow_patterns=["raw_data/*", "2026_2027_new/*"],
+            allow_patterns=["raw_data/*", "2026_2027_new/*", "clean/*"],
             local_dir=str(ROOT_DIR),
             token=token,
         )
