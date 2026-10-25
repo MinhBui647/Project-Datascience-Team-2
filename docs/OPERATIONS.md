@@ -20,14 +20,14 @@ Dựng schema từ `sql/schema/raw_schema_v2.sql` và `sql/m4_4_handover_schema_
 ## 2. Lệnh thường dùng
 
 ```powershell
+# Đọc kết quả lượt gần nhất trước khi tạo báo cáo check mới.
+& .\venv\Scripts\python.exe -B -m scripts.orchestration.auto_ingest --status
+
 # Xem kế hoạch/checkpoint/fence, không ghi PostgreSQL.
 & .\venv\Scripts\python.exe -B -m scripts.orchestration.auto_ingest --check
 
 # Chạy ingest hoặc tiếp tục revision đang dở bằng recovery đã kiểm chứng.
 & .\venv\Scripts\python.exe -B -m scripts.orchestration.auto_ingest --run
-
-# Chỉ đọc kết quả gần nhất tại local, không cần kết nối HF/DB.
-& .\venv\Scripts\python.exe -B -m scripts.orchestration.auto_ingest --status
 ```
 
 | Kết quả | Diễn giải |
@@ -39,6 +39,8 @@ Dựng schema từ `sql/schema/raw_schema_v2.sql` và `sql/m4_4_handover_schema_
 | `BLOCKED` | Đọc `recovery_status`, `intervention_required`, `reason_code`, `failed_stage` và `next_action` |
 
 `--status` in lại receipt gần nhất, nên trường `mode` vẫn là `run` hoặc `check` của lượt đã lưu. `write_authorized=true`, `write_executed=false` cùng `SKIPPED_CURRENT` là kết quả hợp lệ. `steps=[]`, `retry_events=[]`, `recovery_status=NOT_NEEDED` nghĩa là không cần ghi/retry trong lượt đó.
+
+`--check` lưu receipt mới và thay `reports/auto_ingest/latest.json`; hãy đọc `--status` trước nếu cần kiểm tra kết quả lượt tự động. Khi task vẫn `Running`, receipt gần nhất có thể còn là lượt trước. Đối chiếu timestamp, `mode`, receipt từng lượt và log wrapper để xác nhận đúng lần chạy.
 
 ## 3. Task Scheduler 19:00
 
@@ -66,6 +68,27 @@ Get-ScheduledTaskInfo -TaskName $taskName |
 Windows dùng SE Asia Standard Time, UTC+07:00. Task cần phiên Windows đã đăng nhập, máy và PostgreSQL hoạt động, có mạng. `StartWhenAvailable` hỗ trợ chạy bù, `IgnoreNew` tránh chồng task, giới hạn task 12 giờ. Task Scheduler không restart mù; runner quyết định retry bằng evidence. Giữ thư mục triển khai ổn định hoặc cập nhật lại action khi di chuyển dự án.
 
 Installer mặc định `-Mode Check` để giữ tương thích lời gọi cũ. Muốn ingest định kỳ phải chọn rõ `-Mode AutoIngest`. Lịch đang cài không cần đăng ký lại khi chỉ cập nhật source recovery ở cùng đường dẫn.
+
+### Sau khi đổi tên hoặc di chuyển thư mục
+
+Task Scheduler lưu đường dẫn tuyệt đối trong action và working directory. Đổi tên thư mục không tự cập nhật task; lỗi `0x8007010B` có thể xuất hiện khi working directory cũ không còn tồn tại. Khi task đã dừng, mở PowerShell tại thư mục dự án mới và đăng ký lại:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\scheduling\install_windows_task.ps1 `
+    -Mode AutoIngest -At '19:00' -Replace -Install
+
+$taskName = 'EPL Raw Storage - Safe Revision Check'
+(Get-ScheduledTask -TaskName $taskName).Actions |
+    Select-Object Arguments,WorkingDirectory
+Get-ScheduledTaskInfo -TaskName $taskName |
+    Select-Object LastRunTime,LastTaskResult,NextRunTime
+```
+
+Installer lấy đường dẫn mới từ vị trí script. Kiểm tra cả `Arguments` và `WorkingDirectory` cùng trỏ tới thư mục hiện tại. Có thể dùng `Start-ScheduledTask` như trên để chạy bù; `COMPLETED` và audit của receipt mới xác nhận ingest hoàn tất. `LastTaskResult=0` cũng có thể ứng với lượt bỏ qua hợp lệ khi không có dữ liệu mới.
+
+Môi trường `venv/` cũng có thể còn đường dẫn cũ trong activation script và launcher như `pip.exe`, dù `venv\Scripts\python.exe` vẫn chạy. Kiểm tra cả `python.exe -m pip --version`, `pip.exe --version` và activation; sửa launcher hoặc tạo lại môi trường tại vị trí mới nếu cần. Cấu hình task và môi trường Python là thiết lập local; GitHub lưu script cài đặt và hướng dẫn, không mang theo các thiết lập này.
+
+Lần khôi phục ngày 25/10/2026 đã được kiểm chứng bằng lượt chạy bù tạo snapshot **#369**; xem [bằng chứng ingest](AUTOMATED_INGEST.md#91-khôi-phục-sau-đổi-tên-thư-mục).
 
 ## 4. Recovery và báo cáo
 
@@ -119,4 +142,4 @@ Chỉ đọc completed snapshot, dùng đúng observed path và cursor để ph�
 
 `check_repository` kiểm cú pháp Python, JSON config, byte SHA256 của 6 source M4, link Markdown và YAML/action pins. `.gitattributes` giữ LF cho sáu file đó. Nếu hash sai, đối chiếu source; không sửa hằng số pin để vượt kiểm chứng.
 
-[CI GitHub](../.github/workflows/ci.yml) chạy cùng suite trên Windows/Linux, không cần HF token hay DB production. [Workflow ingest thủ công](../.github/workflows/raw-ingest.yml) cần self-hosted runner nối tới deployment có dữ liệu.
+`tests/` được giữ local và bỏ qua bởi Git; lệnh unittest trên cần thư mục test có sẵn. [CI GitHub](../.github/workflows/ci.yml) chạy kiểm tra source/docs/workflow và CLI imports trên Windows/Linux, bỏ qua bước unittest khi checkout không có test. [Workflow ingest thủ công](../.github/workflows/raw-ingest.yml) cần self-hosted runner nối tới deployment có dữ liệu.

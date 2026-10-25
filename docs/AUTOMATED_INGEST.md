@@ -224,8 +224,28 @@ Chạy lại trực tiếp lúc **05:54:41** trả `SKIPPED_CURRENT`, `snapshot_
 
 Đã thay task cũ bằng action `run_windows_task.ps1 -Mode AutoIngest`, working directory trỏ đúng thư mục dự án hiện tại. Kích hoạt thử Task Scheduler lúc **05:55:20** thành công: `LastTaskResult=0`, receipt `SKIPPED_CURRENT`, `snapshot_id=368`, `write_executed=false`; stderr rỗng. Bằng chứng local: `reports/scheduled_tasks/20261024T225521279Z-AutoIngest-7112.status.json` và file `.stdout.log` cùng run ID.
 
-Cấu hình đọc lại từ Windows: task `Ready`, trigger `2026-10-25T19:00:00+07:00`, `NextRunTime=2026-10-25T19:00:00+07:00`, `Interactive`, `StartWhenAvailable=true`, `MultipleInstances=IgnoreNew`, giới hạn `PT12H`. Người dùng không cần chạy chuỗi lệnh ingest hằng ngày; máy và phiên đăng nhập phải đáp ứng điều kiện trên. Lượt tự kích hoạt lúc 19:00 chưa đến thời điểm quan sát và cần xác minh bằng log của chính lượt đó.
+Cấu hình đọc lại tại nghiệm thu ban đầu: task `Ready`, trigger `2026-10-25T19:00:00+07:00`, `NextRunTime=2026-10-25T19:00:00+07:00`, `Interactive`, `StartWhenAvailable=true`, `MultipleInstances=IgnoreNew`, giới hạn `PT12H`. Người dùng không cần chạy chuỗi lệnh ingest hằng ngày; máy và phiên đăng nhập phải đáp ứng điều kiện trên.
+
+### 9.1. Khôi phục sau đổi tên thư mục
+
+Ngày **25/10/2026**, thư mục triển khai được đổi từ `EPL_Raw_Storage (1)` thành `EPL_Raw_Storage`. Task vẫn giữ đường dẫn cũ trong action và working directory; lượt tự động lúc **19:02:07 UTC+7** thất bại với `0x8007010B` (directory name invalid), trước khi wrapper chạy. Đã cập nhật cả hai đường dẫn, giữ lịch hằng ngày **19:00** và sửa các activation script/launcher Python còn giữ đường dẫn cũ. Hướng dẫn cho lần di chuyển tiếp theo nằm trong [Operations](OPERATIONS.md#sau-khi-đổi-tên-hoặc-di-chuyển-thư-mục).
+
+Sau sửa, task được **kích hoạt thủ công để chạy bù** lúc **19:37:24**. Ingest và audit hoàn tất lúc **19:38:41 UTC+7**, tạo snapshot **#369 completed** từ baseline **#368**, revision **`430d18414996a15df6e4fb03a78ecce6364f54ae`**.
+
+| Bằng chứng | Kết quả |
+|---|---:|
+| Candidate mới/thay đổi | 12 file JSON |
+| Byte candidate | 5.092.207 |
+| File REUSE | 294 |
+| Observation/object archive được audit | 306 |
+| Tham chiếu record logic | 8.502.624 |
+| Audit độc lập | `verified=true` |
+| Wrapper exit / LastTaskResult | `0` / `0` |
+
+Receipt local: `reports/auto_ingest/runs/20261025T123725178753Z_c82a3055ad10/receipt.json`. Wrapper kết thúc lúc **19:38:42**; status local: `reports/scheduled_tasks/20261025T123724869Z-AutoIngest-25728.status.json`. Bản sao cấu hình task và các file venv trước sửa nằm trong `reports/path_repair/`; các artifact này được giữ local.
+
+Đọc lại sau chạy bù: task `Ready`, đường dẫn mới, lần chạy tiếp theo **26/10/2026 19:00 UTC+7**. Lượt chạy bù chứng minh task/wrapper và ingest hoạt động sau sửa; lần tự kích hoạt theo lịch 19:00 sau sửa vẫn cần quan sát riêng.
 
 ## 10. CI và điều khiển qua GitHub
 
-[GitHub Actions](../.github/workflows/ci.yml) chạy regression/source/docs/workflow checks trên hosted runners. [Workflow ingest thủ công](../.github/workflows/raw-ingest.yml) chỉ gọi deployment đã có dữ liệu qua self-hosted runner khi được bật; không tạo cron thứ hai hay checkout đè thư mục archive/journal. Source-only CI không cần DB production và không chứng nhận lại một snapshot live.
+[GitHub Actions](../.github/workflows/ci.yml) chạy source/docs/workflow checks và CLI imports trên hosted runners; bước regression chỉ chạy khi checkout có `tests/`. Thư mục test hiện được giữ local và bỏ qua bởi Git. [Workflow ingest thủ công](../.github/workflows/raw-ingest.yml) chỉ gọi deployment đã có dữ liệu qua self-hosted runner khi được bật; không tạo cron thứ hai hay checkout đè thư mục archive/journal. Source-only CI không cần DB production và không chứng nhận lại một snapshot live.

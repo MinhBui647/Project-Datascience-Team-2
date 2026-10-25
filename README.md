@@ -203,7 +203,7 @@ Xem [Raw Data Handover](docs/raw_data_handover.md).
 
 - Dữ liệu được crawl tự động vào khoảng **16:00–16:30**; Windows Task Scheduler kiểm tra revision **19:00 hằng ngày**, giờ hệ thống Windows.
 - Task giữ tên **`EPL Raw Storage - Safe Revision Check`** để thay thế lịch cũ, nhưng action hiện gọi `run_windows_task.ps1 -Mode AutoIngest` → `auto_ingest --run --revision-ref main`.
-- Đã đăng ký chế độ AutoIngest; lần chạy thực tế tạo snapshot #368, chạy lại và kích hoạt thử qua Task Scheduler đều trả `SKIPPED_CURRENT`, không ghi DB; `LastTaskResult=0`. Lần chạy tiếp theo: **25/10/2026 19:00 UTC+7**. **Chưa quan sát lượt chạy tự phát lúc 19:00 sau nâng cấp**.
+- **Cập nhật 25/10/2026:** lượt tự động 19:02 lỗi đường dẫn sau khi đổi tên thư mục. Đã sửa action/working directory và môi trường Python; kích hoạt task chạy bù thành công lúc **19:37–19:38 UTC+7**, ingest **12 file JSON mới/thay đổi** thành snapshot **#369**, audit thành công và `LastTaskResult=0`. Lần chạy tiếp theo: **26/10/2026 19:00 UTC+7**; cần xác minh riêng lượt tự kích hoạt sau sửa. Xem [hướng dẫn khi chuyển thư mục](docs/OPERATIONS.md#sau-khi-đổi-tên-hoặc-di-chuyển-thư-mục) và [bằng chứng](docs/AUTOMATED_INGEST.md#91-khôi-phục-sau-đổi-tên-thư-mục).
 - Máy tắt hẳn không thể chạy task; lịch chạy bù phụ thuộc cài đặt và phiên đăng nhập Windows.
 - `auto_ingest` là entrypoint tự động riêng; A4 `supervised_pipeline_runner` tiếp tục nhận **một stage mỗi lệnh** và không dùng làm action lịch chạy. Cài đặt mới dùng `-Mode AutoIngest -Install`; thay task đã có thêm `-Replace`. Xem [Automation](docs/AUTOMATED_INGEST.md).
 - Candidate mới/thay đổi hỗ trợ JSON và CSV; CSV.GZ/TAR.GZ hiện được reuse khi không đổi. Candidate nén thay đổi, path bị xóa hoặc vượt budget sẽ dừng để kiểm tra.
@@ -227,7 +227,7 @@ Xem [Raw Data Handover](docs/raw_data_handover.md).
 │   ├── access/                   # Raw Data Access JSONB read-only
 │   ├── scheduling/               # Windows Task Scheduler
 │   └── tools/                    # wrappers, helpers, verifiers
-├── tests/                        # Regression suites
+├── tests/                        # Regression suites local, Git bỏ qua
 └── docs/
     ├── M1/ ... M5/README.md      # Chi tiết theo giai đoạn
     ├── ARCHITECTURE.md           # Kiến trúc hệ thống 
@@ -244,7 +244,7 @@ Xem [Raw Data Handover](docs/raw_data_handover.md).
 - **Bằng chứng tự động hóa 25/10:** 1.902 test chạy thành công (17 skipped); ingest revision mới qua `auto_ingest --run` thành snapshot #368, audit 298 archive / 8.502.616 tham chiếu record; chạy lại không ghi DB.
 - **Sau bổ sung Controlled Auto-Recovery:** 1.968 test chạy thành công (17 skipped), gồm CSV+JSON hỗn hợp, retry có kiểm chứng, phục hồi checkpoint sau commit, budget xuyên lượt và báo cáo can thiệp. Nghiệm thu retry có fault injection trên kết nối nguồn/DB thật trả `RECOVERED`; Task Scheduler chạy bản mới exit `0`.
 - **Chưa chứng minh:** clean install/fresh DB; scheduler tự kích hoạt đúng 19:00 sau nâng cấp. Luồng A4 giữ nguyên giới hạn nghiệm thu lịch sử; pipeline tự động dùng entrypoint mới.
-- **Nguyên tắc release:** code + DDL + config mẫu + tests + tài liệu; **không** chứa dữ liệu nguồn lớn, PostgreSQL dumps, thư mục archive/cache, output báo cáo hay secret.
+- **Nguyên tắc release:** code + DDL + config mẫu + tài liệu; tests giữ local và được Git bỏ qua. Repository không chứa dữ liệu nguồn lớn, PostgreSQL dumps, thư mục archive/cache, output báo cáo hay secret.
 
 Đọc tiếp: [Kiến trúc sâu](docs/ARCHITECTURE.md) · [Vận hành](docs/OPERATIONS.md) · [Recovery](docs/CONTROLLED_AUTO_RECOVERY.md).
 
