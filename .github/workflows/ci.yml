@@ -90,6 +90,7 @@ jobs:
           python -B -m scripts.orchestration.auto_ingest --help
           python -B -m scripts.access.raw_data_access --help
       - name: Run complete offline regression suite
+        if: ${{ hashFiles('tests/test_*.py') != '' }}
         run: |
           mkdir -p reports/ci
           python -B -m unittest discover -s tests -p 'test_*.py' -v 2>&1 | tee reports/ci/unittest.log

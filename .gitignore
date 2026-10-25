@@ -24,7 +24,8 @@ venv/
 raw-archive-v2/
 exports/
 reports/
-# Keep automated tests under version control
+# Local tests
+/tests/
 raw_data/
 .mypy_cache/
 .ruff_cache/
