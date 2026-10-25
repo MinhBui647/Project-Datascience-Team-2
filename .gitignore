@@ -10,7 +10,7 @@ raw-data/
 
 # Integration test artifacts
 test-artifacts/
-
+tests/
 # Added by Raw Storage V2 cleanup
 .env.*
 !.env.example
