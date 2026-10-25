@@ -1,0 +1,37 @@
+.env
+.venv/
+.venv_msys2_backup/
+__pycache__/
+raw-archive-v2/
+archive-quarantine/
+
+# Raw input data
+raw-data/
+
+# Integration test artifacts
+test-artifacts/
+
+# Added by Raw Storage V2 cleanup
+.env.*
+!.env.example
+!.env.v2.example
+.venv_v2/
+venv/
+*.py[cod]
+.pytest_cache/
+*.log
+*.zip
+raw-archive-v2/
+exports/
+reports/
+# Keep automated tests under version control
+raw_data/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# R2 - Exclude interim release artifacts
+README_A*.txt
+README_M*.txt
+*.bak
+/verification/

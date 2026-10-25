@@ -1,0 +1,64 @@
+name: Raw ingest (existing storage host)
+run-name: Raw storage ${{ inputs.operation }} by @${{ github.actor }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Operation on the existing Windows storage deployment
+        type: choice
+        required: true
+        default: check
+        options:
+          - check
+          - run
+          - status
+
+permissions:
+  contents: read
+
+concurrency:
+  group: epl-raw-storage-ingestion
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    name: Invoke verified deployment
+    if: ${{ vars.ENABLE_GITHUB_INGEST == 'true' && github.ref_name == github.event.repository.default_branch }}
+    runs-on: [self-hosted, Windows, X64, epl-raw-storage]
+    timeout-minutes: 720
+    env:
+      RAW_STORAGE_ROOT: ${{ vars.RAW_STORAGE_ROOT }}
+      INGEST_OPERATION: ${{ inputs.operation }}
+      PYTHONIOENCODING: utf-8
+      PYTHONUNBUFFERED: '1'
+    steps:
+      # The deployment holds .env, archives, checkpoints and durable journals.
+      # Do not check out/clean a Git workspace over that persistent directory.
+      - name: Run existing deployment with controlled recovery
+        shell: powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass -File "{0}"
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if ($env:INGEST_OPERATION -notin @('check', 'run', 'status')) {
+              throw 'Unsupported ingestion operation'
+          }
+          if ([string]::IsNullOrWhiteSpace($env:RAW_STORAGE_ROOT) -or
+              ![IO.Path]::IsPathRooted($env:RAW_STORAGE_ROOT)) {
+              throw 'Set RAW_STORAGE_ROOT to the absolute path of the verified deployment'
+          }
+          $deploymentRoot = (Resolve-Path -LiteralPath $env:RAW_STORAGE_ROOT).Path
+          $python = Join-Path $deploymentRoot 'venv\Scripts\python.exe'
+          $runner = Join-Path $deploymentRoot 'scripts\orchestration\auto_ingest.py'
+          if (!(Test-Path -LiteralPath $python -PathType Leaf) -or
+              !(Test-Path -LiteralPath $runner -PathType Leaf)) {
+              throw 'Deployment must contain venv Python and the automatic ingestion runner'
+          }
+          Set-Location -LiteralPath $deploymentRoot
+          & $python -B -m scripts.orchestration.auto_ingest ('--' + $env:INGEST_OPERATION)
+          $ingestExit = $LASTEXITCODE
+          if ($null -eq $ingestExit) { throw 'Python did not return an exit status' }
+          "Operation: $env:INGEST_OPERATION; exit code: $ingestExit" |
+              Out-File -LiteralPath $env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
+          if ($ingestExit -ne 0) {
+              throw 'Ingestion did not complete; inspect --status and local durable journals'
+          }

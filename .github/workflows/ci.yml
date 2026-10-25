@@ -1,0 +1,103 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHONIOENCODING: utf-8
+  PYTHONUNBUFFERED: '1'
+  PYTHONDONTWRITEBYTECODE: '1'
+  HF_HUB_OFFLINE: '1'
+  HF_DATASETS_OFFLINE: '1'
+
+jobs:
+  source-checks:
+    name: Source, docs and workflows
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Verify source contracts, Markdown links and workflow YAML
+        run: python -B -m scripts.verification.check_repository
+      - name: Lint GitHub Actions semantics
+        shell: bash
+        run: |
+          version=1.7.12
+          archive="actionlint_${version}_linux_amd64.tar.gz"
+          base="https://github.com/rhysd/actionlint/releases/download/v${version}"
+          curl --fail --location --retry 3 "$base/$archive" --output "$RUNNER_TEMP/$archive"
+          curl --fail --location --retry 3 "$base/actionlint_${version}_checksums.txt" --output "$RUNNER_TEMP/actionlint_checksums.txt"
+          (
+            cd "$RUNNER_TEMP"
+            grep " $archive\$" actionlint_checksums.txt | sha256sum --check --strict -
+          )
+          tar -xzf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP" actionlint
+          "$RUNNER_TEMP/actionlint" -color
+
+  tests:
+    name: Tests (${{ matrix.os }}, Python ${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11']
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Check installed dependencies
+        run: python -m pip check
+      - name: Verify CLI imports without source or database access
+        run: |
+          python -B -m scripts.orchestration.auto_ingest --help
+          python -B -m scripts.access.raw_data_access --help
+      - name: Run complete offline regression suite
+        run: |
+          mkdir -p reports/ci
+          python -B -m unittest discover -s tests -p 'test_*.py' -v 2>&1 | tee reports/ci/unittest.log
+      - name: Upload test log
+        if: ${{ always() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: unittest-${{ matrix.os }}-py${{ matrix.python }}
+          path: reports/ci/unittest.log
+          if-no-files-found: ignore
+          retention-days: 7

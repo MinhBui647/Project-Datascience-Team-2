@@ -1,0 +1,7 @@
+
+{
+  "supported_formats": [
+    "csv"
+  ],
+  "season_pattern": "^\\d{4}-\\d{4}$"
+}

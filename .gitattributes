@@ -1,0 +1,9 @@
+# Preserve byte identity of M4 sources whose SHA256 is pinned by M5.
+# Guarded Preparation Executor verifies these exact bytes before writer approval.
+# Git on Windows must not convert these six paths to CRLF.
+scripts/tools/prepare_incremental_manifest.py text eol=lf
+scripts/incremental/prepare_incremental_manifest.py text eol=lf
+scripts/tools/download_incremental_candidates.py text eol=lf
+scripts/incremental/download_incremental_candidates.py text eol=lf
+scripts/tools/promote_incremental_archive.py text eol=lf
+scripts/incremental/promote_incremental_archive.py text eol=lf

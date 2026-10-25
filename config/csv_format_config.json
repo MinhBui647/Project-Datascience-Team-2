@@ -1,0 +1,7 @@
+{
+  "default": {
+    "delimiter": ",",
+    "encoding": "utf-8-sig"
+  },
+  "rules": []
+}

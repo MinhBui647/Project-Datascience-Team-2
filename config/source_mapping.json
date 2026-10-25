@@ -1,0 +1,17 @@
+{
+  "source_rules": [
+    {
+      "pattern": "espn_*.csv",
+      "source_code": "espn"
+    },
+    {
+      "pattern": "transfermarkt_*.csv",
+      "source_code": "transfermarkt"
+    },
+    {
+      "pattern": "understat*.csv",
+      "source_code": "understat"
+    }
+  ],
+  "default_source_code": null
+}
