@@ -1,8 +1,8 @@
 # Mục lục EDA — matches.csv và features.csv
 
-Đây là bộ EDA hiện tại. Nguồn đầu vào là clean/matches.csv và clean/features.csv ở gốc dự án. Các thư mục reports/eda_epl và mã EDA trong đó là tài liệu của lần phân tích trước.
+Bộ EDA này được thực hiện từ clean/matches.csv và clean/features.csv ở gốc dự án. Nếu muốn xem lại lần phân tích trước, bạn có thể mở reports/eda_epl.
 
-Thời điểm lập: 2026-10-26T22:39:46 (UTC+07). Hai bảng có 9.850 trận khớp theo match_id; matches có 106 cột, features có 102 cột, trong đó 87 đặc trưng ứng viên.
+Báo cáo hoàn thành lúc 20:31 ngày 27/10/2026 (UTC+07). Hai bảng khớp nhau ở 9.850 trận theo match_id: matches có 106 cột, features có 102 cột, trong đó 87 cột là đặc trưng ứng viên.
 
 [Mở báo cáo HTML có đầy đủ biểu đồ](report.html) · [Báo cáo Markdown](report.md)
 

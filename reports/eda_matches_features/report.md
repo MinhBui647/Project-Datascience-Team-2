@@ -1,17 +1,17 @@
-# EDA Premier League: matches.csv và features.csv
+# Khám phá dữ liệu Premier League
 
-Báo cáo khám phá dữ liệu sạch phục vụ phân tích bóng đá và chuẩn bị dự đoán trước trận. Mọi con số mô tả snapshot đang có trên máy, không xác nhận kết quả ngoài đời hoặc dữ liệu mới hơn ngày cuối của snapshot.
+Báo cáo này tìm hiểu dữ liệu Premier League đã được làm sạch và gợi ý những thông tin có thể dùng để dự đoán trước trận. Các con số dưới đây mô tả bản dữ liệu hiện có đến ngày 12/10/2026; báo cáo chưa đối chiếu độc lập từng kết quả trận đấu với nguồn ngoài.
 
-Thời điểm lập: 2026-10-26T22:39:46 (UTC+07). Hai bảng có 9.850 trận khớp theo match_id; matches có 106 cột, features có 102 cột, trong đó 87 đặc trưng ứng viên.
+Báo cáo hoàn thành lúc 20:31 ngày 27/10/2026 (UTC+07). Hai bảng khớp nhau ở 9.850 trận theo match_id: matches có 106 cột, features có 102 cột, trong đó 87 cột là đặc trưng ứng viên.
 
 ## 1. Các phát hiện chính
 
-- Tập dữ liệu chỉ gồm Premier League, 46 đội, từ 19/08/2000 đến 12/10/2026. Phân tích so sánh qua mùa dùng 24 mùa đủ, 9.120 trận.
-- Trên toàn snapshot: chủ nhà thắng 45,6%, hòa 24,8%, đội khách thắng 29,6%. Lợi thế sân nhà hiện diện trong thống kê quan sát, có biến động qua mùa.
-- Ở các mùa đủ, trung bình có 1,54 bàn nhà và 1,19 bàn khách/trận. Chênh bàn trung bình nhà−khách là 0,35; khoảng bootstrap theo mùa 95% [0,30; 0,39].
-- Elo, odds, phong độ và đối đầu có liên hệ đơn biến với kết quả. Khi giới hạn các đội gần sức mạnh Elo, chênh lệch liên quan đến điểm phong độ và H2H thu hẹp; xG gần đây là giả thuyết bổ sung đáng kiểm tra, chưa được chứng minh bằng mô hình.
-- Có 167 trận cần kiểm tra tính nhất quán giữa thống kê sút khác nguồn. rest_days là khoảng cách tới trận EPL quan sát trước, không phải nghỉ mọi đấu trường.
-- 43 cột lịch sử được tính lại độc lập trên toàn bộ trận và có 0 sai khác. Điều này không xác nhận timestamp công bố dữ liệu hay mọi tình huống của toàn bộ 87 biến.
+- Dữ liệu hiện có chỉ gồm Premier League, với 46 đội thi đấu từ 19/08/2000 đến 12/10/2026. Để so sánh giữa các mùa, báo cáo dùng 24 mùa có đủ trận, tương ứng 9.120 trận.
+- Tính trên toàn bộ dữ liệu, chủ nhà thắng 45,6%, hòa 24,8%, còn đội khách thắng 29,6%. Các tỷ lệ này cho thấy lợi thế sân nhà trong những trận đã quan sát, dù mức độ thay đổi theo mùa.
+- Trong các mùa có đủ trận, trung bình mỗi trận có 1,54 bàn của chủ nhà và 1,19 bàn của đội khách. Chênh lệch bàn thắng trung bình nhà−khách là 0,35; khoảng bootstrap theo mùa 95% là [0,30; 0,39].
+- Elo, odds, phong độ và lịch sử đối đầu đều có liên hệ riêng với kết quả. Khi chỉ xét những trận có hai đội gần nhau về Elo, chênh lệch theo điểm phong độ và đối đầu (H2H) thu hẹp. xG gần đây vẫn đáng để kiểm tra thêm, nhưng giá trị bổ sung của nó chưa được chứng minh bằng mô hình.
+- Có 167 trận cần đối chiếu thống kê sút giữa các nguồn để kiểm tra tính nhất quán. Biến rest_days chỉ đo khoảng cách tới trận EPL quan sát trước đó, không phải thời gian nghỉ trên mọi đấu trường.
+- Khi tính lại độc lập 43 cột lịch sử trên toàn bộ trận, báo cáo ghi nhận 0 sai khác. Kết quả này chưa xác nhận thời điểm công bố dữ liệu hoặc bao quát mọi tình huống của cả 87 biến.
 
 ## 2. Phạm vi, đơn vị quan sát và cách lấy mẫu
 
@@ -27,11 +27,11 @@ Thời điểm lập: 2026-10-26T22:39:46 (UTC+07). Hai bảng có 9.850 trận 
 | 2004/05 | 335 | 20 | Mùa lịch sử thiếu trận |
 | 2026/27 | 60 | 20 | Mùa đang diễn ra trong snapshot |
 
-Không thực hiện so sánh liên giải vì không có giải thứ hai. Tất cả dòng hiện tại đều là played; không có provisional, postponed hoặc upcoming. Các thống kê toàn snapshot vẫn giữ mùa thiếu; các biểu đồ xu hướng, nhóm đội và phân phối bàn thắng chính dùng riêng mẫu mùa đủ, được ghi tại từng hình.
+Bộ dữ liệu chỉ có Premier League nên không thể so sánh giữa các giải. Tất cả trận hiện đều mang trạng thái played; không có provisional, postponed hoặc upcoming. Thống kê trên toàn bộ dữ liệu vẫn bao gồm các mùa thiếu trận. Riêng những biểu đồ về xu hướng, nhóm đội và phân phối bàn thắng chính dùng mẫu mùa có đủ trận; phạm vi này được ghi rõ ở từng hình.
 
-![Hình 01. Mùa thiếu và độ phủ chỉ số theo thời gian; màu cam không đồng nghĩa dữ liệu sai.](figures/01_coverage.png)
+![Hình 01. Các mùa thiếu trận và độ phủ của các chỉ số theo thời gian. Màu cam không mặc nhiên có nghĩa dữ liệu sai.](figures/01_coverage.png)
 
-Hình 01. Mùa thiếu và độ phủ chỉ số theo thời gian; màu cam không đồng nghĩa dữ liệu sai.
+Hình 01. Các mùa thiếu trận và độ phủ của các chỉ số theo thời gian. Màu cam không mặc nhiên có nghĩa dữ liệu sai.
 
 ## 3. Kiểm toán dữ liệu và dữ liệu thiếu
 
@@ -42,7 +42,7 @@ Hình 01. Mùa thiếu và độ phủ chỉ số theo thời gian; màu cam kh�
 | Thông tin | 3 |
 | Không đạt | 0 |
 
-Hai bảng không trùng match_id, ghép một–một và khớp các trường ngày, đội, tỷ số, kết quả. Kiểm toán kiểm tra miền giá trị, quan hệ tỷ số–nhãn, thống kê và lịch sử trước trận. Các cảnh báo về khác nguồn, khán giả được điền và lịch sử cũ được giữ riêng; không tự xóa hoặc sửa dòng nguồn.
+Mỗi bảng không có match_id trùng lặp. Khi ghép một–một theo mã này, ngày, đội, tỷ số và kết quả đều khớp. Phần kiểm tra dữ liệu cũng xem xét miền giá trị, quan hệ giữa tỷ số và nhãn, các thống kê cùng trận và lịch sử trước trận. Những cảnh báo về khác biệt giữa các nguồn, số khán giả được điền và lịch sử cũ được ghi lại riêng; dữ liệu nguồn không bị tự động xóa hay sửa.
 
 [Chi tiết kiểm tra dữ liệu](data_quality_checks.csv)
 
@@ -61,11 +61,11 @@ Hai bảng không trùng match_id, ghép một–một và khớp các trường
 | odds_home_prob | 760 | 7,7% |
 | gameweek | 9.790 | 99,4% |
 
-Xóa mọi dòng có bất kỳ ô trống trên cả 102 cột chỉ còn 47 trận. Chỉ xét các biến số dự báo, bỏ gameweek và nhãn, cũng chỉ còn 2.035 trận đủ. Vì vậy không dùng dropna toàn bảng hoặc điền 0 đồng loạt. xG bắt đầu từ 2014/15; các biến FotMob có mốc phủ khác nhau. Thiếu theo thời kỳ không tương đương một giá trị 0 thật.
+Nếu bỏ mọi trận có ô trống ở bất kỳ cột nào trong 102 cột, dữ liệu chỉ còn 47 trận. Ngay cả khi chỉ xét các biến dự báo và bỏ gameweek cùng nhãn, cũng chỉ còn 2.035 trận đầy đủ. Vì thế, không nên dùng dropna cho cả bảng hoặc điền 0 hàng loạt. xG chỉ bắt đầu từ 2014/15, còn các biến FotMob xuất hiện ở những thời điểm khác nhau; một ô thiếu do chưa có dữ liệu trong giai đoạn đó không đồng nghĩa với giá trị 0 thật.
 
-![Hình 02. Cột đại diện ở phía chủ nhà và các biến chênh lệch; CSV danh mục có mức thiếu của toàn bộ đặc trưng.](figures/02_missingness.png)
+![Hình 02. Mức thiếu dữ liệu ở một số cột của chủ nhà và các biến chênh lệch. feature_candidates.csv ghi mức thiếu của toàn bộ đặc trưng.](figures/02_missingness.png)
 
-Hình 02. Cột đại diện ở phía chủ nhà và các biến chênh lệch; CSV danh mục có mức thiếu của toàn bộ đặc trưng.
+Hình 02. Mức thiếu dữ liệu ở một số cột của chủ nhà và các biến chênh lệch. feature_candidates.csv ghi mức thiếu của toàn bộ đặc trưng.
 
 | Tổ hợp nguồn | Số trận | Tỷ lệ |
 |---|---|---|
@@ -75,7 +75,7 @@ Hình 02. Cột đại diện ở phía chủ nhà và các biến chênh lệch
 | FD+FM | 649 | 6,6% |
 | FD+US+FM | 60 | 0,6% |
 
-FD = Football-Data; US = Understat; TM = Transfermarkt; FM = FotMob. Cờ đã ghép nguồn không bảo đảm mọi chỉ số của nguồn đó đều được ghi nhận. gameweek chỉ có ở mùa hiện tại nên không phù hợp làm điều kiện giữ dòng lịch sử.
+FD = Football-Data; US = Understat; TM = Transfermarkt; FM = FotMob. Việc một trận có cờ ghép nguồn không có nghĩa mọi chỉ số từ nguồn đó đều sẵn có. gameweek chỉ xuất hiện ở mùa hiện tại, nên không thể dùng cột này để quyết định giữ các trận lịch sử.
 
 ## 4. Bàn thắng, bàn thua, nhãn và tỷ số
 
@@ -88,11 +88,11 @@ FD = Football-Data; US = Understat; TM = Transfermarkt; FM = FotMob. Cờ đã g
 | Mùa đủ | Hòa | 2.233 | 24,5% | [23,6%; 25,4%] |
 | Mùa đủ | Đội khách thắng | 2.715 | 29,8% | [28,8%; 30,7%] |
 
-Lớp lớn nhất/nhỏ nhất có tỷ số 1,84. Cần theo dõi riêng lớp hòa; mức lệch nhãn quan sát không tự động dẫn đến oversampling. Các khoảng Wilson chỉ mô tả dưới xấp xỉ quan sát độc lập; đội bóng lặp lại khiến suy luận chính thức cần tính đến phụ thuộc.
+Nhóm kết quả phổ biến nhất có số trận gấp 1,84 lần nhóm ít gặp nhất. Nên theo dõi riêng khả năng nhận diện trận hòa, nhưng chênh lệch tỷ lệ này chưa phải lý do để tự động tăng mẫu cho lớp hòa. Các khoảng Wilson dựa trên xấp xỉ các trận độc lập; để suy luận chặt chẽ hơn, cần tính đến việc các đội xuất hiện lặp lại.
 
-![Hình 03. Phân phối kết quả trên toàn snapshot; phân phối bàn thắng dùng 24 mùa đủ.](figures/03_outcomes_goals.png)
+![Hình 03. Kết quả của toàn bộ trận trong dữ liệu; phân phối bàn thắng được tính trên 24 mùa có đủ trận.](figures/03_outcomes_goals.png)
 
-Hình 03. Phân phối kết quả trên toàn snapshot; phân phối bàn thắng dùng 24 mùa đủ.
+Hình 03. Kết quả của toàn bộ trận trong dữ liệu; phân phối bàn thắng được tính trên 24 mùa có đủ trận.
 
 | Đại lượng | Trung bình | Phương sai | Phương sai/TB | Tỷ lệ 0 |
 |---|---|---|---|---|
@@ -100,40 +100,40 @@ Hình 03. Phân phối kết quả trên toàn snapshot; phân phối bàn thắ
 | Bàn khách | 1,190 | 1,343 | 1,128 | 32,8% |
 | Tổng bàn | 2,728 | 2,764 | 1,013 | 7,2% |
 
-Tỷ lệ hai đội cùng ghi bàn là 51,2%; chủ nhà giữ sạch lưới 32,8%, đội khách giữ sạch lưới 23,2%. Tương quan Pearson bàn nhà–khách là -0,092. Các kiểm tra này giúp đặt giả thuyết cho mô hình đếm; không đủ kết luận phân phối Poisson hoặc độc lập là đúng.
+Hai đội cùng ghi bàn trong 51,2% số trận; chủ nhà giữ sạch lưới ở 32,8% số trận và đội khách ở 23,2%. Tương quan Pearson giữa bàn thắng của hai phía là -0,092. Các con số này giúp hình thành giả thuyết cho mô hình đếm, nhưng chưa đủ để khẳng định bàn thắng tuân theo phân phối Poisson hoặc hai phía độc lập với nhau.
 
-Khi gộp toàn bộ đội–trận của giải, tổng bàn ghi và tổng bàn thua bằng nhau, kể cả phân phối đối ứng của chúng. Khác biệt tấn công/phòng ngự cần xét theo đội, mùa và sân, không diễn giải hai tổng toàn giải như hai nguồn thông tin độc lập.
+Nếu gộp tất cả đội–trận trong giải, tổng bàn ghi luôn bằng tổng bàn thua và hai phân phối cũng đối ứng với nhau. Muốn tìm hiểu khác biệt về tấn công hay phòng ngự, cần xét theo đội, mùa và sân thay vì xem hai tổng của cả giải là hai nguồn thông tin riêng.
 
-![Hình 04. Tỷ số và đối chiếu tổng bàn với Poisson có cùng trung bình; đây là mô tả phân phối, không phải mô hình dự báo.](figures/04_score_counts.png)
+![Hình 04. Phân phối tỷ số và tổng bàn thắng so với phân phối Poisson có cùng trung bình. Hình này dùng để mô tả dữ liệu, chưa phải mô hình dự báo.](figures/04_score_counts.png)
 
-Hình 04. Tỷ số và đối chiếu tổng bàn với Poisson có cùng trung bình; đây là mô tả phân phối, không phải mô hình dự báo.
+Hình 04. Phân phối tỷ số và tổng bàn thắng so với phân phối Poisson có cùng trung bình. Hình này dùng để mô tả dữ liệu, chưa phải mô hình dự báo.
 
 ## 5. Mùa giải và lợi thế sân nhà
 
-![Hình 05. Chỉ dùng mùa đủ; mỗi điểm có 380 trận nên các tỷ lệ và trung bình có cùng mẫu số.](figures/05_season_trends.png)
+![Hình 05. Xu hướng qua các mùa có đủ trận. Mỗi điểm được tính từ 380 trận, nên các tỷ lệ và trung bình có cùng mẫu số.](figures/05_season_trends.png)
 
-Hình 05. Chỉ dùng mùa đủ; mỗi điểm có 380 trận nên các tỷ lệ và trung bình có cùng mẫu số.
+Hình 05. Xu hướng qua các mùa có đủ trận. Mỗi điểm được tính từ 380 trận, nên các tỷ lệ và trung bình có cùng mẫu số.
 
-Trong các mùa đủ, tổng bàn/trận thấp nhất ở 2006/07 (2,45) và cao nhất ở 2023/24 (3,28). Chênh tỷ lệ H−A thấp nhất ở 2020/21 (-2,4%), cao nhất ở 2009/10 (26,8%). Đây là cực trị trong mẫu, không chứng minh xu hướng tuyến tính hoặc khác biệt có ý nghĩa xác nhận.
+Trong các mùa có đủ trận, số bàn trung bình mỗi trận thấp nhất ở mùa 2006/07 (2,45) và cao nhất ở mùa 2023/24 (3,28). Chênh lệch giữa tỷ lệ thắng của chủ nhà và đội khách thấp nhất ở 2020/21 (-2,4%), cao nhất ở 2009/10 (26,8%). Đây là những mốc cao và thấp trong mẫu đã quan sát, chưa đủ để kết luận có xu hướng tuyến tính hoặc khác biệt được xác nhận bằng kiểm định.
 
 | Thước đo sân nhà ở mùa đủ | Ước lượng | Bootstrap theo mùa 95% |
 |---|---|---|
 | Tỷ lệ H trừ tỷ lệ A | 16,0% | [13,5%; 18,3%] |
 | Bàn nhà trừ bàn khách | 0,348 | [0,299; 0,394] |
 
-Khoảng trên được tính bằng 4.000 lần lấy mẫu lại 24 mùa (seed 42), giữ các trận trong cùng mùa đi cùng nhau. Nó mô tả biến động giữa các mùa đã quan sát; 24 cụm là hữu hạn và các mùa vẫn có đội lặp lại. Không diễn giải đây là hiệu ứng nhân quả của sân nhà.
+Khoảng trong bảng được tính bằng 4.000 lần lấy mẫu lại 24 mùa (seed 42), với các trận trong cùng mùa luôn đi cùng nhau. Nhờ vậy, khoảng này phản ánh biến động giữa những mùa đã quan sát. Tuy nhiên, chỉ có 24 cụm và các đội vẫn lặp lại qua nhiều mùa, nên không thể xem đây là bằng chứng về tác động nhân quả của sân nhà.
 
-![Hình 06. Thanh cam đánh dấu 2019/20 và 2020/21; so sánh khán giả chỉ mang tính mô tả trong từng mùa.](figures/06_home_advantage.png)
+![Hình 06. Mùa 2019/20 và 2020/21 được tô cam. So sánh theo số khán giả chỉ mô tả các trận trong từng mùa.](figures/06_home_advantage.png)
 
-Hình 06. Thanh cam đánh dấu 2019/20 và 2020/21; so sánh khán giả chỉ mang tính mô tả trong từng mùa.
+Hình 06. Mùa 2019/20 và 2020/21 được tô cam. So sánh theo số khán giả chỉ mô tả các trận trong từng mùa.
 
-Có 441 giá trị khán giả được điền; các giá trị 0 giai đoạn COVID có cờ attendance_imputed. Khác biệt giữa nhóm có/không khán giả còn chịu ảnh hưởng của lịch, sức mạnh đội và thời điểm; không quy toàn bộ khác biệt cho khán giả.
+Dữ liệu có 441 giá trị khán giả được điền; những giá trị 0 trong giai đoạn COVID được đánh dấu bằng cờ attendance_imputed. Khi so sánh nhóm có và không có khán giả, cần nhớ rằng lịch thi đấu, sức mạnh đội và thời điểm cũng có thể ảnh hưởng đến kết quả; không thể quy toàn bộ khác biệt cho khán giả.
 
 ## 6. Nhóm đội và khả năng ghi bàn/phòng ngự
 
-![Hình 07. Nhóm Elo lấy từ giá trị trước trận; ngưỡng phân vị toàn mẫu chỉ phục vụ EDA. Không dùng thứ hạng cuối mùa để tạo nhóm dự báo.](figures/07_team_groups.png)
+![Hình 07. Các nhóm được chia theo Elo trước trận và ngưỡng phân vị của toàn bộ mẫu để phục vụ mô tả. Thứ hạng cuối mùa không được dùng để tạo nhóm dự báo.](figures/07_team_groups.png)
 
-Hình 07. Nhóm Elo lấy từ giá trị trước trận; ngưỡng phân vị toàn mẫu chỉ phục vụ EDA. Không dùng thứ hạng cuối mùa để tạo nhóm dự báo.
+Hình 07. Các nhóm được chia theo Elo trước trận và ngưỡng phân vị của toàn bộ mẫu để phục vụ mô tả. Thứ hạng cuối mùa không được dùng để tạo nhóm dự báo.
 
 | Nhóm Elo trước trận | Sân | Đội–trận | Điểm/trận | Bàn ghi/trận | Bàn thua/trận |
 |---|---|---|---|---|---|
@@ -144,7 +144,7 @@ Hình 07. Nhóm Elo lấy từ giá trị trước trận; ngưỡng phân vị 
 | Elo cao | Khách | 3.044 | 1,59 | 1,57 | 1,23 |
 | Elo cao | Nhà | 3.036 | 2,10 | 2,03 | 0,92 |
 
-Đội không có mặt mùa EPL trước được nhận diện bằng lịch sử tham dự quan sát, gồm đội lần đầu xuất hiện hoặc trở lại. Đây là nhóm mô tả, chưa xác nhận toàn bộ lịch thi đấu hạng dưới. Nhóm đầu tiên của lịch sử dữ liệu được loại khỏi so sánh này.
+Những đội vắng mặt ở EPL mùa trước được nhận diện từ lịch sử tham dự có trong dữ liệu; nhóm này gồm đội mới xuất hiện lần đầu và đội trở lại giải. Cách chia nhóm chỉ phục vụ mô tả vì chưa đối chiếu toàn bộ lịch thi đấu hạng dưới. Các đội thuộc mùa đầu tiên của dữ liệu được loại khỏi so sánh này.
 
 | Đội (ít nhất 3 mùa đủ tương đương) | Đội–trận | Điểm/trận | Bàn ghi/trận | Bàn thua/trận |
 |---|---|---|---|---|
@@ -157,15 +157,15 @@ Hình 07. Nhóm Elo lấy từ giá trị trước trận; ngưỡng phân vị 
 | Everton | 912 | 1,39 | 1,29 | 1,27 |
 | Newcastle | 836 | 1,34 | 1,34 | 1,44 |
 
-Bảng trên tổng hợp các lần xuất hiện trong mẫu mùa đủ, không phải bảng xếp hạng của một mùa. Các đội có số mùa góp mặt khác nhau; không suy rằng khác biệt do một đặc trưng duy nhất.
+Bảng gộp những lần mỗi đội xuất hiện trong các mùa có đủ trận, chứ không phải bảng xếp hạng của một mùa riêng lẻ. Vì số mùa góp mặt khác nhau giữa các đội, không thể quy khác biệt trong bảng cho một đặc trưng duy nhất.
 
 ## 7. Thống kê cùng trận và đối chiếu nguồn xG
 
-![Hình 15. Ba đồ thị hộp thể hiện trung vị và khoảng tứ phân vị; điểm ngoài râu vẫn được giữ trong dữ liệu. Thẻ đỏ dùng tỷ lệ có ít nhất một thẻ vì trung vị và tứ phân vị đều bằng 0.](figures/15_match_statistics.png)
+![Hình 15. Ba đồ thị hộp cho thấy trung vị và khoảng tứ phân vị; các điểm ngoài râu vẫn nằm trong dữ liệu. Với thẻ đỏ, báo cáo dùng tỷ lệ trận có ít nhất một thẻ vì cả trung vị lẫn tứ phân vị đều bằng 0.](figures/15_match_statistics.png)
 
-Hình 15. Ba đồ thị hộp thể hiện trung vị và khoảng tứ phân vị; điểm ngoài râu vẫn được giữ trong dữ liệu. Thẻ đỏ dùng tỷ lệ có ít nhất một thẻ vì trung vị và tứ phân vị đều bằng 0.
+Hình 15. Ba đồ thị hộp cho thấy trung vị và khoảng tứ phân vị; các điểm ngoài râu vẫn nằm trong dữ liệu. Với thẻ đỏ, báo cáo dùng tỷ lệ trận có ít nhất một thẻ vì cả trung vị lẫn tứ phân vị đều bằng 0.
 
-Số sút, xG, kiểm soát bóng và thẻ của chính trận liên hệ với kết quả theo mô tả. Chúng không có trước trận nên không được đưa trực tiếp vào mô hình dự đoán trước trận. Thẻ và kiểm soát bóng cũng có thể là hệ quả của diễn biến/tỷ số, không chỉ là nguyên nhân.
+Trong chính trận đấu, số sút, xG, kiểm soát bóng và thẻ có liên hệ với kết quả quan sát được. Những thông tin này chưa có trước giờ bóng lăn, nên không thể đưa trực tiếp vào mô hình dự đoán trước trận. Riêng thẻ và kiểm soát bóng còn có thể chịu ảnh hưởng từ diễn biến hoặc tỷ số của trận đấu.
 
 | Thước đo trên cùng mẫu | Giá trị |
 |---|---|
@@ -174,11 +174,11 @@ Số sút, xG, kiểm soát bóng và thẻ của chính trận liên hệ với
 | Chênh trung bình FotMob−Understat | -0,091 |
 | Dải TB ±1,96 SD của chênh | [-0,711; 0,529] |
 
-![Hình 12. Tương quan cao không đồng nghĩa hai mô hình xG có thể thay thế hoàn toàn; dải SD không phải khoảng tin cậy của trung bình.](figures/12_xg_sources.png)
+![Hình 12. Hai nguồn xG có tương quan cao, nhưng không vì thế mà có thể thay thế hoàn toàn cho nhau; dải SD cũng không phải khoảng tin cậy của trung bình.](figures/12_xg_sources.png)
 
-Hình 12. Tương quan cao không đồng nghĩa hai mô hình xG có thể thay thế hoàn toàn; dải SD không phải khoảng tin cậy của trung bình.
+Hình 12. Hai nguồn xG có tương quan cao, nhưng không vì thế mà có thể thay thế hoàn toàn cho nhau; dải SD cũng không phải khoảng tin cậy của trung bình.
 
-Khi dựng đặc trưng, cần giữ nhất quán nguồn xG hoặc kiểm tra nhạy cảm khi đổi nguồn. Báo cáo không tự ghép hai nguồn thành một chỉ số mới.
+Khi tạo đặc trưng, nên dùng nhất quán một nguồn xG và kiểm tra độ nhạy nếu muốn đổi nguồn. Ở đây, hai nguồn được giữ riêng thay vì ghép thành một chỉ số mới.
 
 ## 8. Ý nghĩa và thời điểm có đặc trưng
 
@@ -192,15 +192,15 @@ Khi dựng đặc trưng, cần giữ nhất quán nguồn xG hoặc kiểm tra 
 | rest_days | Ngày từ trận EPL quan sát gần nhất | Không phải thời gian nghỉ mọi đấu trường |
 | odds_*_prob | Nghịch đảo odds Avg, B365 dự phòng, chuẩn hóa tổng bằng 1 | Chưa có timestamp thu thập; đóng khung thời điểm dự đoán trước khi dùng |
 
-Có 143 trận có ít nhất một đội với cửa sổ kết quả đã biết nhưng chưa đủ 5 trận; 800 trận chưa có đối đầu quan sát trước. H2H với ít nhất 3 lần gặp có 7.632 trận. Cửa sổ phong độ vẫn có thể chứa kết quả nhiều năm trước khi một đội trở lại EPL.
+Ở 143 trận, ít nhất một đội đã có lịch sử kết quả nhưng cửa sổ vẫn chưa đủ 5 trận; 800 trận chưa ghi nhận lần đối đầu nào trước đó. Nếu yêu cầu H2H có ít nhất 3 lần gặp, còn 7.632 trận. Với đội trở lại EPL, cửa sổ phong độ đôi khi vẫn chứa kết quả từ nhiều năm trước.
 
-Kiểm toán mới tính lại độc lập 43 cột trên toàn bộ 9.850 trận, gồm Elo, phong độ kết quả/bàn/xG, phong độ sân, thống kê mùa, ngày EPL và H2H; có 0 ô sai khác. Kiểm tra này đọc trạng thái trước khi cập nhật kết quả hiện tại. Không thay thế kiểm chứng timestamp dữ liệu, thời gian kickoff thiếu, toàn bộ biến FotMob hoặc dữ liệu nguồn thực tế.
+Để kiểm tra cách tính các biến lịch sử, kiểm toán đã tính lại độc lập 43 cột trên toàn bộ 9.850 trận. Các cột này gồm Elo, phong độ kết quả/bàn/xG, phong độ sân, thống kê mùa, ngày EPL và H2H; ghi nhận 0 ô sai khác. Phép kiểm tra dùng trạng thái trước khi cập nhật kết quả trận hiện tại. Kết quả này chưa thay thế việc xác minh timestamp dữ liệu, thời gian kickoff còn thiếu, toàn bộ biến FotMob hay dữ liệu nguồn thực tế.
 
 ## 9. Phong độ, bàn thắng trung bình, đối đầu và kết quả
 
-![Hình 08. Các phân vị là nhóm mô tả toàn mẫu, không phải ngưỡng quyết định của mô hình. Một số giá trị bằng nhau làm kích thước nhóm không đều.](figures/08_feature_associations.png)
+![Hình 08. Các phân vị giúp nhìn dữ liệu theo từng nhóm trên toàn mẫu; chúng không phải ngưỡng ra quyết định của mô hình. Do một số giá trị trùng nhau, kích thước các nhóm không hoàn toàn bằng nhau.](figures/08_feature_associations.png)
 
-Hình 08. Các phân vị là nhóm mô tả toàn mẫu, không phải ngưỡng quyết định của mô hình. Một số giá trị bằng nhau làm kích thước nhóm không đều.
+Hình 08. Các phân vị giúp nhìn dữ liệu theo từng nhóm trên toàn mẫu; chúng không phải ngưỡng ra quyết định của mô hình. Do một số giá trị trùng nhau, kích thước các nhóm không hoàn toàn bằng nhau.
 
 | Biến | Số trận hợp lệ | Spearman với H | Spearman với hiệu số bàn |
 |---|---|---|---|
@@ -215,15 +215,15 @@ Hình 08. Các phân vị là nhóm mô tả toàn mẫu, không phải ngưỡn
 | h2h_home_points | 9.050 | 0,202 | 0,247 |
 | h2h_home_goal_diff | 9.050 | 0,235 | 0,287 |
 
-Nhãn H/D/A không được mã hóa thành một thang số tùy ý để tính tương quan. Báo cáo dùng H=1, còn lại=0 hoặc hiệu số bàn (đại lượng có thứ tự tự nhiên). Các hệ số trên dùng tập trận hợp lệ riêng, vì vậy không xếp hạng khả năng dự đoán trực tiếp giữa chúng.
+Để tính tương quan, báo cáo không gán nhãn H/D/A vào một thang số tùy ý. Thay vào đó, kết quả được xét dưới dạng H=1, còn lại=0, hoặc qua hiệu số bàn, vốn có thứ tự tự nhiên. Mỗi hệ số dựa trên tập trận hợp lệ riêng, nên chưa thể dùng chúng để xếp hạng trực tiếp khả năng dự đoán của các biến.
 
-![Hình 10. So sánh bổ sung trên cùng 4.408 trận đủ sáu biến; mẫu này thiên về giai đoạn có xG và không đại diện đồng đều toàn lịch sử.](figures/10_common_sample.png)
+![Hình 10. Sáu biến được so sánh thêm trên cùng 4.408 trận có đủ dữ liệu; mẫu này tập trung nhiều hơn ở giai đoạn có xG, nên không đại diện đều cho toàn bộ lịch sử.](figures/10_common_sample.png)
 
-Hình 10. So sánh bổ sung trên cùng 4.408 trận đủ sáu biến; mẫu này thiên về giai đoạn có xG và không đại diện đồng đều toàn lịch sử.
+Hình 10. Sáu biến được so sánh thêm trên cùng 4.408 trận có đủ dữ liệu; mẫu này tập trung nhiều hơn ở giai đoạn có xG, nên không đại diện đều cho toàn bộ lịch sử.
 
-![Hình 09. So nhóm thấp/cao theo tercile toàn mẫu trong các trận gần Elo; đây chỉ là điều kiện thô, chưa loại hết khác biệt về sức mạnh và thời kỳ.](figures/09_strength_conditioned.png)
+![Hình 09. So sánh nhóm thấp và cao theo tercile toàn mẫu ở các trận có Elo gần nhau; đây mới là bước điều kiện hóa sơ bộ, chưa loại hết khác biệt về sức mạnh và thời kỳ.](figures/09_strength_conditioned.png)
 
-Hình 09. So nhóm thấp/cao theo tercile toàn mẫu trong các trận gần Elo; đây chỉ là điều kiện thô, chưa loại hết khác biệt về sức mạnh và thời kỳ.
+Hình 09. So sánh nhóm thấp và cao theo tercile toàn mẫu ở các trận có Elo gần nhau; đây mới là bước điều kiện hóa sơ bộ, chưa loại hết khác biệt về sức mạnh và thời kỳ.
 
 | Biến | Ngưỡng thấp / cao | Tỷ lệ H thấp | Tỷ lệ H cao | Chênh cao−thấp | Elo TB thấp / cao |
 |---|---|---|---|---|---|
@@ -232,7 +232,7 @@ Hình 09. So nhóm thấp/cao theo tercile toàn mẫu trong các trận gần E
 | Điểm TB đối đầu của đội nhà | ≤1,000 / ≥1,600 | 45,2% (n=1.079) | 45,3% (n=897) | 0,03 điểm % | -4,4 / 4,0 |
 | Chênh xG TB 5 trận | ≤-0,324 / ≥0,257 | 38,4% (n=349) | 45,2% (n=343) | 6,79 điểm % | -7,8 / 6,1 |
 
-Trong nhóm gần Elo, khác biệt của phong độ điểm, bàn ghi và đối đầu giảm mạnh so với liên hệ thô. xG giữ chênh lệch lớn hơn nhưng hai nhóm vẫn khác Elo trung bình và phạm vi thời kỳ. Đây là lý do đề xuất kiểm định giá trị tăng thêm của xG bằng mô hình theo thời gian; chưa phải bằng chứng nhân quả hoặc cải thiện dự báo.
+Khi chỉ nhìn các trận có Elo gần nhau, chênh lệch gắn với phong độ điểm, bàn ghi và đối đầu nhỏ đi nhiều so với liên hệ ban đầu. Chênh lệch theo xG vẫn lớn hơn, dù hai nhóm còn khác nhau về Elo trung bình và giai đoạn thi đấu. Vì vậy, giá trị tăng thêm của xG cần được kiểm định bằng mô hình theo thời gian; kết quả mô tả này chưa cho thấy quan hệ nhân quả hay mức cải thiện dự báo.
 
 ## 10. Bất thường và quyết định xử lý
 
@@ -244,23 +244,23 @@ Trong nhóm gần Elo, khác biệt của phong độ điểm, bàn ghi và đ�
 | observed_epl_gap | 534 | 284 | Khoảng cách EPL >30 ngày: gồm nghỉ mùa, vắng giải; không tự coi là lỗi |
 | suspect_possession | 1 | 1 | Xem reason_vi trong bảng chi tiết |
 
-Trong/ngoài vòng cấm vượt tổng sút ở 167 trận, nhưng các chỉ số đến từ hai nguồn nên đây là cảnh báo tính nhất quán, chưa đủ để kết luận tổng nào sai. Ngoài ra có trận Newcastle–Tottenham ngày 15/05/2016 ghi kiểm soát bóng 3%–97% và tỷ số 5–1; cần xác minh nguồn.
+Ở 167 trận, tổng số sút trong và ngoài vòng cấm lớn hơn tổng sút được ghi nhận. Vì các chỉ số đến từ hai nguồn khác nhau, đây là dấu hiệu cần đối chiếu, chưa đủ để xác định bên nào sai. Trận Newcastle–Tottenham ngày 15/05/2016 cũng ghi kiểm soát bóng 3%–97% dù tỷ số là 5–1; trường hợp này cần kiểm tra lại nguồn.
 
-Có thêm 3 trận mà hai thành phần sút FotMob đều bằng 0 trong khi tổng sút Football-Data dương. Các số 0 này cần được kiểm tra về độ phủ/ghi nhận nguồn, không tự diễn giải là đội không có cú sút nào.
+Thêm 3 trận có cả hai thành phần sút của FotMob bằng 0 trong khi tổng sút từ Football-Data vẫn dương. Nên kiểm tra cách ghi nhận và độ phủ của nguồn trước khi hiểu các số 0 này là đội không có cú sút nào.
 
-Khoảng cách EPL lớn nhất là 9.225 ngày; 52 đội–trận có khoảng cách trên một năm. Không cắt các giá trị này rồi gọi chúng là nghỉ thực tế. Có thể thiết kế cờ lịch sử cũ, khoảng cách trong mùa, hoặc bổ sung lịch mọi đấu trường trước khi kiểm định mệt mỏi.
+Khoảng cách giữa hai lần xuất hiện ở EPL dài nhất là 9.225 ngày; 52 đội–trận có khoảng cách trên một năm. Không nên cắt ngắn những khoảng này rồi gọi kết quả là thời gian nghỉ thực tế. Khi nghiên cứu mệt mỏi, có thể đánh dấu lịch sử quá cũ, tính khoảng cách trong mùa hoặc bổ sung lịch thi đấu ở mọi đấu trường.
 
-![Hình 13. Không có dòng nào bị tự động loại khỏi dữ liệu nguồn. Phân phối log cho thấy vì sao mean/std đơn thuần không diễn giải được rest_days.](figures/13_anomalies.png)
+![Hình 13. Báo cáo giữ nguyên các dòng dữ liệu nguồn. Phân phối trên thang log cho thấy chỉ nhìn trung bình và độ lệch chuẩn chưa đủ để hiểu rest_days.](figures/13_anomalies.png)
 
-Hình 13. Không có dòng nào bị tự động loại khỏi dữ liệu nguồn. Phân phối log cho thấy vì sao mean/std đơn thuần không diễn giải được rest_days.
+Hình 13. Báo cáo giữ nguyên các dòng dữ liệu nguồn. Phân phối trên thang log cho thấy chỉ nhìn trung bình và độ lệch chuẩn chưa đủ để hiểu rest_days.
 
 ## 11. Đặc trưng tiềm năng, trùng thông tin và độ ổn định
 
-![Hình 11. Tương quan từng cặp không cùng mẫu; quan hệ xác định đại số được kiểm tra thêm bằng công thức.](figures/11_redundancy.png)
+![Hình 11. Mỗi cặp tương quan có thể dựa trên một tập trận khác nhau; các quan hệ xác định về mặt đại số được kiểm tra thêm bằng công thức.](figures/11_redundancy.png)
 
-Hình 11. Tương quan từng cặp không cùng mẫu; quan hệ xác định đại số được kiểm tra thêm bằng công thức.
+Hình 11. Mỗi cặp tương quan có thể dựa trên một tập trận khác nhau; các quan hệ xác định về mặt đại số được kiểm tra thêm bằng công thức.
 
-14 cột diff_* có sẵn đều bằng home−away của chỉ số tương ứng. Không đưa đồng thời cả ba biến vào hồi quy tuyến tính không điều chuẩn. elo_home_win_prob là biến đổi đơn điệu của elo_diff; position_diff và diff_ppg, cùng hai biến H2H, có mức trùng thông tin lớn. Không cần PCA bắt buộc cho EDA; ưu tiên tính giải thích và chọn theo nhóm.
+Cả 14 cột diff_* có sẵn đều bằng giá trị home−away của chỉ số tương ứng. Vì vậy, không nên đưa đồng thời cả ba biến vào hồi quy tuyến tính không điều chuẩn. elo_home_win_prob là biến đổi đơn điệu của elo_diff; position_diff và diff_ppg, cũng như hai biến H2H, có nhiều thông tin trùng nhau. Ở bước EDA, chưa cần áp dụng PCA như một yêu cầu bắt buộc; có thể ưu tiên các nhóm biến dễ giải thích.
 
 | Biến | Thiếu | Quyết định đề xuất |
 |---|---|---|
@@ -283,11 +283,11 @@ Hình 11. Tương quan từng cặp không cùng mẫu; quan hệ xác định �
 
 [Danh mục đầy đủ 87 đặc trưng: định nghĩa, nguồn, thời điểm có, thiếu, tương quan và quyết định](feature_candidates.csv)
 
-Tương quan chỉ hỗ trợ khám phá. Các quyết định là thứ tự kiểm định, không phải danh sách đã được chứng minh có ích. Giữ hai kịch bản: chỉ dùng dữ liệu bóng đá và có thêm odds đúng thời điểm. Không dùng thiếu dữ liệu của một thời kỳ như đường tắt nhận diện nhãn.
+Tương quan giúp nhận ra hướng đáng tìm hiểu, nhưng chưa chứng minh biến nào thực sự có ích cho dự báo. Các quyết định trong bảng vì thế là thứ tự đề xuất để kiểm định. Nên xét riêng kịch bản chỉ có dữ liệu bóng đá và kịch bản thêm odds đúng thời điểm, đồng thời tránh để mẫu thiếu dữ liệu của một giai đoạn trở thành dấu hiệu nhận diện nhãn.
 
-![Hình 16. Hướng liên hệ ổn định qua mùa chưa chứng minh dự báo ngoài mẫu. Mốc ≥100 quan sát tránh diễn giải hệ số từ rất ít trận.](figures/16_temporal_stability.png)
+![Hình 16. Hướng liên hệ ổn định qua nhiều mùa là tín hiệu để tìm hiểu thêm, chưa chứng minh khả năng dự báo ngoài mẫu. Mốc ≥100 quan sát giúp tránh diễn giải hệ số tính từ quá ít trận.](figures/16_temporal_stability.png)
 
-Hình 16. Hướng liên hệ ổn định qua mùa chưa chứng minh dự báo ngoài mẫu. Mốc ≥100 quan sát tránh diễn giải hệ số từ rất ít trận.
+Hình 16. Hướng liên hệ ổn định qua nhiều mùa là tín hiệu để tìm hiểu thêm, chưa chứng minh khả năng dự báo ngoài mẫu. Mốc ≥100 quan sát giúp tránh diễn giải hệ số tính từ quá ít trận.
 
 | Biến | Mùa đủ điều kiện | Số mùa tương quan dương | Khoảng Spearman |
 |---|---|---|---|
@@ -298,11 +298,11 @@ Hình 16. Hướng liên hệ ổn định qua mùa chưa chứng minh dự báo
 | h2h_home_points | 24 | 24 | [0,022; 0,332] |
 | odds_home_prob | 22 | 22 | [0,287; 0,467] |
 
-![Hình 14. Kiểm tra mô tả xác suất từ odds trên snapshot, không phải kết quả backtest hoặc hiệu quả tài chính. Không vẽ Elo expectation như P(H).](figures/14_odds_reliability.png)
+![Hình 14. Biểu đồ mô tả xác suất suy từ odds trong bộ dữ liệu hiện có; đây chưa phải kết quả backtest hay đánh giá hiệu quả tài chính. Elo expectation cũng không được xem như P(H).](figures/14_odds_reliability.png)
 
-Hình 14. Kiểm tra mô tả xác suất từ odds trên snapshot, không phải kết quả backtest hoặc hiệu quả tài chính. Không vẽ Elo expectation như P(H).
+Hình 14. Biểu đồ mô tả xác suất suy từ odds trong bộ dữ liệu hiện có; đây chưa phải kết quả backtest hay đánh giá hiệu quả tài chính. Elo expectation cũng không được xem như P(H).
 
-Các odds được dùng để tạo features là Avg với B365 dự phòng, chuẩn hóa nghịch đảo; không phải tự động là closing odds. Timestamp thu thập chưa được cung cấp, nên độ sẵn có ở mốc dự đoán trước trận một ngày chưa được xác nhận.
+Đặc trưng odds được tạo từ Avg, dùng B365 khi cần dự phòng, rồi chuẩn hóa các giá trị nghịch đảo. Chúng chưa chắc là closing odds. Vì chưa có timestamp thu thập, báo cáo cũng chưa thể xác nhận liệu odds đã sẵn có trước trận một ngày hay chưa.
 
 ## 12. Giả thuyết cần kiểm tra bằng mô hình
 
@@ -320,20 +320,20 @@ Các odds được dùng để tạo features là Avg với B365 dự phòng, ch
 
 [Chi tiết giả thuyết, tập dữ liệu, tiêu chí và lưu ý](hypotheses.csv)
 
-Không giả thuyết nào được chấp nhận chỉ từ EDA. Mô hình nền nên gồm tần suất nhãn học từ train, sau đó một mô hình H/D/A đơn giản với Elo. Khi dự đoán tỷ số, kiểm định riêng Poisson/biến thể đếm dựa trên quá khứ, độ phân tán và phụ thuộc bàn nhà–khách; hình đối chiếu Poisson chưa phải mô hình dự báo.
+Những liên hệ trên gợi ra hướng thử nghiệm, nhưng EDA chưa đủ để khẳng định giả thuyết nào đúng. Nên bắt đầu từ tỷ lệ H/D/A tính trên tập huấn luyện, rồi so với một mô hình đơn giản có Elo. Nếu dự đoán tỷ số, cần đánh giá riêng Poisson và các biến thể đếm trên dữ liệu quá khứ, đồng thời kiểm tra độ phân tán và mối liên hệ giữa bàn thắng nhà–khách. Biểu đồ đối chiếu Poisson ở trên mới là bước khám phá phân phối.
 
 ## 13. Kế hoạch đánh giá và giới hạn diễn giải
 
-- Chốt mục tiêu: dự đoán H/D/A hay tỷ số; chốt mốc trước giờ bóng lăn hoặc trước một ngày. Chỉ dùng các trường đã sẵn có ở mốc đó.
-- Đánh giá mở rộng theo thời gian: train bằng các mùa trước, validation bằng mùa tiếp theo; các trận cùng ngày không tách hai phía ranh giới.
-- Để so nhóm biến cơ bản/xG/FotMob/H2H/odds, dùng cùng trận và cùng fold. Báo cáo riêng mẫu dài hạn và mẫu giàu thống kê gần đây.
-- Điền thiếu, chuẩn hóa, chọn biến, PCA nếu có và hiệu chỉnh xác suất chỉ được học trong train của từng fold. Không dùng kết quả test để chọn biến.
-- Thước đo chính cho H/D/A là log loss đa lớp; bổ sung Brier, macro-F1, recall lớp hòa, confusion matrix và hiệu chỉnh xác suất. Báo cáo biến động qua mùa.
-- Giữ một tập kiểm tra khóa sau khi chốt đặc trưng và quy trình. Vì EDA này đã xem toàn snapshot, một mùa đã được xem không còn hoàn toàn chưa đụng tới; ưu tiên kiểm chứng xác nhận bằng snapshot tương lai chưa xem.
-- Kiểm tra nhạy cảm với hai mùa thiếu, đội trở lại EPL, cửa sổ ít hơn 5, H2H ít trận, định nghĩa nguồn xG và khoảng trống lịch sử.
-- Mọi liên hệ trong báo cáo là mô tả, chưa suy ra nhân quả. Các đội lặp lại và nhiều phép so sánh làm các khoảng đơn giản không đủ cho suy luận xác nhận.
+- Trước tiên, xác định rõ mục tiêu là dự đoán H/D/A hay tỷ số, và dự đoán ngay trước giờ bóng lăn hay trước một ngày. Chỉ dùng thông tin đã có ở thời điểm đó.
+- Chia dữ liệu theo thời gian: học từ các mùa trước rồi đánh giá trên mùa tiếp theo. Các trận cùng ngày nên nằm cùng một phía của ranh giới chia tập.
+- Khi so sánh các nhóm biến cơ bản, xG, FotMob, H2H và odds, hãy dùng cùng tập trận và cùng lần chia dữ liệu. Trình bày riêng kết quả trên mẫu dài hạn và mẫu giàu thống kê gần đây.
+- Ở mỗi lần chia tập, chỉ học cách điền thiếu, chuẩn hóa, chọn biến, PCA (nếu dùng) và hiệu chỉnh xác suất từ tập huấn luyện. Không dùng tập kiểm tra để chọn biến.
+- Dùng log loss đa lớp làm thước đo chính cho H/D/A; xem thêm Brier, macro-F1, recall lớp hòa, ma trận nhầm lẫn và độ hiệu chỉnh xác suất. Nên trình bày cả mức biến động qua mùa.
+- Sau khi chốt đặc trưng và quy trình, khóa một tập đánh giá cuối. Vì EDA này đã xem toàn bộ dữ liệu hiện có, một mùa trong đó không còn hoàn toàn mới; tốt nhất là kiểm chứng thêm bằng dữ liệu tương lai chưa xem.
+- Lặp lại đánh giá khi thay đổi cách xử lý hai mùa thiếu, đội trở lại EPL, cửa sổ dưới 5 trận, H2H ít trận, nguồn xG và khoảng trống lịch sử.
+- Các mối liên hệ trong báo cáo chỉ mang tính mô tả. Nhiều trận có cùng đội và nhiều phép so sánh được thực hiện, nên cần phương pháp phù hợp hơn trước khi đưa ra kết luận xác nhận hay nhân quả.
 
-Mức 'đã xử lý' và 108 kiểm tra QA của pipeline nguồn không đồng nghĩa dữ liệu không còn vấn đề cho mọi bài toán. Kiểm toán mới tập trung thêm vào mục tiêu EDA và thời điểm dự đoán. Không huấn luyện mô hình dự đoán trong lần bàn giao này.
+Dữ liệu nguồn đã được xử lý và có 108 kiểm tra QA, nhưng từng bài toán vẫn cần xem lại những giới hạn liên quan. Lần kiểm toán này tập trung thêm vào EDA và thời điểm thông tin có thể được dùng để dự đoán. Báo cáo chưa huấn luyện mô hình dự đoán.
 
 [Tham khảo phương pháp: tránh rò rỉ dữ liệu (scikit-learn)](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage)
 
@@ -341,20 +341,20 @@ Mức 'đã xử lý' và 108 kiểm tra QA của pipeline nguồn không đồn
 
 ## 14. Bàn giao và tái lập
 
-- report.html: báo cáo tự chứa toàn bộ 16 biểu đồ, mở ngoại tuyến bằng trình duyệt.
-- report.md và figures/: báo cáo Markdown cùng ảnh PNG có thể đưa vào tài liệu hoặc slide.
-- feature_candidates.csv: danh mục 87 biến và quyết định kiểm định đề xuất.
-- hypotheses.csv: 9 giả thuyết cùng phép so sánh và tiêu chí.
-- data_quality_checks.csv và data_issues.csv: kết quả kiểm tra và dòng được gắn cờ; đây là sản phẩm kiểm toán, không phải dữ liệu nguồn đã sửa.
-- analysis_metadata.json: thời điểm tạo, phiên bản thư viện, SHA256 của hai nguồn và chi tiết kiểm toán.
+- Mở report.html để đọc báo cáo cùng toàn bộ 16 biểu đồ ngay trong trình duyệt, kể cả khi ngoại tuyến.
+- Dùng report.md và thư mục figures/ nếu muốn đưa nội dung, ảnh PNG vào tài liệu hoặc slide.
+- feature_candidates.csv ghi lại 87 biến cùng hướng kiểm tra được đề xuất.
+- hypotheses.csv tập hợp 9 giả thuyết, phép so sánh và tiêu chí đánh giá.
+- data_quality_checks.csv và data_issues.csv lưu kết quả kiểm tra và các dòng cần xem lại; dữ liệu nguồn chưa bị sửa.
+- analysis_metadata.json lưu thời điểm tạo, phiên bản thư viện, SHA256 của hai nguồn và chi tiết kiểm toán.
 
-Nguồn: clean/matches.csv và clean/features.csv, đã tải từ thư mục clean của kho Toibinguz/epl-premier-league-dataset trên Hugging Face. Định nghĩa lịch sử được đối chiếu mã origin/Data_itegration tại commit eaef4cd, thư mục Data integration and preprocessing. Mã EDA chỉ đọc nguồn và ghi trong reports/eda_matches_features; dấu vân tay được so trước và sau chạy.
+Báo cáo dùng clean/matches.csv và clean/features.csv, lấy từ thư mục clean của kho Toibinguz/epl-premier-league-dataset trên Hugging Face. Để hiểu cách tạo các biến lịch sử, nhóm đã đối chiếu với mã ở origin/Data_itegration, commit eaef4cd, thư mục Data integration and preprocessing. Mã EDA chỉ đọc dữ liệu nguồn và ghi kết quả vào reports/eda_matches_features; dấu vân tay của hai tệp được kiểm tra trước và sau khi chạy.
 
 | Nguồn | Đường dẫn | SHA256 |
 |---|---|---|
 | matches | clean\matches.csv | 3c122c5f6d5f7ff5aed498ae28499ca26e6a6e8d26639d52172876b2a668b81a |
 | features | clean\features.csv | 671192ed692d4a609ebf530dc9f161101f8c803271c4ad15dac27087bdb1ecdf |
 
-Lệnh tái tạo từ thư mục dự án (cần pandas, numpy, matplotlib và scipy):
+Có thể tạo lại báo cáo từ gốc dự án bằng lệnh dưới đây, sau khi cài pandas, numpy, matplotlib và scipy:
 
     python reports/eda_matches_features/run_eda.py
