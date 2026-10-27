@@ -156,7 +156,7 @@ class Report:
         """
         document = '<!doctype html><html lang="vi"><head><meta charset="utf-8">' \
                    '<meta name="viewport" content="width=device-width, initial-scale=1">' \
-                   '<title>EDA Premier League — matches và features</title><style>' + css + \
+                   '<title>Khám phá dữ liệu Premier League</title><style>' + css + \
                    '</style></head><body><main>' + "\n".join(self.html[:3]) + \
                    '<nav><strong>Mục lục</strong><div class="nav-links">' + toc + \
                    "</div></nav>" + "\n".join(self.html[3:]) + "</main></body></html>"
@@ -167,8 +167,8 @@ class Report:
 def write_index(toc, summary):
     lines=[
         "# Mục lục EDA — matches.csv và features.csv", "",
-        "Đây là bộ EDA hiện tại. Nguồn đầu vào là clean/matches.csv và clean/features.csv ở gốc dự án. "
-        "Các thư mục reports/eda_epl và mã EDA trong đó là tài liệu của lần phân tích trước.", "",
+        "Bộ EDA này được thực hiện từ clean/matches.csv và clean/features.csv ở gốc dự án. "
+        "Nếu muốn xem lại lần phân tích trước, bạn có thể mở reports/eda_epl.", "",
         summary, "",
         "[Mở báo cáo HTML có đầy đủ biểu đồ](report.html) · [Báo cáo Markdown](report.md)", "",
         "| Phần phân tích | Liên kết |", "|---|---|",
@@ -669,27 +669,30 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
     adv_ci=np.quantile(per_season.adv.to_numpy()[boot].mean(axis=1),[.025,.975])
     gd_ci=np.quantile(per_season.gd.to_numpy()[boot].mean(axis=1),[.025,.975])
     audit=meta["audit_details"]
-    report.section("EDA Premier League: matches.csv và features.csv",1)
-    report.p("Báo cáo khám phá dữ liệu sạch phục vụ phân tích bóng đá và chuẩn bị dự đoán trước trận. "
-             "Mọi con số mô tả snapshot đang có trên máy, không xác nhận kết quả ngoài đời hoặc dữ liệu mới hơn ngày cuối của snapshot.")
-    report.p(f"Thời điểm lập: {meta['created_at'][:19]} (UTC+07). Hai bảng có {nfmt(len(m))} trận khớp theo match_id; "
-             f"matches có {raw_m.shape[1]} cột, features có {raw_f.shape[1]} cột, trong đó {len(catalog)} đặc trưng ứng viên.")
+    created_local=datetime.fromisoformat(meta["created_at"])
+    report.section("Khám phá dữ liệu Premier League",1)
+    report.p("Báo cáo này tìm hiểu dữ liệu Premier League đã được làm sạch và gợi ý những thông tin có thể dùng để dự đoán trước trận. "
+             f"Các con số dưới đây mô tả bản dữ liệu hiện có đến ngày {m.date.max():%d/%m/%Y}; "
+             "báo cáo chưa đối chiếu độc lập từng kết quả trận đấu với nguồn ngoài.")
+    report.p(f"Báo cáo hoàn thành lúc {created_local:%H:%M ngày %d/%m/%Y} (UTC+07). "
+             f"Hai bảng khớp nhau ở {nfmt(len(m))} trận theo match_id: "
+             f"matches có {raw_m.shape[1]} cột, features có {raw_f.shape[1]} cột, trong đó {len(catalog)} cột là đặc trưng ứng viên.")
     report.section("1. Các phát hiện chính")
     report.bullets([
-        f"Tập dữ liệu chỉ gồm Premier League, {team_rows(m,f).club_id.nunique()} đội, từ "
-        f"{m.date.min():%d/%m/%Y} đến {m.date.max():%d/%m/%Y}. Phân tích so sánh qua mùa dùng "
-        f"{int(seasons.complete.sum())} mùa đủ, {nfmt(len(core))} trận.",
-        f"Trên toàn snapshot: chủ nhà thắng {pct(counts.H/len(m))}, hòa {pct(counts.D/len(m))}, "
-        f"đội khách thắng {pct(counts.A/len(m))}. Lợi thế sân nhà hiện diện trong thống kê quan sát, có biến động qua mùa.",
-        f"Ở các mùa đủ, trung bình có {vfmt(core.home_goals.mean())} bàn nhà và {vfmt(core.away_goals.mean())} bàn khách/trận. "
-        f"Chênh bàn trung bình nhà−khách là {vfmt(per_season.gd.mean())}; khoảng bootstrap theo mùa 95% "
+        f"Dữ liệu hiện có chỉ gồm Premier League, với {team_rows(m,f).club_id.nunique()} đội thi đấu từ "
+        f"{m.date.min():%d/%m/%Y} đến {m.date.max():%d/%m/%Y}. Để so sánh giữa các mùa, báo cáo dùng "
+        f"{int(seasons.complete.sum())} mùa có đủ trận, tương ứng {nfmt(len(core))} trận.",
+        f"Tính trên toàn bộ dữ liệu, chủ nhà thắng {pct(counts.H/len(m))}, hòa {pct(counts.D/len(m))}, "
+        f"còn đội khách thắng {pct(counts.A/len(m))}. Các tỷ lệ này cho thấy lợi thế sân nhà trong những trận đã quan sát, dù mức độ thay đổi theo mùa.",
+        f"Trong các mùa có đủ trận, trung bình mỗi trận có {vfmt(core.home_goals.mean())} bàn của chủ nhà và {vfmt(core.away_goals.mean())} bàn của đội khách. "
+        f"Chênh lệch bàn thắng trung bình nhà−khách là {vfmt(per_season.gd.mean())}; khoảng bootstrap theo mùa 95% là "
         f"[{vfmt(gd_ci[0])}; {vfmt(gd_ci[1])}].",
-        "Elo, odds, phong độ và đối đầu có liên hệ đơn biến với kết quả. Khi giới hạn các đội gần sức mạnh Elo, "
-        "chênh lệch liên quan đến điểm phong độ và H2H thu hẹp; xG gần đây là giả thuyết bổ sung đáng kiểm tra, chưa được chứng minh bằng mô hình.",
-        f"Có {audit['shot_components_exceed_total_unique_matches']} trận cần kiểm tra tính nhất quán giữa thống kê sút khác nguồn. "
-        "rest_days là khoảng cách tới trận EPL quan sát trước, không phải nghỉ mọi đấu trường.",
-        f"{audit['selected_temporal_feature_count']} cột lịch sử được tính lại độc lập trên toàn bộ trận và có "
-        f"{audit['selected_temporal_mismatch_count']} sai khác. Điều này không xác nhận timestamp công bố dữ liệu hay mọi tình huống của toàn bộ 87 biến.",
+        "Elo, odds, phong độ và lịch sử đối đầu đều có liên hệ riêng với kết quả. Khi chỉ xét những trận có hai đội gần nhau về Elo, "
+        "chênh lệch theo điểm phong độ và đối đầu (H2H) thu hẹp. xG gần đây vẫn đáng để kiểm tra thêm, nhưng giá trị bổ sung của nó chưa được chứng minh bằng mô hình.",
+        f"Có {audit['shot_components_exceed_total_unique_matches']} trận cần đối chiếu thống kê sút giữa các nguồn để kiểm tra tính nhất quán. "
+        "Biến rest_days chỉ đo khoảng cách tới trận EPL quan sát trước đó, không phải thời gian nghỉ trên mọi đấu trường.",
+        f"Khi tính lại độc lập {audit['selected_temporal_feature_count']} cột lịch sử trên toàn bộ trận, báo cáo ghi nhận "
+        f"{audit['selected_temporal_mismatch_count']} sai khác. Kết quả này chưa xác nhận thời điểm công bố dữ liệu hoặc bao quát mọi tình huống của cả 87 biến.",
     ])
 
     report.section("2. Phạm vi, đơn vị quan sát và cách lấy mẫu")
@@ -701,17 +704,17 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
     incomplete=seasons.loc[~seasons.complete,["matches","teams"]].reset_index()
     incomplete["Ghi chú"]=np.where(incomplete.season.eq(m.season.max()),"Mùa đang diễn ra trong snapshot","Mùa lịch sử thiếu trận")
     report.table(incomplete.rename(columns={"season":"Mùa","matches":"Số trận","teams":"Số đội"}))
-    report.p("Không thực hiện so sánh liên giải vì không có giải thứ hai. Tất cả dòng hiện tại đều là played; "
-             "không có provisional, postponed hoặc upcoming. Các thống kê toàn snapshot vẫn giữ mùa thiếu; "
-             "các biểu đồ xu hướng, nhóm đội và phân phối bàn thắng chính dùng riêng mẫu mùa đủ, được ghi tại từng hình.")
-    report.image("01_coverage.png","Hình 01. Mùa thiếu và độ phủ chỉ số theo thời gian; màu cam không đồng nghĩa dữ liệu sai.")
+    report.p("Bộ dữ liệu chỉ có Premier League nên không thể so sánh giữa các giải. Tất cả trận hiện đều mang trạng thái played; "
+             "không có provisional, postponed hoặc upcoming. Thống kê trên toàn bộ dữ liệu vẫn bao gồm các mùa thiếu trận. "
+             "Riêng những biểu đồ về xu hướng, nhóm đội và phân phối bàn thắng chính dùng mẫu mùa có đủ trận; phạm vi này được ghi rõ ở từng hình.")
+    report.image("01_coverage.png","Hình 01. Các mùa thiếu trận và độ phủ của các chỉ số theo thời gian. Màu cam không mặc nhiên có nghĩa dữ liệu sai.")
 
     report.section("3. Kiểm toán dữ liệu và dữ liệu thiếu")
     qc=checks.status.value_counts().reindex(["pass","warn","info","fail"],fill_value=0)
     report.table(pd.DataFrame({"Trạng thái":["Đạt","Cảnh báo cần diễn giải","Thông tin","Không đạt"],"Số kiểm tra":qc.to_numpy()}))
-    report.p("Hai bảng không trùng match_id, ghép một–một và khớp các trường ngày, đội, tỷ số, kết quả. "
-             "Kiểm toán kiểm tra miền giá trị, quan hệ tỷ số–nhãn, thống kê và lịch sử trước trận. "
-             "Các cảnh báo về khác nguồn, khán giả được điền và lịch sử cũ được giữ riêng; không tự xóa hoặc sửa dòng nguồn.")
+    report.p("Mỗi bảng không có match_id trùng lặp. Khi ghép một–một theo mã này, ngày, đội, tỷ số và kết quả đều khớp. "
+             "Phần kiểm tra dữ liệu cũng xem xét miền giá trị, quan hệ giữa tỷ số và nhãn, các thống kê cùng trận và lịch sử trước trận. "
+             "Những cảnh báo về khác biệt giữa các nguồn, số khán giả được điền và lịch sử cũ được ghi lại riêng; dữ liệu nguồn không bị tự động xóa hay sửa.")
     report.link("Chi tiết kiểm tra dữ liệu","data_quality_checks.csv")
     report.link("Các dòng được gắn cờ và lý do","data_issues.csv")
     missing_cols=["home_points5","home_ppg","h2h_home_points","diff_xg5","diff_possession5",
@@ -722,15 +725,15 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
         "Tỷ lệ thiếu":[pct(raw_f[c].isna().mean()) for c in missing_cols],
     })
     report.table(miss_table)
-    report.p(f"Xóa mọi dòng có bất kỳ ô trống trên cả 102 cột chỉ còn {nfmt(audit['all_column_complete_case_rows'])} trận. "
-             f"Chỉ xét các biến số dự báo, bỏ gameweek và nhãn, cũng chỉ còn {nfmt(audit['numeric_predictor_complete_case_rows'])} trận đủ. "
-             "Vì vậy không dùng dropna toàn bảng hoặc điền 0 đồng loạt. xG bắt đầu từ 2014/15; "
-             "các biến FotMob có mốc phủ khác nhau. Thiếu theo thời kỳ không tương đương một giá trị 0 thật.")
-    report.image("02_missingness.png","Hình 02. Cột đại diện ở phía chủ nhà và các biến chênh lệch; CSV danh mục có mức thiếu của toàn bộ đặc trưng.")
+    report.p(f"Nếu bỏ mọi trận có ô trống ở bất kỳ cột nào trong 102 cột, dữ liệu chỉ còn {nfmt(audit['all_column_complete_case_rows'])} trận. "
+             f"Ngay cả khi chỉ xét các biến dự báo và bỏ gameweek cùng nhãn, cũng chỉ còn {nfmt(audit['numeric_predictor_complete_case_rows'])} trận đầy đủ. "
+             "Vì thế, không nên dùng dropna cho cả bảng hoặc điền 0 hàng loạt. xG chỉ bắt đầu từ 2014/15, còn các biến FotMob xuất hiện ở những thời điểm khác nhau; "
+             "một ô thiếu do chưa có dữ liệu trong giai đoạn đó không đồng nghĩa với giá trị 0 thật.")
+    report.image("02_missingness.png","Hình 02. Mức thiếu dữ liệu ở một số cột của chủ nhà và các biến chênh lệch. feature_candidates.csv ghi mức thiếu của toàn bộ đặc trưng.")
     source=m.source_flags.value_counts()
     report.table(pd.DataFrame({"Tổ hợp nguồn":source.index,"Số trận":[nfmt(v) for v in source],"Tỷ lệ":[pct(v/len(m)) for v in source]}))
-    report.p("FD = Football-Data; US = Understat; TM = Transfermarkt; FM = FotMob. Cờ đã ghép nguồn không bảo đảm "
-             "mọi chỉ số của nguồn đó đều được ghi nhận. gameweek chỉ có ở mùa hiện tại nên không phù hợp làm điều kiện giữ dòng lịch sử.")
+    report.p("FD = Football-Data; US = Understat; TM = Transfermarkt; FM = FotMob. Việc một trận có cờ ghép nguồn "
+             "không có nghĩa mọi chỉ số từ nguồn đó đều sẵn có. gameweek chỉ xuất hiện ở mùa hiện tại, nên không thể dùng cột này để quyết định giữ các trận lịch sử.")
 
     report.section("4. Bàn thắng, bàn thua, nhãn và tỷ số")
     label_rows=[]
@@ -739,67 +742,67 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
             lo,hi=wilson(ct[k],total)
             label_rows.append([scope,NAMES[k],nfmt(ct[k]),pct(ct[k]/total),f"[{pct(float(lo))}; {pct(float(hi))}]"])
     report.table(pd.DataFrame(label_rows,columns=["Mẫu","Kết quả","Số trận","Tỷ lệ","Wilson 95% xấp xỉ"]))
-    report.p(f"Lớp lớn nhất/nhỏ nhất có tỷ số {vfmt(counts.max()/counts.min())}. "
-             "Cần theo dõi riêng lớp hòa; mức lệch nhãn quan sát không tự động dẫn đến oversampling. "
-             "Các khoảng Wilson chỉ mô tả dưới xấp xỉ quan sát độc lập; đội bóng lặp lại khiến suy luận chính thức cần tính đến phụ thuộc.")
-    report.image("03_outcomes_goals.png","Hình 03. Phân phối kết quả trên toàn snapshot; phân phối bàn thắng dùng 24 mùa đủ.")
+    report.p(f"Nhóm kết quả phổ biến nhất có số trận gấp {vfmt(counts.max()/counts.min())} lần nhóm ít gặp nhất. "
+             "Nên theo dõi riêng khả năng nhận diện trận hòa, nhưng chênh lệch tỷ lệ này chưa phải lý do để tự động tăng mẫu cho lớp hòa. "
+             "Các khoảng Wilson dựa trên xấp xỉ các trận độc lập; để suy luận chặt chẽ hơn, cần tính đến việc các đội xuất hiện lặp lại.")
+    report.image("03_outcomes_goals.png","Hình 03. Kết quả của toàn bộ trận trong dữ liệu; phân phối bàn thắng được tính trên 24 mùa có đủ trận.")
     moment=[]
     for label,s in [("Bàn nhà",core.home_goals),("Bàn khách",core.away_goals),("Tổng bàn",goals)]:
         moment.append([label,vfmt(s.mean(),3),vfmt(s.var(),3),vfmt(s.var()/s.mean(),3),pct(s.eq(0).mean())])
     report.table(pd.DataFrame(moment,columns=["Đại lượng","Trung bình","Phương sai","Phương sai/TB","Tỷ lệ 0"]))
-    report.p(f"Tỷ lệ hai đội cùng ghi bàn là {pct((core.home_goals.gt(0)&core.away_goals.gt(0)).mean())}; "
-             f"chủ nhà giữ sạch lưới {pct(core.away_goals.eq(0).mean())}, đội khách giữ sạch lưới {pct(core.home_goals.eq(0).mean())}. "
-             f"Tương quan Pearson bàn nhà–khách là {vfmt(core.home_goals.corr(core.away_goals),3)}. "
-             "Các kiểm tra này giúp đặt giả thuyết cho mô hình đếm; không đủ kết luận phân phối Poisson hoặc độc lập là đúng.")
-    report.p("Khi gộp toàn bộ đội–trận của giải, tổng bàn ghi và tổng bàn thua bằng nhau, kể cả phân phối đối ứng của chúng. "
-             "Khác biệt tấn công/phòng ngự cần xét theo đội, mùa và sân, không diễn giải hai tổng toàn giải như hai nguồn thông tin độc lập.")
-    report.image("04_score_counts.png","Hình 04. Tỷ số và đối chiếu tổng bàn với Poisson có cùng trung bình; đây là mô tả phân phối, không phải mô hình dự báo.")
+    report.p(f"Hai đội cùng ghi bàn trong {pct((core.home_goals.gt(0)&core.away_goals.gt(0)).mean())} số trận; "
+             f"chủ nhà giữ sạch lưới ở {pct(core.away_goals.eq(0).mean())} số trận và đội khách ở {pct(core.home_goals.eq(0).mean())}. "
+             f"Tương quan Pearson giữa bàn thắng của hai phía là {vfmt(core.home_goals.corr(core.away_goals),3)}. "
+             "Các con số này giúp hình thành giả thuyết cho mô hình đếm, nhưng chưa đủ để khẳng định bàn thắng tuân theo phân phối Poisson hoặc hai phía độc lập với nhau.")
+    report.p("Nếu gộp tất cả đội–trận trong giải, tổng bàn ghi luôn bằng tổng bàn thua và hai phân phối cũng đối ứng với nhau. "
+             "Muốn tìm hiểu khác biệt về tấn công hay phòng ngự, cần xét theo đội, mùa và sân thay vì xem hai tổng của cả giải là hai nguồn thông tin riêng.")
+    report.image("04_score_counts.png","Hình 04. Phân phối tỷ số và tổng bàn thắng so với phân phối Poisson có cùng trung bình. Hình này dùng để mô tả dữ liệu, chưa phải mô hình dự báo.")
 
     report.section("5. Mùa giải và lợi thế sân nhà")
-    report.image("05_season_trends.png","Hình 05. Chỉ dùng mùa đủ; mỗi điểm có 380 trận nên các tỷ lệ và trung bình có cùng mẫu số.")
+    report.image("05_season_trends.png","Hình 05. Xu hướng qua các mùa có đủ trận. Mỗi điểm được tính từ 380 trận, nên các tỷ lệ và trung bình có cùng mẫu số.")
     season_goals=core.assign(total=core.home_goals+core.away_goals).groupby("season").total.mean()
-    report.p(f"Trong các mùa đủ, tổng bàn/trận thấp nhất ở {season_goals.idxmin()} "
-             f"({vfmt(season_goals.min())}) và cao nhất ở {season_goals.idxmax()} ({vfmt(season_goals.max())}). "
-             f"Chênh tỷ lệ H−A thấp nhất ở {per_season.adv.idxmin()} ({pct(per_season.adv.min())}), "
+    report.p(f"Trong các mùa có đủ trận, số bàn trung bình mỗi trận thấp nhất ở mùa {season_goals.idxmin()} "
+             f"({vfmt(season_goals.min())}) và cao nhất ở mùa {season_goals.idxmax()} ({vfmt(season_goals.max())}). "
+             f"Chênh lệch giữa tỷ lệ thắng của chủ nhà và đội khách thấp nhất ở {per_season.adv.idxmin()} ({pct(per_season.adv.min())}), "
              f"cao nhất ở {per_season.adv.idxmax()} ({pct(per_season.adv.max())}). "
-             "Đây là cực trị trong mẫu, không chứng minh xu hướng tuyến tính hoặc khác biệt có ý nghĩa xác nhận.")
+             "Đây là những mốc cao và thấp trong mẫu đã quan sát, chưa đủ để kết luận có xu hướng tuyến tính hoặc khác biệt được xác nhận bằng kiểm định.")
     report.table(pd.DataFrame([
         ["Tỷ lệ H trừ tỷ lệ A",pct(per_season.adv.mean()),f"[{pct(adv_ci[0])}; {pct(adv_ci[1])}]"],
         ["Bàn nhà trừ bàn khách",vfmt(per_season.gd.mean(),3),f"[{vfmt(gd_ci[0],3)}; {vfmt(gd_ci[1],3)}]"],
     ],columns=["Thước đo sân nhà ở mùa đủ","Ước lượng","Bootstrap theo mùa 95%"]))
-    report.p("Khoảng trên được tính bằng 4.000 lần lấy mẫu lại 24 mùa (seed 42), giữ các trận trong cùng mùa đi cùng nhau. "
-             "Nó mô tả biến động giữa các mùa đã quan sát; 24 cụm là hữu hạn và các mùa vẫn có đội lặp lại. "
-             "Không diễn giải đây là hiệu ứng nhân quả của sân nhà.")
-    report.image("06_home_advantage.png","Hình 06. Thanh cam đánh dấu 2019/20 và 2020/21; so sánh khán giả chỉ mang tính mô tả trong từng mùa.")
-    report.p(f"Có {nfmt(m.attendance_imputed.fillna(False).sum())} giá trị khán giả được điền; "
-             "các giá trị 0 giai đoạn COVID có cờ attendance_imputed. Khác biệt giữa nhóm có/không khán giả "
-             "còn chịu ảnh hưởng của lịch, sức mạnh đội và thời điểm; không quy toàn bộ khác biệt cho khán giả.")
+    report.p("Khoảng trong bảng được tính bằng 4.000 lần lấy mẫu lại 24 mùa (seed 42), với các trận trong cùng mùa luôn đi cùng nhau. "
+             "Nhờ vậy, khoảng này phản ánh biến động giữa những mùa đã quan sát. Tuy nhiên, chỉ có 24 cụm và các đội vẫn lặp lại qua nhiều mùa, "
+             "nên không thể xem đây là bằng chứng về tác động nhân quả của sân nhà.")
+    report.image("06_home_advantage.png","Hình 06. Mùa 2019/20 và 2020/21 được tô cam. So sánh theo số khán giả chỉ mô tả các trận trong từng mùa.")
+    report.p(f"Dữ liệu có {nfmt(m.attendance_imputed.fillna(False).sum())} giá trị khán giả được điền; "
+             "những giá trị 0 trong giai đoạn COVID được đánh dấu bằng cờ attendance_imputed. Khi so sánh nhóm có và không có khán giả, "
+             "cần nhớ rằng lịch thi đấu, sức mạnh đội và thời điểm cũng có thể ảnh hưởng đến kết quả; không thể quy toàn bộ khác biệt cho khán giả.")
 
     report.section("6. Nhóm đội và khả năng ghi bàn/phòng ngự")
-    report.image("07_team_groups.png","Hình 07. Nhóm Elo lấy từ giá trị trước trận; ngưỡng phân vị toàn mẫu chỉ phục vụ EDA. "
-                 "Không dùng thứ hạng cuối mùa để tạo nhóm dự báo.")
+    report.image("07_team_groups.png","Hình 07. Các nhóm được chia theo Elo trước trận và ngưỡng phân vị của toàn bộ mẫu để phục vụ mô tả. "
+                 "Thứ hạng cuối mùa không được dùng để tạo nhóm dự báo.")
     group_table=group.reset_index().rename(columns={"strength":"Nhóm Elo trước trận","venue":"Sân","n":"Đội–trận","pts":"Điểm/trận","gf":"Bàn ghi/trận","ga":"Bàn thua/trận"})
     for c in ["Điểm/trận","Bàn ghi/trận","Bàn thua/trận"]:
         group_table[c]=group_table[c].map(vfmt)
     group_table["Đội–trận"]=group_table["Đội–trận"].map(nfmt)
     report.table(group_table)
-    report.p("Đội không có mặt mùa EPL trước được nhận diện bằng lịch sử tham dự quan sát, gồm đội lần đầu xuất hiện hoặc trở lại. "
-             "Đây là nhóm mô tả, chưa xác nhận toàn bộ lịch thi đấu hạng dưới. Nhóm đầu tiên của lịch sử dữ liệu được loại khỏi so sánh này.")
+    report.p("Những đội vắng mặt ở EPL mùa trước được nhận diện từ lịch sử tham dự có trong dữ liệu; nhóm này gồm đội mới xuất hiện lần đầu và đội trở lại giải. "
+             "Cách chia nhóm chỉ phục vụ mô tả vì chưa đối chiếu toàn bộ lịch thi đấu hạng dưới. Các đội thuộc mùa đầu tiên của dữ liệu được loại khỏi so sánh này.")
     ts=teams.groupby("team").agg(n=("pts","size"),ppg=("pts","mean"),gf=("gf","mean"),ga=("ga","mean"))
     best=ts[ts.n.ge(114)].sort_values("ppg",ascending=False).head(8).reset_index()
     report.table(pd.DataFrame({
         "Đội (ít nhất 3 mùa đủ tương đương)":best.team,"Đội–trận":best.n.map(nfmt),
         "Điểm/trận":best.ppg.map(vfmt),"Bàn ghi/trận":best.gf.map(vfmt),"Bàn thua/trận":best.ga.map(vfmt),
     }))
-    report.p("Bảng trên tổng hợp các lần xuất hiện trong mẫu mùa đủ, không phải bảng xếp hạng của một mùa. "
-             "Các đội có số mùa góp mặt khác nhau; không suy rằng khác biệt do một đặc trưng duy nhất.")
+    report.p("Bảng gộp những lần mỗi đội xuất hiện trong các mùa có đủ trận, chứ không phải bảng xếp hạng của một mùa riêng lẻ. "
+             "Vì số mùa góp mặt khác nhau giữa các đội, không thể quy khác biệt trong bảng cho một đặc trưng duy nhất.")
 
     report.section("7. Thống kê cùng trận và đối chiếu nguồn xG")
-    report.image("15_match_statistics.png","Hình 15. Ba đồ thị hộp thể hiện trung vị và khoảng tứ phân vị; điểm ngoài râu vẫn được giữ trong dữ liệu. "
-                 "Thẻ đỏ dùng tỷ lệ có ít nhất một thẻ vì trung vị và tứ phân vị đều bằng 0.")
-    report.p("Số sút, xG, kiểm soát bóng và thẻ của chính trận liên hệ với kết quả theo mô tả. "
-             "Chúng không có trước trận nên không được đưa trực tiếp vào mô hình dự đoán trước trận. "
-             "Thẻ và kiểm soát bóng cũng có thể là hệ quả của diễn biến/tỷ số, không chỉ là nguyên nhân.")
+    report.image("15_match_statistics.png","Hình 15. Ba đồ thị hộp cho thấy trung vị và khoảng tứ phân vị; các điểm ngoài râu vẫn nằm trong dữ liệu. "
+                 "Với thẻ đỏ, báo cáo dùng tỷ lệ trận có ít nhất một thẻ vì cả trung vị lẫn tứ phân vị đều bằng 0.")
+    report.p("Trong chính trận đấu, số sút, xG, kiểm soát bóng và thẻ có liên hệ với kết quả quan sát được. "
+             "Những thông tin này chưa có trước giờ bóng lăn, nên không thể đưa trực tiếp vào mô hình dự đoán trước trận. "
+             "Riêng thẻ và kiểm soát bóng còn có thể chịu ảnh hưởng từ diễn biến hoặc tỷ số của trận đấu.")
     xd=xg.fotmob-xg.understat
     report.table(pd.DataFrame([
         ["Đội–trận có cả hai xG",nfmt(len(xg))],
@@ -807,9 +810,9 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
         ["Chênh trung bình FotMob−Understat",vfmt(xd.mean(),3)],
         ["Dải TB ±1,96 SD của chênh",f"[{vfmt(xd.mean()-1.96*xd.std(),3)}; {vfmt(xd.mean()+1.96*xd.std(),3)}]"],
     ],columns=["Thước đo trên cùng mẫu","Giá trị"]))
-    report.image("12_xg_sources.png","Hình 12. Tương quan cao không đồng nghĩa hai mô hình xG có thể thay thế hoàn toàn; dải SD không phải khoảng tin cậy của trung bình.")
-    report.p("Khi dựng đặc trưng, cần giữ nhất quán nguồn xG hoặc kiểm tra nhạy cảm khi đổi nguồn. "
-             "Báo cáo không tự ghép hai nguồn thành một chỉ số mới.")
+    report.image("12_xg_sources.png","Hình 12. Hai nguồn xG có tương quan cao, nhưng không vì thế mà có thể thay thế hoàn toàn cho nhau; dải SD cũng không phải khoảng tin cậy của trung bình.")
+    report.p("Khi tạo đặc trưng, nên dùng nhất quán một nguồn xG và kiểm tra độ nhạy nếu muốn đổi nguồn. "
+             "Ở đây, hai nguồn được giữ riêng thay vì ghép thành một chỉ số mới.")
 
     report.section("8. Ý nghĩa và thời điểm có đặc trưng")
     report.table(pd.DataFrame([
@@ -823,18 +826,18 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
     ],columns=["Nhóm biến","Định nghĩa đúng","Lưu ý sử dụng"]))
     short_history=((f.home_wins5+f.home_draws5+f.home_losses5).lt(5) |
                    (f.away_wins5+f.away_draws5+f.away_losses5).lt(5))
-    report.p(f"Có {nfmt(short_history.sum())} trận có ít nhất một đội với cửa sổ kết quả đã biết nhưng chưa đủ 5 trận; "
-             f"{nfmt(f.h2h_matches.eq(0).sum())} trận chưa có đối đầu quan sát trước. "
-             f"H2H với ít nhất 3 lần gặp có {nfmt(f.h2h_matches.ge(3).sum())} trận. "
-             "Cửa sổ phong độ vẫn có thể chứa kết quả nhiều năm trước khi một đội trở lại EPL.")
-    report.p(f"Kiểm toán mới tính lại độc lập {audit['selected_temporal_feature_count']} cột trên toàn bộ "
-             f"{nfmt(len(f))} trận, gồm Elo, phong độ kết quả/bàn/xG, phong độ sân, thống kê mùa, ngày EPL và H2H; "
-             f"có {audit['selected_temporal_mismatch_count']} ô sai khác. Kiểm tra này đọc trạng thái trước khi cập nhật kết quả hiện tại. "
-             "Không thay thế kiểm chứng timestamp dữ liệu, thời gian kickoff thiếu, toàn bộ biến FotMob hoặc dữ liệu nguồn thực tế.")
+    report.p(f"Ở {nfmt(short_history.sum())} trận, ít nhất một đội đã có lịch sử kết quả nhưng cửa sổ vẫn chưa đủ 5 trận; "
+             f"{nfmt(f.h2h_matches.eq(0).sum())} trận chưa ghi nhận lần đối đầu nào trước đó. "
+             f"Nếu yêu cầu H2H có ít nhất 3 lần gặp, còn {nfmt(f.h2h_matches.ge(3).sum())} trận. "
+             "Với đội trở lại EPL, cửa sổ phong độ đôi khi vẫn chứa kết quả từ nhiều năm trước.")
+    report.p(f"Để kiểm tra cách tính các biến lịch sử, kiểm toán đã tính lại độc lập {audit['selected_temporal_feature_count']} cột trên toàn bộ "
+             f"{nfmt(len(f))} trận. Các cột này gồm Elo, phong độ kết quả/bàn/xG, phong độ sân, thống kê mùa, ngày EPL và H2H; "
+             f"ghi nhận {audit['selected_temporal_mismatch_count']} ô sai khác. Phép kiểm tra dùng trạng thái trước khi cập nhật kết quả trận hiện tại. "
+             "Kết quả này chưa thay thế việc xác minh timestamp dữ liệu, thời gian kickoff còn thiếu, toàn bộ biến FotMob hay dữ liệu nguồn thực tế.")
 
     report.section("9. Phong độ, bàn thắng trung bình, đối đầu và kết quả")
-    report.image("08_feature_associations.png","Hình 08. Các phân vị là nhóm mô tả toàn mẫu, không phải ngưỡng quyết định của mô hình. "
-                 "Một số giá trị bằng nhau làm kích thước nhóm không đều.")
+    report.image("08_feature_associations.png","Hình 08. Các phân vị giúp nhìn dữ liệu theo từng nhóm trên toàn mẫu; chúng không phải ngưỡng ra quyết định của mô hình. "
+                 "Do một số giá trị trùng nhau, kích thước các nhóm không hoàn toàn bằng nhau.")
     show=["odds_home_prob","elo_diff","diff_ppg","diff_xg5","diff_shots_on_target5",
           "diff_points5","diff_goals_for5","diff_goals_against5","h2h_home_points","h2h_home_goal_diff"]
     assoc=overall.loc[show]
@@ -843,13 +846,13 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
         "Spearman với H":assoc.rho_H.map(lambda v:vfmt(v,3)),
         "Spearman với hiệu số bàn":assoc.rho_GD.map(lambda v:vfmt(v,3)),
     }))
-    report.p("Nhãn H/D/A không được mã hóa thành một thang số tùy ý để tính tương quan. "
-             "Báo cáo dùng H=1, còn lại=0 hoặc hiệu số bàn (đại lượng có thứ tự tự nhiên). "
-             "Các hệ số trên dùng tập trận hợp lệ riêng, vì vậy không xếp hạng khả năng dự đoán trực tiếp giữa chúng.")
-    report.image("10_common_sample.png",f"Hình 10. So sánh bổ sung trên cùng {nfmt(common.n.iloc[0])} trận đủ sáu biến; "
-                 "mẫu này thiên về giai đoạn có xG và không đại diện đồng đều toàn lịch sử.")
-    report.image("09_strength_conditioned.png","Hình 09. So nhóm thấp/cao theo tercile toàn mẫu trong các trận gần Elo; "
-                 "đây chỉ là điều kiện thô, chưa loại hết khác biệt về sức mạnh và thời kỳ.")
+    report.p("Để tính tương quan, báo cáo không gán nhãn H/D/A vào một thang số tùy ý. "
+             "Thay vào đó, kết quả được xét dưới dạng H=1, còn lại=0, hoặc qua hiệu số bàn, vốn có thứ tự tự nhiên. "
+             "Mỗi hệ số dựa trên tập trận hợp lệ riêng, nên chưa thể dùng chúng để xếp hạng trực tiếp khả năng dự đoán của các biến.")
+    report.image("10_common_sample.png",f"Hình 10. Sáu biến được so sánh thêm trên cùng {nfmt(common.n.iloc[0])} trận có đủ dữ liệu; "
+                 "mẫu này tập trung nhiều hơn ở giai đoạn có xG, nên không đại diện đều cho toàn bộ lịch sử.")
+    report.image("09_strength_conditioned.png","Hình 09. So sánh nhóm thấp và cao theo tercile toàn mẫu ở các trận có Elo gần nhau; "
+                 "đây mới là bước điều kiện hóa sơ bộ, chưa loại hết khác biệt về sức mạnh và thời kỳ.")
     cond_rows=[]
     for col,g in cond.groupby("feature",sort=False):
         low=g[g.group.eq("Thấp")].iloc[0]
@@ -859,9 +862,9 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
                           vfmt((high.rate-low.rate)*100)+" điểm %",
                           f"{vfmt(low.mean_elo,1)} / {vfmt(high.mean_elo,1)}"])
     report.table(pd.DataFrame(cond_rows,columns=["Biến","Ngưỡng thấp / cao","Tỷ lệ H thấp","Tỷ lệ H cao","Chênh cao−thấp","Elo TB thấp / cao"]))
-    report.p("Trong nhóm gần Elo, khác biệt của phong độ điểm, bàn ghi và đối đầu giảm mạnh so với liên hệ thô. "
-             "xG giữ chênh lệch lớn hơn nhưng hai nhóm vẫn khác Elo trung bình và phạm vi thời kỳ. "
-             "Đây là lý do đề xuất kiểm định giá trị tăng thêm của xG bằng mô hình theo thời gian; chưa phải bằng chứng nhân quả hoặc cải thiện dự báo.")
+    report.p("Khi chỉ nhìn các trận có Elo gần nhau, chênh lệch gắn với phong độ điểm, bàn ghi và đối đầu nhỏ đi nhiều so với liên hệ ban đầu. "
+             "Chênh lệch theo xG vẫn lớn hơn, dù hai nhóm còn khác nhau về Elo trung bình và giai đoạn thi đấu. "
+             "Vì vậy, giá trị tăng thêm của xG cần được kiểm định bằng mô hình theo thời gian; kết quả mô tả này chưa cho thấy quan hệ nhân quả hay mức cải thiện dự báo.")
 
     report.section("10. Bất thường và quyết định xử lý")
     issue_summary=issues.groupby("category").agg(flags=("category","size"),matches=("match_id","nunique")).reset_index()
@@ -875,24 +878,24 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
     }
     issue_summary["Diễn giải"]=issue_summary.category.map(meanings).fillna("Xem reason_vi trong bảng chi tiết")
     report.table(issue_summary.rename(columns={"category":"Nhóm cờ","flags":"Số cờ","matches":"Trận duy nhất trong nhóm"}))
-    report.p(f"Trong/ngoài vòng cấm vượt tổng sút ở {audit['shot_components_exceed_total_unique_matches']} trận, "
-             "nhưng các chỉ số đến từ hai nguồn nên đây là cảnh báo tính nhất quán, chưa đủ để kết luận tổng nào sai. "
-             "Ngoài ra có trận Newcastle–Tottenham ngày 15/05/2016 ghi kiểm soát bóng 3%–97% và tỷ số 5–1; cần xác minh nguồn.")
-    report.p(f"Có thêm {audit.get('zero_shot_components_positive_total_unique_matches',0)} trận mà hai thành phần sút FotMob "
-             "đều bằng 0 trong khi tổng sút Football-Data dương. Các số 0 này cần được kiểm tra về độ phủ/ghi nhận nguồn, "
-             "không tự diễn giải là đội không có cú sút nào.")
+    report.p(f"Ở {audit['shot_components_exceed_total_unique_matches']} trận, tổng số sút trong và ngoài vòng cấm lớn hơn tổng sút được ghi nhận. "
+             "Vì các chỉ số đến từ hai nguồn khác nhau, đây là dấu hiệu cần đối chiếu, chưa đủ để xác định bên nào sai. "
+             "Trận Newcastle–Tottenham ngày 15/05/2016 cũng ghi kiểm soát bóng 3%–97% dù tỷ số là 5–1; trường hợp này cần kiểm tra lại nguồn.")
+    report.p(f"Thêm {audit.get('zero_shot_components_positive_total_unique_matches',0)} trận có cả hai thành phần sút của FotMob bằng 0 "
+             "trong khi tổng sút từ Football-Data vẫn dương. Nên kiểm tra cách ghi nhận và độ phủ của nguồn trước khi hiểu các số 0 này "
+             "là đội không có cú sút nào.")
     gaps=pd.concat([f.home_rest_days,f.away_rest_days]).dropna()
-    report.p(f"Khoảng cách EPL lớn nhất là {nfmt(gaps.max())} ngày; {nfmt(gaps.gt(365).sum())} đội–trận có khoảng cách trên một năm. "
-             "Không cắt các giá trị này rồi gọi chúng là nghỉ thực tế. Có thể thiết kế cờ lịch sử cũ, khoảng cách trong mùa, "
-             "hoặc bổ sung lịch mọi đấu trường trước khi kiểm định mệt mỏi.")
-    report.image("13_anomalies.png","Hình 13. Không có dòng nào bị tự động loại khỏi dữ liệu nguồn. Phân phối log cho thấy vì sao mean/std đơn thuần không diễn giải được rest_days.")
+    report.p(f"Khoảng cách giữa hai lần xuất hiện ở EPL dài nhất là {nfmt(gaps.max())} ngày; {nfmt(gaps.gt(365).sum())} đội–trận có khoảng cách trên một năm. "
+             "Không nên cắt ngắn những khoảng này rồi gọi kết quả là thời gian nghỉ thực tế. Khi nghiên cứu mệt mỏi, có thể đánh dấu lịch sử quá cũ, "
+             "tính khoảng cách trong mùa hoặc bổ sung lịch thi đấu ở mọi đấu trường.")
+    report.image("13_anomalies.png","Hình 13. Báo cáo giữ nguyên các dòng dữ liệu nguồn. Phân phối trên thang log cho thấy chỉ nhìn trung bình và độ lệch chuẩn chưa đủ để hiểu rest_days.")
 
     report.section("11. Đặc trưng tiềm năng, trùng thông tin và độ ổn định")
-    report.image("11_redundancy.png","Hình 11. Tương quan từng cặp không cùng mẫu; quan hệ xác định đại số được kiểm tra thêm bằng công thức.")
-    report.p("14 cột diff_* có sẵn đều bằng home−away của chỉ số tương ứng. Không đưa đồng thời cả ba biến vào "
-             "hồi quy tuyến tính không điều chuẩn. elo_home_win_prob là biến đổi đơn điệu của elo_diff; "
-             "position_diff và diff_ppg, cùng hai biến H2H, có mức trùng thông tin lớn. "
-             "Không cần PCA bắt buộc cho EDA; ưu tiên tính giải thích và chọn theo nhóm.")
+    report.image("11_redundancy.png","Hình 11. Mỗi cặp tương quan có thể dựa trên một tập trận khác nhau; các quan hệ xác định về mặt đại số được kiểm tra thêm bằng công thức.")
+    report.p("Cả 14 cột diff_* có sẵn đều bằng giá trị home−away của chỉ số tương ứng. Vì vậy, không nên đưa đồng thời cả ba biến "
+             "vào hồi quy tuyến tính không điều chuẩn. elo_home_win_prob là biến đổi đơn điệu của elo_diff; "
+             "position_diff và diff_ppg, cũng như hai biến H2H, có nhiều thông tin trùng nhau. "
+             "Ở bước EDA, chưa cần áp dụng PCA như một yêu cầu bắt buộc; có thể ưu tiên các nhóm biến dễ giải thích.")
     selected=["elo_diff","diff_ppg","diff_points5","diff_goals_for5","diff_goals_against5","diff_shots_on_target5",
               "diff_xg5","diff_xga5","h2h_home_points","h2h_home_goal_diff","diff_possession5",
               "diff_big_chances5","diff_box_touches5","diff_xgot5","odds_home_prob","home_rest_days"]
@@ -902,63 +905,67 @@ def build_report(raw_m,raw_f,m,f,seasons,core,teams,checks,issues,catalog,overal
         "Quyết định đề xuất":cat.decision_vi,
     }))
     report.link("Danh mục đầy đủ 87 đặc trưng: định nghĩa, nguồn, thời điểm có, thiếu, tương quan và quyết định","feature_candidates.csv")
-    report.p("Tương quan chỉ hỗ trợ khám phá. Các quyết định là thứ tự kiểm định, không phải danh sách đã được chứng minh có ích. "
-             "Giữ hai kịch bản: chỉ dùng dữ liệu bóng đá và có thêm odds đúng thời điểm. "
-             "Không dùng thiếu dữ liệu của một thời kỳ như đường tắt nhận diện nhãn.")
-    report.image("16_temporal_stability.png","Hình 16. Hướng liên hệ ổn định qua mùa chưa chứng minh dự báo ngoài mẫu. "
-                 "Mốc ≥100 quan sát tránh diễn giải hệ số từ rất ít trận.")
+    report.p("Tương quan giúp nhận ra hướng đáng tìm hiểu, nhưng chưa chứng minh biến nào thực sự có ích cho dự báo. "
+             "Các quyết định trong bảng vì thế là thứ tự đề xuất để kiểm định. Nên xét riêng kịch bản chỉ có dữ liệu bóng đá "
+             "và kịch bản thêm odds đúng thời điểm, đồng thời tránh để mẫu thiếu dữ liệu của một giai đoạn trở thành dấu hiệu nhận diện nhãn.")
+    report.image("16_temporal_stability.png","Hình 16. Hướng liên hệ ổn định qua nhiều mùa là tín hiệu để tìm hiểu thêm, chưa chứng minh khả năng dự báo ngoài mẫu. "
+                 "Mốc ≥100 quan sát giúp tránh diễn giải hệ số tính từ quá ít trận.")
     st=stable.groupby("feature").agg(seasons=("season","nunique"),positive=("rho_H",lambda s:int(s.gt(0).sum())),
                                     minimum=("rho_H","min"),maximum=("rho_H","max"))
     report.table(pd.DataFrame({
         "Biến":st.index,"Mùa đủ điều kiện":st.seasons,"Số mùa tương quan dương":st.positive,
         "Khoảng Spearman":[f"[{vfmt(a,3)}; {vfmt(b,3)}]" for a,b in zip(st.minimum,st.maximum)],
     }))
-    report.image("14_odds_reliability.png","Hình 14. Kiểm tra mô tả xác suất từ odds trên snapshot, không phải kết quả backtest hoặc hiệu quả tài chính. "
-                 "Không vẽ Elo expectation như P(H).")
-    report.p("Các odds được dùng để tạo features là Avg với B365 dự phòng, chuẩn hóa nghịch đảo; "
-             "không phải tự động là closing odds. Timestamp thu thập chưa được cung cấp, nên độ sẵn có ở mốc dự đoán trước trận một ngày chưa được xác nhận.")
+    report.image("14_odds_reliability.png","Hình 14. Biểu đồ mô tả xác suất suy từ odds trong bộ dữ liệu hiện có; đây chưa phải kết quả backtest hay đánh giá hiệu quả tài chính. "
+                 "Elo expectation cũng không được xem như P(H).")
+    report.p("Đặc trưng odds được tạo từ Avg, dùng B365 khi cần dự phòng, rồi chuẩn hóa các giá trị nghịch đảo. "
+             "Chúng chưa chắc là closing odds. Vì chưa có timestamp thu thập, báo cáo cũng chưa thể xác nhận liệu odds đã sẵn có trước trận một ngày hay chưa.")
 
     report.section("12. Giả thuyết cần kiểm tra bằng mô hình")
     report.table(hypotheses[["id","hypothesis_vi","comparison_vi"]].rename(columns={
         "id":"Mã","hypothesis_vi":"Giả thuyết","comparison_vi":"So sánh đề xuất"}))
     report.link("Chi tiết giả thuyết, tập dữ liệu, tiêu chí và lưu ý","hypotheses.csv")
-    report.p("Không giả thuyết nào được chấp nhận chỉ từ EDA. Mô hình nền nên gồm tần suất nhãn học từ train, "
-             "sau đó một mô hình H/D/A đơn giản với Elo. Khi dự đoán tỷ số, kiểm định riêng Poisson/biến thể đếm "
-             "dựa trên quá khứ, độ phân tán và phụ thuộc bàn nhà–khách; hình đối chiếu Poisson chưa phải mô hình dự báo.")
+    report.p("Những liên hệ trên gợi ra hướng thử nghiệm, nhưng EDA chưa đủ để khẳng định giả thuyết nào đúng. "
+             "Nên bắt đầu từ tỷ lệ H/D/A tính trên tập huấn luyện, rồi so với một mô hình đơn giản có Elo. "
+             "Nếu dự đoán tỷ số, cần đánh giá riêng Poisson và các biến thể đếm trên dữ liệu quá khứ, "
+             "đồng thời kiểm tra độ phân tán và mối liên hệ giữa bàn thắng nhà–khách. "
+             "Biểu đồ đối chiếu Poisson ở trên mới là bước khám phá phân phối.")
 
     report.section("13. Kế hoạch đánh giá và giới hạn diễn giải")
     report.bullets([
-        "Chốt mục tiêu: dự đoán H/D/A hay tỷ số; chốt mốc trước giờ bóng lăn hoặc trước một ngày. Chỉ dùng các trường đã sẵn có ở mốc đó.",
-        "Đánh giá mở rộng theo thời gian: train bằng các mùa trước, validation bằng mùa tiếp theo; các trận cùng ngày không tách hai phía ranh giới.",
-        "Để so nhóm biến cơ bản/xG/FotMob/H2H/odds, dùng cùng trận và cùng fold. Báo cáo riêng mẫu dài hạn và mẫu giàu thống kê gần đây.",
-        "Điền thiếu, chuẩn hóa, chọn biến, PCA nếu có và hiệu chỉnh xác suất chỉ được học trong train của từng fold. Không dùng kết quả test để chọn biến.",
-        "Thước đo chính cho H/D/A là log loss đa lớp; bổ sung Brier, macro-F1, recall lớp hòa, confusion matrix và hiệu chỉnh xác suất. Báo cáo biến động qua mùa.",
-        "Giữ một tập kiểm tra khóa sau khi chốt đặc trưng và quy trình. Vì EDA này đã xem toàn snapshot, một mùa đã được xem không còn hoàn toàn chưa đụng tới; ưu tiên kiểm chứng xác nhận bằng snapshot tương lai chưa xem.",
-        "Kiểm tra nhạy cảm với hai mùa thiếu, đội trở lại EPL, cửa sổ ít hơn 5, H2H ít trận, định nghĩa nguồn xG và khoảng trống lịch sử.",
-        "Mọi liên hệ trong báo cáo là mô tả, chưa suy ra nhân quả. Các đội lặp lại và nhiều phép so sánh làm các khoảng đơn giản không đủ cho suy luận xác nhận.",
+        "Trước tiên, xác định rõ mục tiêu là dự đoán H/D/A hay tỷ số, và dự đoán ngay trước giờ bóng lăn hay trước một ngày. Chỉ dùng thông tin đã có ở thời điểm đó.",
+        "Chia dữ liệu theo thời gian: học từ các mùa trước rồi đánh giá trên mùa tiếp theo. Các trận cùng ngày nên nằm cùng một phía của ranh giới chia tập.",
+        "Khi so sánh các nhóm biến cơ bản, xG, FotMob, H2H và odds, hãy dùng cùng tập trận và cùng lần chia dữ liệu. Trình bày riêng kết quả trên mẫu dài hạn và mẫu giàu thống kê gần đây.",
+        "Ở mỗi lần chia tập, chỉ học cách điền thiếu, chuẩn hóa, chọn biến, PCA (nếu dùng) và hiệu chỉnh xác suất từ tập huấn luyện. Không dùng tập kiểm tra để chọn biến.",
+        "Dùng log loss đa lớp làm thước đo chính cho H/D/A; xem thêm Brier, macro-F1, recall lớp hòa, ma trận nhầm lẫn và độ hiệu chỉnh xác suất. Nên trình bày cả mức biến động qua mùa.",
+        "Sau khi chốt đặc trưng và quy trình, khóa một tập đánh giá cuối. Vì EDA này đã xem toàn bộ dữ liệu hiện có, một mùa trong đó không còn hoàn toàn mới; tốt nhất là kiểm chứng thêm bằng dữ liệu tương lai chưa xem.",
+        "Lặp lại đánh giá khi thay đổi cách xử lý hai mùa thiếu, đội trở lại EPL, cửa sổ dưới 5 trận, H2H ít trận, nguồn xG và khoảng trống lịch sử.",
+        "Các mối liên hệ trong báo cáo chỉ mang tính mô tả. Nhiều trận có cùng đội và nhiều phép so sánh được thực hiện, nên cần phương pháp phù hợp hơn trước khi đưa ra kết luận xác nhận hay nhân quả.",
     ])
-    report.p("Mức 'đã xử lý' và 108 kiểm tra QA của pipeline nguồn không đồng nghĩa dữ liệu không còn vấn đề cho mọi bài toán. "
-             "Kiểm toán mới tập trung thêm vào mục tiêu EDA và thời điểm dự đoán. Không huấn luyện mô hình dự đoán trong lần bàn giao này.")
+    report.p("Dữ liệu nguồn đã được xử lý và có 108 kiểm tra QA, nhưng từng bài toán vẫn cần xem lại những giới hạn liên quan. "
+             "Lần kiểm toán này tập trung thêm vào EDA và thời điểm thông tin có thể được dùng để dự đoán. "
+             "Báo cáo chưa huấn luyện mô hình dự đoán.")
     report.link("Tham khảo phương pháp: tránh rò rỉ dữ liệu (scikit-learn)","https://scikit-learn.org/stable/common_pitfalls.html#data-leakage")
     report.link("Tham khảo phương pháp: đánh giá theo thời gian (scikit-learn)","https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-of-time-series-data")
 
     report.section("14. Bàn giao và tái lập")
     report.bullets([
-        "report.html: báo cáo tự chứa toàn bộ 16 biểu đồ, mở ngoại tuyến bằng trình duyệt.",
-        "report.md và figures/: báo cáo Markdown cùng ảnh PNG có thể đưa vào tài liệu hoặc slide.",
-        "feature_candidates.csv: danh mục 87 biến và quyết định kiểm định đề xuất.",
-        "hypotheses.csv: 9 giả thuyết cùng phép so sánh và tiêu chí.",
-        "data_quality_checks.csv và data_issues.csv: kết quả kiểm tra và dòng được gắn cờ; đây là sản phẩm kiểm toán, không phải dữ liệu nguồn đã sửa.",
-        "analysis_metadata.json: thời điểm tạo, phiên bản thư viện, SHA256 của hai nguồn và chi tiết kiểm toán.",
+        "Mở report.html để đọc báo cáo cùng toàn bộ 16 biểu đồ ngay trong trình duyệt, kể cả khi ngoại tuyến.",
+        "Dùng report.md và thư mục figures/ nếu muốn đưa nội dung, ảnh PNG vào tài liệu hoặc slide.",
+        "feature_candidates.csv ghi lại 87 biến cùng hướng kiểm tra được đề xuất.",
+        "hypotheses.csv tập hợp 9 giả thuyết, phép so sánh và tiêu chí đánh giá.",
+        "data_quality_checks.csv và data_issues.csv lưu kết quả kiểm tra và các dòng cần xem lại; dữ liệu nguồn chưa bị sửa.",
+        "analysis_metadata.json lưu thời điểm tạo, phiên bản thư viện, SHA256 của hai nguồn và chi tiết kiểm toán.",
     ])
-    report.p("Nguồn: clean/matches.csv và clean/features.csv, đã tải từ thư mục clean của kho "
-             "Toibinguz/epl-premier-league-dataset trên Hugging Face. Định nghĩa lịch sử được đối chiếu mã "
-             "origin/Data_itegration tại commit eaef4cd, thư mục Data integration and preprocessing. "
-             "Mã EDA chỉ đọc nguồn và ghi trong reports/eda_matches_features; dấu vân tay được so trước và sau chạy.")
+    report.p("Báo cáo dùng clean/matches.csv và clean/features.csv, lấy từ thư mục clean của kho "
+             "Toibinguz/epl-premier-league-dataset trên Hugging Face. Để hiểu cách tạo các biến lịch sử, "
+             "nhóm đã đối chiếu với mã ở origin/Data_itegration, commit eaef4cd, thư mục Data integration and preprocessing. "
+             "Mã EDA chỉ đọc dữ liệu nguồn và ghi kết quả vào reports/eda_matches_features; "
+             "dấu vân tay của hai tệp được kiểm tra trước và sau khi chạy.")
     report.table(pd.DataFrame([
         [name,item["path"],item["sha256"]] for name,item in meta["inputs"].items()
     ],columns=["Nguồn","Đường dẫn","SHA256"]))
-    report.p("Lệnh tái tạo từ thư mục dự án (cần pandas, numpy, matplotlib và scipy):")
+    report.p("Có thể tạo lại báo cáo từ gốc dự án bằng lệnh dưới đây, sau khi cài pandas, numpy, matplotlib và scipy:")
     report.code("python reports/eda_matches_features/run_eda.py")
     report.write()
 
