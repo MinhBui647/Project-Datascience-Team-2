@@ -1,0 +1,1159 @@
+﻿match_id,date,home_team,away_team,category,field,value,reason_vi
+EPL_2015_2016_NEW_TOT,2016-05-15,Newcastle,Tottenham,suspect_possession,home_possession,3.0,Kiểm soát bóng dưới 10%; cần đối chiếu nguồn.
+EPL_2011_2012_STK_MCI,2012-03-24,Stoke,Manchester City,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2011_2012_MCI_QPR,2012-05-13,Manchester City,QPR,cross_source_shots,home_shots,9.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2012_2013_WBA_MUN,2013-05-19,West Brom,Manchester United,cross_source_shots,home_shots,4.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2014_2015_CHE_SWA,2014-09-13,Chelsea,Swansea,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2014_2015_BUR_CRY,2015-01-17,Burnley,Crystal Palace,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2015_2016_MUN_CRY,2016-04-20,Manchester United,Crystal Palace,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2015_2016_WHU_SWA,2016-05-07,West Ham,Swansea,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2015_2016_ARS_AVL,2016-05-15,Arsenal,Aston Villa,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2015_2016_SOU_CRY,2016-05-15,Southampton,Crystal Palace,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_SWA_HUL,2016-08-20,Swansea,Hull,cross_source_shots,home_shots,10.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_WHU_BOU,2016-08-21,West Ham,Bournemouth,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_BUR_HUL,2016-09-10,Burnley,Hull,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_STK_TOT,2016-09-10,Stoke,Tottenham,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_ARS_MID,2016-10-22,Arsenal,Middlesbrough,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_BUR_EVE,2016-10-22,Burnley,Everton,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_MID_BOU,2016-10-29,Middlesbrough,Bournemouth,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_MUN_BUR,2016-10-29,Manchester United,Burnley,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_WAT_HUL,2016-10-29,Watford,Hull,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_SOU_CHE,2016-10-30,Southampton,Chelsea,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_SWA_MUN,2016-11-06,Swansea,Manchester United,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_LEI_MCI,2016-12-10,Leicester,Manchester City,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_LIV_WHU,2016-12-11,Liverpool,West Ham,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_WHU_HUL,2016-12-17,West Ham,Hull,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_BOU_ARS,2017-01-03,Bournemouth,Arsenal,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_SWA_SOU,2017-01-31,Swansea,Southampton,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_MUN_HUL,2017-02-01,Manchester United,Hull,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_BUR_CHE,2017-02-12,Burnley,Chelsea,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_LEI_LIV,2017-02-27,Leicester,Liverpool,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_SWA_BUR,2017-03-04,Swansea,Burnley,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_BOU_WHU,2017-03-11,Bournemouth,West Ham,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_MID_BUR,2017-04-08,Middlesbrough,Burnley,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_BOU_MID,2017-04-22,Bournemouth,Middlesbrough,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_SOU_STK,2017-05-21,Southampton,Stoke,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_NEW_WHU,2017-08-26,Newcastle,West Ham,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_EVE_BUR,2017-10-01,Everton,Burnley,cross_source_shots,home_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_STK_BOU,2017-10-21,Stoke,Bournemouth,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_EVE_ARS,2017-10-22,Everton,Arsenal,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_CRY_WHU,2017-10-28,Crystal Palace,West Ham,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_WAT_STK,2017-10-28,Watford,Stoke,cross_source_shots,home_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_WBA_MCI,2017-10-28,West Brom,Manchester City,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_BUR_SWA,2017-11-18,Burnley,Swansea,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_TOT_WBA,2017-11-25,Tottenham,West Brom,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_BOU_BUR,2017-11-29,Bournemouth,Burnley,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_MUN_BUR,2017-12-26,Manchester United,Burnley,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_LIV_LEI,2017-12-30,Liverpool,Leicester,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_MCI_WAT,2018-01-02,Manchester City,Watford,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_BUR_MUN,2018-01-20,Burnley,Manchester United,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_SWA_BUR,2018-02-10,Swansea,Burnley,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_BOU_CRY,2018-04-07,Bournemouth,Crystal Palace,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_HUD_ARS,2018-05-13,Huddersfield,Arsenal,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_SWA_STK,2018-05-13,Swansea,Stoke,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_CAR_BUR,2018-09-30,Cardiff,Burnley,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_BHA_WOL,2018-10-27,Brighton,Wolves,cross_source_shots,home_shots,5.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_LIV_FUL,2018-11-11,Liverpool,Fulham,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_WOL_BOU,2018-12-15,Wolves,Bournemouth,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_ARS_BUR,2018-12-22,Arsenal,Burnley,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_WAT_CHE,2018-12-26,Watford,Chelsea,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_NEW_MCI,2019-01-29,Newcastle,Manchester City,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_HUD_ARS,2019-02-09,Huddersfield,Arsenal,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_NEW_BUR,2019-02-26,Newcastle,Burnley,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_BHA_HUD,2019-03-02,Brighton,Huddersfield,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_TOT_ARS,2019-03-02,Tottenham,Arsenal,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_BUR_WOL,2019-03-30,Burnley,Wolves,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_WOL_BHA,2019-04-20,Wolves,Brighton,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_LEI_WOL,2019-08-11,Leicester,Wolves,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_LEI_BOU,2019-08-31,Leicester,Bournemouth,cross_source_shots,home_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_MCI_AVL,2019-10-26,Manchester City,Aston Villa,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_BOU_MUN,2019-11-02,Bournemouth,Manchester United,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_NEW_BOU,2019-11-09,Newcastle,Bournemouth,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_WOL_TOT,2019-12-15,Wolves,Tottenham,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_WOL_MCI,2019-12-27,Wolves,Manchester City,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_MUN_WOL,2020-02-01,Manchester United,Wolves,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2020_2021_MUN_CRY,2020-09-19,Manchester United,Crystal Palace,cross_source_shots,home_shots,4.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2020_2021_SOU_EVE,2020-10-25,Southampton,Everton,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2021_2022_WHU_LEI,2021-08-23,West Ham,Leicester,cross_source_shots,home_shots,6.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2021_2022_WAT_CHE,2021-12-01,Watford,Chelsea,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2021_2022_AVL_TOT,2022-04-09,Aston Villa,Tottenham,cross_source_shots,home_shots,10.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2021_2022_WAT_BRE,2022-04-16,Watford,Brentford,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2022_2023_MUN_LIV,2022-08-22,Manchester United,Liverpool,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2022_2023_BRE_EVE,2022-08-27,Brentford,Everton,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2022_2023_BRE_AVL,2023-04-22,Brentford,Aston Villa,cross_source_shots,home_shots,10.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2023_2024_LUT_AVL,2024-03-02,Luton,Aston Villa,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2023_2024_MCI_LUT,2024-04-13,Manchester City,Luton,cross_source_shots,home_shots,4.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2023_2024_AVL_BOU,2024-04-21,Aston Villa,Bournemouth,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2023_2024_TOT_ARS,2024-04-28,Tottenham,Arsenal,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2023_2024_WOL_CRY,2024-05-11,Wolves,Crystal Palace,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2024_2025_MUN_AVL,2025-05-25,Manchester United,Aston Villa,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2025_2026_TOT_AVL,2025-10-19,Tottenham,Aston Villa,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2025_2026_CRY_BRE,2025-11-01,Crystal Palace,Brentford,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2025_2026_SUN_CHE,2026-05-24,Sunderland,Chelsea,cross_source_shots,home_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2011_2012_WBA_NEW,2012-03-25,West Brom,Newcastle,cross_source_zero_shots,home_shots,14.0,"Cú sút trong và ngoài vòng cấm đều bằng 0 nhưng tổng sút FD dương; cần kiểm tra độ đầy đủ và định nghĩa dữ liệu FotMob/FD, chưa xác nhận là lỗi."
+EPL_2013_2014_CHE_EVE,2014-02-22,Chelsea,Everton,cross_source_zero_shots,home_shots,25.0,"Cú sút trong và ngoài vòng cấm đều bằng 0 nhưng tổng sút FD dương; cần kiểm tra độ đầy đủ và định nghĩa dữ liệu FotMob/FD, chưa xác nhận là lỗi."
+EPL_2015_2016_WBA_WAT,2016-04-16,West Brom,Watford,cross_source_zero_shots,home_shots,16.0,"Cú sút trong và ngoài vòng cấm đều bằng 0 nhưng tổng sút FD dương; cần kiểm tra độ đầy đủ và định nghĩa dữ liệu FotMob/FD, chưa xác nhận là lỗi."
+EPL_2012_2013_WBA_MUN,2013-05-19,West Brom,Manchester United,cross_source_shots,away_shots,3.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2014_2015_CHE_SWA,2014-09-13,Chelsea,Swansea,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2015_2016_WBA_SOU,2015-09-12,West Brom,Southampton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2015_2016_WHU_SWA,2016-05-07,West Ham,Swansea,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_SUN_CRY,2016-09-24,Sunderland,Crystal Palace,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_BUR_EVE,2016-10-22,Burnley,Everton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_LIV_WBA,2016-10-22,Liverpool,West Brom,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_MID_BOU,2016-10-29,Middlesbrough,Bournemouth,cross_source_shots,away_shots,3.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_EVE_SWA,2016-11-19,Everton,Swansea,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_WAT_LEI,2016-11-19,Watford,Leicester,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_BUR_BOU,2016-12-10,Burnley,Bournemouth,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_HUL_CRY,2016-12-10,Hull,Crystal Palace,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_LIV_WHU,2016-12-11,Liverpool,West Ham,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_WBA_SWA,2016-12-14,West Brom,Swansea,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_SUN_WAT,2016-12-17,Sunderland,Watford,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_MUN_SUN,2016-12-26,Manchester United,Sunderland,cross_source_shots,away_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_CRY_EVE,2017-01-21,Crystal Palace,Everton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_STK_EVE,2017-02-01,Stoke,Everton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_LEI_MUN,2017-02-05,Leicester,Manchester United,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_HUL_BUR,2017-02-25,Hull,Burnley,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_BOU_WHU,2017-03-11,Bournemouth,West Ham,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_LIV_BOU,2017-04-05,Liverpool,Bournemouth,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_MCI_HUL,2017-04-08,Manchester City,Hull,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_STK_LIV,2017-04-08,Stoke,Liverpool,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_WHU_SWA,2017-04-08,West Ham,Swansea,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_HUL_WAT,2017-04-22,Hull,Watford,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_SWA_EVE,2017-05-06,Swansea,Everton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2016_2017_MCI_WBA,2017-05-16,Manchester City,West Brom,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_CRY_HUD,2017-08-12,Crystal Palace,Huddersfield,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_BUR_SWA,2017-11-18,Burnley,Swansea,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_CRY_STK,2017-11-25,Crystal Palace,Stoke,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_BUR_ARS,2017-11-26,Burnley,Arsenal,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_WHU_WBA,2018-01-02,West Ham,West Brom,cross_source_shots,away_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_CRY_NEW,2018-02-04,Crystal Palace,Newcastle,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_HUD_CRY,2018-03-17,Huddersfield,Crystal Palace,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_BHA_HUD,2018-04-07,Brighton,Huddersfield,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_BUR_BHA,2018-04-28,Burnley,Brighton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2017_2018_TOT_LEI,2018-05-13,Tottenham,Leicester,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_FUL_CRY,2018-08-11,Fulham,Crystal Palace,cross_source_shots,away_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_WOL_EVE,2018-08-11,Wolves,Everton,cross_source_shots,away_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_ARS_EVE,2018-09-23,Arsenal,Everton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_ARS_WAT,2018-09-29,Arsenal,Watford,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_MCI_SOU,2018-11-04,Manchester City,Southampton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_HUD_FUL,2018-11-05,Huddersfield,Fulham,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_ARS_WOL,2018-11-11,Arsenal,Wolves,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_WAT_BUR,2019-01-19,Watford,Burnley,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_MUN_SOU,2019-03-02,Manchester United,Southampton,cross_source_shots,away_shots,3.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_EVE_CHE,2019-03-17,Everton,Chelsea,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_FUL_EVE,2019-04-13,Fulham,Everton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2018_2019_CHE_WAT,2019-05-05,Chelsea,Watford,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_NOR_NEW,2019-08-17,Norwich,Newcastle,cross_source_shots,away_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_EVE_TOT,2019-11-03,Everton,Tottenham,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_BOU_WOL,2019-11-23,Bournemouth,Wolves,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_WOL_SHU,2019-12-01,Wolves,Sheffield United,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_EVE_NEW,2020-01-21,Everton,Newcastle,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_TOT_NOR,2020-01-22,Tottenham,Norwich,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_MUN_WOL,2020-02-01,Manchester United,Wolves,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_TOT_MCI,2020-02-02,Tottenham,Manchester City,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_SHU_BHA,2020-02-22,Sheffield United,Brighton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_BHA_LIV,2020-07-08,Brighton,Liverpool,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2019_2020_BUR_BHA,2020-07-26,Burnley,Brighton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2020_2021_LEI_WOL,2020-11-08,Leicester,Wolves,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2020_2021_SHU_MUN,2020-12-17,Sheffield United,Manchester United,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2020_2021_MUN_AVL,2021-01-01,Manchester United,Aston Villa,cross_source_shots,away_shots,10.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2020_2021_BUR_LEI,2021-03-03,Burnley,Leicester,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2021_2022_LEI_WAT,2021-11-28,Leicester,Watford,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2021_2022_LIV_NEW,2021-12-16,Liverpool,Newcastle,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2021_2022_CRY_MCI,2022-03-14,Crystal Palace,Manchester City,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2021_2022_TOT_ARS,2022-05-12,Tottenham,Arsenal,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2022_2023_LEE_BHA,2023-03-11,Leeds,Brighton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2022_2023_ARS_CRY,2023-03-19,Arsenal,Crystal Palace,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2022_2023_SOU_CRY,2023-04-15,Southampton,Crystal Palace,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2022_2023_TOT_BOU,2023-04-15,Tottenham,Bournemouth,cross_source_shots,away_shots,3.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2022_2023_MCI_LEI,2023-04-15,Manchester City,Leicester,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2023_2024_BUR_TOT,2023-09-02,Burnley,Tottenham,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2023_2024_BOU_WOL,2023-10-21,Bournemouth,Wolves,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2023_2024_BHA_CHE,2024-05-15,Brighton,Chelsea,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2023_2024_LUT_FUL,2024-05-19,Luton,Fulham,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2024_2025_FUL_NEW,2024-09-21,Fulham,Newcastle,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2024_2025_LEI_EVE,2024-09-21,Leicester,Everton,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2024_2025_LEI_BOU,2024-10-05,Leicester,Bournemouth,cross_source_shots,away_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2025_2026_WHU_FUL,2025-12-27,West Ham,Fulham,cross_source_shots,away_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2025_2026_LEE_ARS,2026-01-31,Leeds,Arsenal,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2025_2026_WOL_LIV,2026-03-03,Wolves,Liverpool,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2025_2026_NFO_FUL,2026-03-15,Nottingham Forest,Fulham,cross_source_shots,away_shots,1.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2025_2026_TOT_EVE,2026-05-24,Tottenham,Everton,cross_source_shots,away_shots,2.0,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+EPL_2011_2012_WBA_NEW,2012-03-25,West Brom,Newcastle,cross_source_zero_shots,away_shots,10.0,"Cú sút trong và ngoài vòng cấm đều bằng 0 nhưng tổng sút FD dương; cần kiểm tra độ đầy đủ và định nghĩa dữ liệu FotMob/FD, chưa xác nhận là lỗi."
+EPL_2013_2014_CHE_EVE,2014-02-22,Chelsea,Everton,cross_source_zero_shots,away_shots,8.0,"Cú sút trong và ngoài vòng cấm đều bằng 0 nhưng tổng sút FD dương; cần kiểm tra độ đầy đủ và định nghĩa dữ liệu FotMob/FD, chưa xác nhận là lỗi."
+EPL_2015_2016_WBA_WAT,2016-04-16,West Brom,Watford,cross_source_zero_shots,away_shots,11.0,"Cú sút trong và ngoài vòng cấm đều bằng 0 nhưng tổng sút FD dương; cần kiểm tra độ đầy đủ và định nghĩa dữ liệu FotMob/FD, chưa xác nhận là lỗi."
+EPL_2019_2020_AVL_SHU,2020-06-17,Aston Villa,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MCI_ARS,2020-06-17,Manchester City,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NOR_SOU,2020-06-19,Norwich,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_TOT_MUN,2020-06-19,Tottenham,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WAT_LEI,2020-06-20,Watford,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BHA_ARS,2020-06-20,Brighton,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WHU_WOL,2020-06-20,West Ham,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BOU_CRY,2020-06-20,Bournemouth,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NEW_SHU,2020-06-21,Newcastle,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_AVL_CHE,2020-06-21,Aston Villa,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_EVE_LIV,2020-06-21,Everton,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MCI_BUR,2020-06-22,Manchester City,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_LEI_BHA,2020-06-23,Leicester,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_TOT_WHU,2020-06-23,Tottenham,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MUN_SHU,2020-06-24,Manchester United,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NEW_AVL,2020-06-24,Newcastle,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NOR_EVE,2020-06-24,Norwich,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WOL_BOU,2020-06-24,Wolves,Bournemouth,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_LIV_CRY,2020-06-24,Liverpool,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BUR_WAT,2020-06-25,Burnley,Watford,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_SOU_ARS,2020-06-25,Southampton,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_CHE_MCI,2020-06-25,Chelsea,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_AVL_WOL,2020-06-27,Aston Villa,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WAT_SOU,2020-06-28,Watford,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_CRY_BUR,2020-06-29,Crystal Palace,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BHA_MUN,2020-06-30,Brighton,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_ARS_NOR,2020-07-01,Arsenal,Norwich,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BOU_NEW,2020-07-01,Bournemouth,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_EVE_LEI,2020-07-01,Everton,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WHU_CHE,2020-07-01,West Ham,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_SHU_TOT,2020-07-02,Sheffield United,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MCI_LIV,2020-07-02,Manchester City,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NOR_BHA,2020-07-04,Norwich,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_LEI_CRY,2020-07-04,Leicester,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MUN_BOU,2020-07-04,Manchester United,Bournemouth,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WOL_ARS,2020-07-04,Wolves,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_CHE_WAT,2020-07-04,Chelsea,Watford,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BUR_SHU,2020-07-05,Burnley,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NEW_WHU,2020-07-05,Newcastle,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_LIV_AVL,2020-07-05,Liverpool,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_SOU_MCI,2020-07-05,Southampton,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_TOT_EVE,2020-07-06,Tottenham,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_CRY_CHE,2020-07-07,Crystal Palace,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WAT_NOR,2020-07-07,Watford,Norwich,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_ARS_LEI,2020-07-07,Arsenal,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MCI_NEW,2020-07-08,Manchester City,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_SHU_WOL,2020-07-08,Sheffield United,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WHU_BUR,2020-07-08,West Ham,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BHA_LIV,2020-07-08,Brighton,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BOU_TOT,2020-07-09,Bournemouth,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_EVE_SOU,2020-07-09,Everton,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_AVL_MUN,2020-07-09,Aston Villa,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NOR_WHU,2020-07-11,Norwich,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WAT_NEW,2020-07-11,Watford,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_LIV_BUR,2020-07-11,Liverpool,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_SHU_CHE,2020-07-11,Sheffield United,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BHA_MCI,2020-07-11,Brighton,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WOL_EVE,2020-07-12,Wolves,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_AVL_CRY,2020-07-12,Aston Villa,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_TOT_ARS,2020-07-12,Tottenham,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BOU_LEI,2020-07-12,Bournemouth,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MUN_SOU,2020-07-13,Manchester United,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_CHE_NOR,2020-07-14,Chelsea,Norwich,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BUR_WOL,2020-07-15,Burnley,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MCI_BOU,2020-07-15,Manchester City,Bournemouth,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NEW_TOT,2020-07-15,Newcastle,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_ARS_LIV,2020-07-15,Arsenal,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_EVE_AVL,2020-07-16,Everton,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_LEI_SHU,2020-07-16,Leicester,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_CRY_MUN,2020-07-16,Crystal Palace,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_SOU_BHA,2020-07-16,Southampton,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WHU_WAT,2020-07-17,West Ham,Watford,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NOR_BUR,2020-07-18,Norwich,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BOU_SOU,2020-07-19,Bournemouth,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_TOT_LEI,2020-07-19,Tottenham,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BHA_NEW,2020-07-20,Brighton,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_SHU_EVE,2020-07-20,Sheffield United,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WOL_CRY,2020-07-20,Wolves,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WAT_MCI,2020-07-21,Watford,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_AVL_ARS,2020-07-21,Aston Villa,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MUN_WHU,2020-07-22,Manchester United,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_LIV_CHE,2020-07-22,Liverpool,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_ARS_WAT,2020-07-26,Arsenal,Watford,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_BUR_BHA,2020-07-26,Burnley,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_CHE_WOL,2020-07-26,Chelsea,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_CRY_TOT,2020-07-26,Crystal Palace,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_EVE_BOU,2020-07-26,Everton,Bournemouth,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_LEI_MUN,2020-07-26,Leicester,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_MCI_NOR,2020-07-26,Manchester City,Norwich,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_NEW_LIV,2020-07-26,Newcastle,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_SOU_SHU,2020-07-26,Southampton,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2019_2020_WHU_AVL,2020-07-26,West Ham,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_ARS,2020-09-12,Fulham,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_SOU,2020-09-12,Crystal Palace,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_LEE,2020-09-12,Liverpool,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_NEW,2020-09-12,West Ham,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_LEI,2020-09-13,West Brom,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_EVE,2020-09-13,Tottenham,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_WOL,2020-09-14,Sheffield United,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_CHE,2020-09-14,Brighton,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_WBA,2020-09-19,Everton,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_FUL,2020-09-19,Leeds,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_CRY,2020-09-19,Manchester United,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_WHU,2020-09-19,Arsenal,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_TOT,2020-09-20,Southampton,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_BHA,2020-09-20,Newcastle,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_LIV,2020-09-20,Chelsea,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_BUR,2020-09-20,Leicester,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_SHU,2020-09-21,Aston Villa,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_MCI,2020-09-21,Wolves,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_MUN,2020-09-26,Brighton,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_EVE,2020-09-26,Crystal Palace,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_CHE,2020-09-26,West Brom,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_SOU,2020-09-26,Burnley,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_LEE,2020-09-27,Sheffield United,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_NEW,2020-09-27,Tottenham,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_LEI,2020-09-27,Manchester City,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_WOL,2020-09-27,West Ham,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_AVL,2020-09-28,Fulham,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_ARS,2020-09-28,Liverpool,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_CRY,2020-10-03,Chelsea,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_BHA,2020-10-03,Everton,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_MCI,2020-10-03,Leeds,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_BUR,2020-10-03,Newcastle,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_WHU,2020-10-04,Leicester,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_WBA,2020-10-04,Southampton,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_SHU,2020-10-04,Arsenal,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_FUL,2020-10-04,Wolves,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_TOT,2020-10-04,Manchester United,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_LIV,2020-10-04,Aston Villa,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_LIV,2020-10-17,Everton,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_SOU,2020-10-17,Chelsea,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_ARS,2020-10-17,Manchester City,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_MUN,2020-10-17,Newcastle,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_FUL,2020-10-18,Sheffield United,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_BHA,2020-10-18,Crystal Palace,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_WHU,2020-10-18,Tottenham,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_AVL,2020-10-18,Leicester,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_BUR,2020-10-19,West Brom,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_WOL,2020-10-19,Leeds,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_LEE,2020-10-23,Aston Villa,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_MCI,2020-10-24,West Ham,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_CRY,2020-10-24,Fulham,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_CHE,2020-10-24,Manchester United,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_SHU,2020-10-24,Liverpool,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_EVE,2020-10-25,Southampton,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_NEW,2020-10-25,Wolves,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_LEI,2020-10-25,Arsenal,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_WBA,2020-10-26,Brighton,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_TOT,2020-10-26,Burnley,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_CRY,2020-10-30,Wolves,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_MCI,2020-10-31,Sheffield United,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_CHE,2020-10-31,Burnley,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_WHU,2020-10-31,Liverpool,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_SOU,2020-11-01,Aston Villa,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_EVE,2020-11-01,Newcastle,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_ARS,2020-11-01,Manchester United,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_BHA,2020-11-01,Tottenham,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_WBA,2020-11-02,Fulham,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_LEI,2020-11-02,Leeds,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_BUR,2020-11-06,Brighton,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_NEW,2020-11-06,Southampton,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_MUN,2020-11-07,Everton,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_LEE,2020-11-07,Crystal Palace,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_SHU,2020-11-07,Chelsea,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_FUL,2020-11-07,West Ham,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_TOT,2020-11-08,West Brom,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_WOL,2020-11-08,Leicester,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_LIV,2020-11-08,Manchester City,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_AVL,2020-11-08,Arsenal,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_CHE,2020-11-21,Newcastle,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_BHA,2020-11-21,Aston Villa,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_MCI,2020-11-21,Tottenham,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_WBA,2020-11-21,Manchester United,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_EVE,2020-11-22,Fulham,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_WHU,2020-11-22,Sheffield United,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_ARS,2020-11-22,Leeds,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_LEI,2020-11-22,Liverpool,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_CRY,2020-11-23,Burnley,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_SOU,2020-11-23,Wolves,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_NEW,2020-11-27,Crystal Palace,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_LIV,2020-11-28,Brighton,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_BUR,2020-11-28,Manchester City,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_LEE,2020-11-28,Everton,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_SHU,2020-11-28,West Brom,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_MUN,2020-11-29,Southampton,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_TOT,2020-11-29,Chelsea,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_WOL,2020-11-29,Arsenal,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_FUL,2020-11-30,Leicester,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_AVL,2020-11-30,West Ham,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_EVE,2020-12-05,Burnley,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_FUL,2020-12-05,Manchester City,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_CRY,2020-12-06,West Brom,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_LEI,2020-12-06,Sheffield United,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_WHU,2020-12-11,Leeds,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_AVL,2020-12-12,Wolves,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_WBA,2020-12-12,Newcastle,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_MCI,2020-12-12,Manchester United,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_BUR,2020-12-13,Arsenal,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_BHA,2020-12-13,Leicester,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_CHE,2020-12-15,Wolves,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_WBA,2020-12-15,Manchester City,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_SOU,2020-12-16,Arsenal,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_NEW,2020-12-16,Leeds,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_EVE,2020-12-16,Leicester,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_BHA,2020-12-16,Fulham,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_CRY,2020-12-16,West Ham,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_BUR,2020-12-17,Aston Villa,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_MUN,2020-12-17,Sheffield United,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_LIV,2020-12-19,Crystal Palace,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_FUL,2020-12-19,Newcastle,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_LEI,2020-12-20,Tottenham,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_LEE,2020-12-20,Manchester United,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_AVL,2020-12-20,West Brom,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_WOL,2020-12-21,Burnley,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_WHU,2020-12-21,Chelsea,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_MUN,2020-12-26,Leicester,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_CRY,2020-12-26,Aston Villa,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_SOU,2020-12-26,Fulham,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_CHE,2020-12-26,Arsenal,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_NEW,2020-12-26,Manchester City,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_EVE,2020-12-26,Sheffield United,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_BUR,2020-12-27,Leeds,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_BHA,2020-12-27,West Ham,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_TOT,2020-12-27,Wolves,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_LEI,2020-12-28,Crystal Palace,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_AVL,2020-12-28,Chelsea,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_ARS,2020-12-29,Brighton,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_SHU,2020-12-29,Burnley,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_WHU,2020-12-29,Southampton,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_LEE,2020-12-29,West Brom,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_WOL,2020-12-29,Manchester United,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_LIV,2020-12-30,Newcastle,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_WHU,2021-01-01,Everton,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_AVL,2021-01-01,Manchester United,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_LEE,2021-01-02,Tottenham,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_SHU,2021-01-02,Crystal Palace,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_WOL,2021-01-02,Brighton,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_ARS,2021-01-02,West Brom,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_LEI,2021-01-03,Newcastle,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_MCI,2021-01-03,Chelsea,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_LIV,2021-01-04,Southampton,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_NEW,2021-01-12,Sheffield United,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_MUN,2021-01-12,Burnley,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_EVE,2021-01-12,Wolves,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_BHA,2021-01-13,Manchester City,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_FUL,2021-01-13,Tottenham,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_CRY,2021-01-14,Arsenal,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_WBA,2021-01-16,Wolves,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_BHA,2021-01-16,Leeds,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_BUR,2021-01-16,West Ham,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_CHE,2021-01-16,Fulham,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_SOU,2021-01-16,Leicester,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_TOT,2021-01-17,Sheffield United,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_MUN,2021-01-17,Liverpool,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_CRY,2021-01-17,Manchester City,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_NEW,2021-01-18,Arsenal,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_WBA,2021-01-19,West Ham,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_CHE,2021-01-19,Leicester,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_AVL,2021-01-20,Manchester City,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_MUN,2021-01-20,Fulham,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_BUR,2021-01-21,Liverpool,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_NEW,2021-01-23,Aston Villa,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_WHU,2021-01-26,Crystal Palace,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_LEE,2021-01-26,Newcastle,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_ARS,2021-01-26,Southampton,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_MCI,2021-01-26,West Brom,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_AVL,2021-01-27,Burnley,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_WOL,2021-01-27,Chelsea,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_FUL,2021-01-27,Brighton,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_LEI,2021-01-27,Everton,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_SHU,2021-01-27,Manchester United,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_LIV,2021-01-28,Tottenham,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_NEW,2021-01-30,Everton,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_WOL,2021-01-30,Crystal Palace,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_SHU,2021-01-30,Manchester City,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_FUL,2021-01-30,West Brom,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_MUN,2021-01-30,Arsenal,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_AVL,2021-01-30,Southampton,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_BUR,2021-01-31,Chelsea,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_LEE,2021-01-31,Leicester,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_LIV,2021-01-31,West Ham,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_TOT,2021-01-31,Brighton,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_WBA,2021-02-02,Sheffield United,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_ARS,2021-02-02,Wolves,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_SOU,2021-02-02,Manchester United,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_CRY,2021-02-02,Newcastle,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_MCI,2021-02-03,Burnley,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_LEI,2021-02-03,Fulham,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_EVE,2021-02-03,Leeds,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_WHU,2021-02-03,Aston Villa,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_BHA,2021-02-03,Liverpool,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_CHE,2021-02-04,Tottenham,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_ARS,2021-02-06,Aston Villa,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_BHA,2021-02-06,Burnley,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_SOU,2021-02-06,Newcastle,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_WHU,2021-02-06,Fulham,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_EVE,2021-02-06,Manchester United,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_WBA,2021-02-07,Tottenham,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_LEI,2021-02-07,Wolves,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_MCI,2021-02-07,Liverpool,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_CHE,2021-02-07,Sheffield United,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_CRY,2021-02-08,Leeds,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_LIV,2021-02-13,Leicester,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_BUR,2021-02-13,Crystal Palace,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_TOT,2021-02-13,Manchester City,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_AVL,2021-02-13,Brighton,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_WOL,2021-02-14,Southampton,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_MUN,2021-02-14,West Brom,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_LEE,2021-02-14,Arsenal,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_FUL,2021-02-14,Everton,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_SHU,2021-02-15,West Ham,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_NEW,2021-02-15,Chelsea,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_FUL,2021-02-17,Burnley,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_MCI,2021-02-17,Everton,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_LEE,2021-02-19,Wolves,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_CHE,2021-02-20,Southampton,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_WBA,2021-02-20,Burnley,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_EVE,2021-02-20,Liverpool,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_SHU,2021-02-20,Fulham,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_TOT,2021-02-21,West Ham,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_LEI,2021-02-21,Aston Villa,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_MCI,2021-02-21,Arsenal,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_NEW,2021-02-21,Manchester United,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_CRY,2021-02-22,Brighton,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_SOU,2021-02-23,Leeds,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_WHU,2021-02-27,Manchester City,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_BHA,2021-02-27,West Brom,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_AVL,2021-02-27,Leeds,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_WOL,2021-02-27,Newcastle,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_FUL,2021-02-28,Crystal Palace,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_ARS,2021-02-28,Leicester,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_BUR,2021-02-28,Tottenham,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_MUN,2021-02-28,Chelsea,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_LIV,2021-02-28,Sheffield United,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_SOU,2021-03-01,Everton,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_WOL,2021-03-02,Manchester City,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_LEI,2021-03-03,Burnley,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_AVL,2021-03-03,Sheffield United,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_MUN,2021-03-03,Crystal Palace,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_TOT,2021-03-04,Fulham,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_EVE,2021-03-04,West Brom,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_CHE,2021-03-04,Liverpool,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_ARS,2021-03-06,Burnley,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_SOU,2021-03-06,Sheffield United,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_WOL,2021-03-06,Aston Villa,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_LEI,2021-03-06,Brighton,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_NEW,2021-03-07,West Brom,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_FUL,2021-03-07,Liverpool,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_MUN,2021-03-07,Manchester City,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_CRY,2021-03-07,Tottenham,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_EVE,2021-03-08,Chelsea,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_LEE,2021-03-08,West Ham,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_SOU,2021-03-10,Manchester City,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_AVL,2021-03-12,Newcastle,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_CHE,2021-03-13,Leeds,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_WBA,2021-03-13,Crystal Palace,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_BUR,2021-03-13,Everton,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_MCI,2021-03-13,Fulham,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_BHA,2021-03-14,Southampton,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_SHU,2021-03-14,Leicester,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_TOT,2021-03-14,Arsenal,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_WHU,2021-03-14,Manchester United,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_LIV,2021-03-15,Wolves,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_LEE,2021-03-19,Fulham,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_NEW,2021-03-20,Brighton,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_ARS,2021-03-21,West Ham,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_TOT,2021-03-21,Aston Villa,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_WBA,2021-04-03,Chelsea,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_SHU,2021-04-03,Leeds,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_MCI,2021-04-03,Leicester,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_LIV,2021-04-03,Arsenal,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_BUR,2021-04-04,Southampton,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_TOT,2021-04-04,Newcastle,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_FUL,2021-04-04,Aston Villa,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_BHA,2021-04-04,Manchester United,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_CRY,2021-04-05,Everton,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_WHU,2021-04-05,Wolves,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_WOL,2021-04-09,Fulham,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_LEE,2021-04-10,Manchester City,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_AVL,2021-04-10,Liverpool,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_CHE,2021-04-10,Crystal Palace,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_NEW,2021-04-11,Burnley,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_LEI,2021-04-11,West Ham,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_MUN,2021-04-11,Tottenham,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_ARS,2021-04-11,Sheffield United,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_SOU,2021-04-12,West Brom,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_EVE,2021-04-12,Brighton,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_TOT,2021-04-16,Everton,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_WHU,2021-04-17,Newcastle,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_SHU,2021-04-17,Wolves,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_FUL,2021-04-18,Arsenal,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_BUR,2021-04-18,Manchester United,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_LIV,2021-04-19,Leeds,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_BHA,2021-04-20,Chelsea,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_SOU,2021-04-21,Tottenham,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_MCI,2021-04-21,Aston Villa,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_WBA,2021-04-22,Leicester,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_EVE,2021-04-23,Arsenal,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_NEW,2021-04-24,Liverpool,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_CHE,2021-04-24,West Ham,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_BHA,2021-04-24,Sheffield United,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_BUR,2021-04-25,Wolves,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_MUN,2021-04-25,Leeds,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_WBA,2021-04-25,Aston Villa,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_CRY,2021-04-26,Leicester,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_LEI,2021-04-30,Southampton,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_MCI,2021-05-01,Crystal Palace,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_LEE,2021-05-01,Brighton,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_FUL,2021-05-01,Chelsea,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_AVL,2021-05-01,Everton,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_ARS,2021-05-02,Newcastle,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_SHU,2021-05-02,Tottenham,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_WOL,2021-05-03,West Brom,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_WHU,2021-05-03,Burnley,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEI_NEW,2021-05-07,Leicester,Newcastle,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LEE_TOT,2021-05-08,Leeds,Tottenham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SHU_CRY,2021-05-08,Sheffield United,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MCI_CHE,2021-05-08,Manchester City,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_LIV_SOU,2021-05-08,Liverpool,Southampton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_BHA,2021-05-09,Wolves,Brighton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_MUN,2021-05-09,Aston Villa,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WHU_EVE,2021-05-09,West Ham,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_ARS_WBA,2021-05-09,Arsenal,West Brom,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_FUL_BUR,2021-05-10,Fulham,Burnley,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_LEI,2021-05-11,Manchester United,Leicester,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_CRY,2021-05-11,Southampton,Crystal Palace,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CHE_ARS,2021-05-12,Chelsea,Arsenal,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_EVE,2021-05-13,Aston Villa,Everton,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_MUN_LIV,2021-05-13,Manchester United,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_NEW_MCI,2021-05-14,Newcastle,Manchester City,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BUR_LEE,2021-05-15,Burnley,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_FUL,2021-05-15,Southampton,Fulham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_BHA_WHU,2021-05-15,Brighton,West Ham,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_CRY_AVL,2021-05-16,Crystal Palace,Aston Villa,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_TOT_WOL,2021-05-16,Tottenham,Wolves,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WBA_LIV,2021-05-16,West Brom,Liverpool,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_EVE_SHU,2021-05-16,Everton,Sheffield United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_SOU_LEE,2021-05-18,Southampton,Leeds,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_AVL_CHE,2021-05-23,Aston Villa,Chelsea,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2020_2021_WOL_MUN,2021-05-23,Wolves,Manchester United,attendance_imputed,attendance,0.0,Giá trị khán giả được điền; cần giữ cờ attendance_imputed.
+EPL_2001_2002_CHA_EVE,2001-08-18,Charlton,Everton,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_DER_BLB,2001-08-18,Derby,Blackburn,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_LEE_SOU,2001-08-18,Leeds,Southampton,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_LEI_BOL,2001-08-18,Leicester,Bolton,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_LIV_WHU,2001-08-18,Liverpool,West Ham,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_MID_ARS,2001-08-18,Middlesbrough,Arsenal,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_SUN_IPS,2001-08-18,Sunderland,Ipswich,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_TOT_AVL,2001-08-18,Tottenham,Aston Villa,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_CHE_NEW,2001-08-19,Chelsea,Newcastle,observed_epl_gap,home_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_MUN_FUL,2001-08-19,Manchester United,Fulham,observed_epl_gap,home_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_BLB_SUN,2002-08-17,Blackburn,Sunderland,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_CHA_CHE,2002-08-17,Charlton,Chelsea,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_EVE_TOT,2002-08-17,Everton,Tottenham,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_FUL_BOL,2002-08-17,Fulham,Bolton,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_LEE_MCI,2002-08-17,Leeds,Manchester City,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_MUN_WBA,2002-08-17,Manchester United,West Brom,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_SOU_MID,2002-08-17,Southampton,Middlesbrough,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_ARS_BIR,2002-08-18,Arsenal,Birmingham,observed_epl_gap,home_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_AVL_LIV,2002-08-18,Aston Villa,Liverpool,observed_epl_gap,home_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_NEW_WHU,2002-08-19,Newcastle,West Ham,observed_epl_gap,home_rest_days,100.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_ARS_EVE,2003-08-16,Arsenal,Everton,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_BIR_TOT,2003-08-16,Birmingham,Tottenham,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_BLB_WOL,2003-08-16,Blackburn,Wolves,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_FUL_MID,2003-08-16,Fulham,Middlesbrough,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_LEI_SOU,2003-08-16,Leicester,Southampton,observed_epl_gap,home_rest_days,462.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_MUN_BOL,2003-08-16,Manchester United,Bolton,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_CHA_MCI,2003-08-17,Charlton,Manchester City,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_LEE_NEW,2003-08-17,Leeds,Newcastle,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_LIV_CHE,2003-08-17,Liverpool,Chelsea,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_AVL_SOU,2004-08-14,Aston Villa,Southampton,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_BLB_WBA,2004-08-14,Blackburn,West Brom,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_BOL_CHA,2004-08-14,Bolton,Charlton,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_MCI_FUL,2004-08-14,Manchester City,Fulham,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_MID_NEW,2004-08-14,Middlesbrough,Newcastle,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_POR_BIR,2004-08-14,Portsmouth,Birmingham,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_TOT_LIV,2004-08-14,Tottenham,Liverpool,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_CHE_MUN,2004-08-15,Chelsea,Manchester United,observed_epl_gap,home_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_EVE_ARS,2004-08-15,Everton,Arsenal,observed_epl_gap,home_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_AVL_BOL,2005-08-13,Aston Villa,Bolton,observed_epl_gap,home_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_EVE_MUN,2005-08-13,Everton,Manchester United,observed_epl_gap,home_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_FUL_BIR,2005-08-13,Fulham,Birmingham,observed_epl_gap,home_rest_days,116.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_MCI_WBA,2005-08-13,Manchester City,West Brom,observed_epl_gap,home_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_MID_LIV,2005-08-13,Middlesbrough,Liverpool,observed_epl_gap,home_rest_days,116.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_POR_TOT,2005-08-13,Portsmouth,Tottenham,observed_epl_gap,home_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_SUN_CHA,2005-08-13,Sunderland,Charlton,observed_epl_gap,home_rest_days,825.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_WHU_BLB,2005-08-13,West Ham,Blackburn,observed_epl_gap,home_rest_days,825.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_ARS_NEW,2005-08-14,Arsenal,Newcastle,observed_epl_gap,home_rest_days,116.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_ARS_AVL,2006-08-19,Arsenal,Aston Villa,observed_epl_gap,home_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_BOL_TOT,2006-08-19,Bolton,Tottenham,observed_epl_gap,home_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_EVE_WAT,2006-08-19,Everton,Watford,observed_epl_gap,home_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_NEW_WIG,2006-08-19,Newcastle,Wigan,observed_epl_gap,home_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_POR_BLB,2006-08-19,Portsmouth,Blackburn,observed_epl_gap,home_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_WHU_CHA,2006-08-19,West Ham,Charlton,observed_epl_gap,home_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_CHE_MCI,2006-08-20,Chelsea,Manchester City,observed_epl_gap,home_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_MUN_FUL,2006-08-20,Manchester United,Fulham,observed_epl_gap,home_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_AVL_LIV,2007-08-11,Aston Villa,Liverpool,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_BOL_NEW,2007-08-11,Bolton,Newcastle,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_DER_POR,2007-08-11,Derby,Portsmouth,observed_epl_gap,home_rest_days,1918.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_EVE_WIG,2007-08-11,Everton,Wigan,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_MID_BLB,2007-08-11,Middlesbrough,Blackburn,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_SUN_TOT,2007-08-11,Sunderland,Tottenham,observed_epl_gap,home_rest_days,461.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_WHU_MCI,2007-08-11,West Ham,Manchester City,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_ARS_FUL,2007-08-12,Arsenal,Fulham,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_CHE_BIR,2007-08-12,Chelsea,Birmingham,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_MUN_REA,2007-08-12,Manchester United,Reading,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_ARS_WBA,2008-08-16,Arsenal,West Brom,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_BOL_STK,2008-08-16,Bolton,Stoke,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_EVE_BLB,2008-08-16,Everton,Blackburn,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_MID_TOT,2008-08-16,Middlesbrough,Tottenham,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_SUN_LIV,2008-08-16,Sunderland,Liverpool,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_WHU_WIG,2008-08-16,West Ham,Wigan,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_AVL_MCI,2008-08-17,Aston Villa,Manchester City,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_CHE_POR,2008-08-17,Chelsea,Portsmouth,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_MUN_NEW,2008-08-17,Manchester United,Newcastle,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_AVL_WIG,2009-08-15,Aston Villa,Wigan,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_BLB_MCI,2009-08-15,Blackburn,Manchester City,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_BOL_SUN,2009-08-15,Bolton,Sunderland,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_CHE_HUL,2009-08-15,Chelsea,Hull,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_EVE_ARS,2009-08-15,Everton,Arsenal,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_POR_FUL,2009-08-15,Portsmouth,Fulham,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_STK_BUR,2009-08-15,Stoke,Burnley,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_WOL_WHU,2009-08-15,Wolves,West Ham,observed_epl_gap,home_rest_days,1932.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_MUN_BIR,2009-08-16,Manchester United,Birmingham,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_TOT_LIV,2009-08-16,Tottenham,Liverpool,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_AVL_WHU,2010-08-14,Aston Villa,West Ham,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_BLB_EVE,2010-08-14,Blackburn,Everton,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_BOL_FUL,2010-08-14,Bolton,Fulham,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_CHE_WBA,2010-08-14,Chelsea,West Brom,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_SUN_BIR,2010-08-14,Sunderland,Birmingham,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_TOT_MCI,2010-08-14,Tottenham,Manchester City,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_WIG_BLP,2010-08-14,Wigan,Blackpool,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_WOL_STK,2010-08-14,Wolves,Stoke,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_LIV_ARS,2010-08-15,Liverpool,Arsenal,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_MUN_NEW,2010-08-16,Manchester United,Newcastle,observed_epl_gap,home_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_BLB_WOL,2011-08-13,Blackburn,Wolves,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_FUL_AVL,2011-08-13,Fulham,Aston Villa,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_LIV_SUN,2011-08-13,Liverpool,Sunderland,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_NEW_ARS,2011-08-13,Newcastle,Arsenal,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_WIG_NOR,2011-08-13,Wigan,Norwich,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_STK_CHE,2011-08-14,Stoke,Chelsea,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_WBA_MUN,2011-08-14,West Brom,Manchester United,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_MCI_SWA,2011-08-15,Manchester City,Swansea,observed_epl_gap,home_rest_days,85.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_EVE_QPR,2011-08-20,Everton,QPR,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_ARS_SUN,2012-08-18,Arsenal,Sunderland,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_FUL_NOR,2012-08-18,Fulham,Norwich,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_NEW_TOT,2012-08-18,Newcastle,Tottenham,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_QPR_SWA,2012-08-18,QPR,Swansea,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_REA_STK,2012-08-18,Reading,Stoke,observed_epl_gap,home_rest_days,1560.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_WBA_LIV,2012-08-18,West Brom,Liverpool,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_WHU_AVL,2012-08-18,West Ham,Aston Villa,observed_epl_gap,home_rest_days,454.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_MCI_SOU,2012-08-19,Manchester City,Southampton,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_WIG_CHE,2012-08-19,Wigan,Chelsea,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_EVE_MUN,2012-08-20,Everton,Manchester United,observed_epl_gap,home_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_ARS_AVL,2013-08-17,Arsenal,Aston Villa,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_LIV_STK,2013-08-17,Liverpool,Stoke,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_NOR_EVE,2013-08-17,Norwich,Everton,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_SUN_FUL,2013-08-17,Sunderland,Fulham,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_SWA_MUN,2013-08-17,Swansea,Manchester United,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_WBA_SOU,2013-08-17,West Brom,Southampton,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_WHU_CAR,2013-08-17,West Ham,Cardiff,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_CHE_HUL,2013-08-18,Chelsea,Hull,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_CRY_TOT,2013-08-18,Crystal Palace,Tottenham,observed_epl_gap,home_rest_days,3042.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_MCI_NEW,2013-08-19,Manchester City,Newcastle,observed_epl_gap,home_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_ARS_CRY,2014-08-16,Arsenal,Crystal Palace,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_LEI_EVE,2014-08-16,Leicester,Everton,observed_epl_gap,home_rest_days,3752.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_MUN_SWA,2014-08-16,Manchester United,Swansea,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_QPR_HUL,2014-08-16,QPR,Hull,observed_epl_gap,home_rest_days,454.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_STK_AVL,2014-08-16,Stoke,Aston Villa,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_WBA_SUN,2014-08-16,West Brom,Sunderland,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_WHU_TOT,2014-08-16,West Ham,Tottenham,observed_epl_gap,home_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_LIV_SOU,2014-08-17,Liverpool,Southampton,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_NEW_MCI,2014-08-17,Newcastle,Manchester City,observed_epl_gap,home_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_BUR_CHE,2014-08-18,Burnley,Chelsea,observed_epl_gap,home_rest_days,1562.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_CHE_SWA,2015-08-08,Chelsea,Swansea,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_EVE_WAT,2015-08-08,Everton,Watford,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_LEI_SUN,2015-08-08,Leicester,Sunderland,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_MUN_TOT,2015-08-08,Manchester United,Tottenham,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_NOR_CRY,2015-08-08,Norwich,Crystal Palace,observed_epl_gap,home_rest_days,454.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_ARS_WHU,2015-08-09,Arsenal,West Ham,observed_epl_gap,home_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_NEW_SOU,2015-08-09,Newcastle,Southampton,observed_epl_gap,home_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_STK_LIV,2015-08-09,Stoke,Liverpool,observed_epl_gap,home_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_WBA_MCI,2015-08-10,West Brom,Manchester City,observed_epl_gap,home_rest_days,78.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_BUR_SWA,2016-08-13,Burnley,Swansea,observed_epl_gap,home_rest_days,447.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_CRY_WBA,2016-08-13,Crystal Palace,West Brom,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_EVE_TOT,2016-08-13,Everton,Tottenham,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_HUL_LEI,2016-08-13,Hull,Leicester,observed_epl_gap,home_rest_days,447.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_MCI_SUN,2016-08-13,Manchester City,Sunderland,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_MID_STK,2016-08-13,Middlesbrough,Stoke,observed_epl_gap,home_rest_days,2638.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_SOU_WAT,2016-08-13,Southampton,Watford,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_ARS_LIV,2016-08-14,Arsenal,Liverpool,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_BOU_MUN,2016-08-14,Bournemouth,Manchester United,observed_epl_gap,home_rest_days,89.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_CHE_WHU,2016-08-15,Chelsea,West Ham,observed_epl_gap,home_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_ARS_LEI,2017-08-11,Arsenal,Leicester,observed_epl_gap,home_rest_days,82.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_CHE_BUR,2017-08-12,Chelsea,Burnley,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_CRY_HUD,2017-08-12,Crystal Palace,Huddersfield,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_EVE_STK,2017-08-12,Everton,Stoke,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_SOU_SWA,2017-08-12,Southampton,Swansea,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_WAT_LIV,2017-08-12,Watford,Liverpool,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_WBA_BOU,2017-08-12,West Brom,Bournemouth,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_MUN_WHU,2017-08-13,Manchester United,West Ham,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_NEW_TOT,2017-08-13,Newcastle,Tottenham,observed_epl_gap,home_rest_days,455.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_MUN_LEI,2018-08-10,Manchester United,Leicester,observed_epl_gap,home_rest_days,89.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_BOU_CAR,2018-08-11,Bournemouth,Cardiff,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_FUL_CRY,2018-08-11,Fulham,Crystal Palace,observed_epl_gap,home_rest_days,1553.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_HUD_CHE,2018-08-11,Huddersfield,Chelsea,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_NEW_TOT,2018-08-11,Newcastle,Tottenham,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_WAT_BHA,2018-08-11,Watford,Brighton,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_WOL_EVE,2018-08-11,Wolves,Everton,observed_epl_gap,home_rest_days,2281.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_ARS_MCI,2018-08-12,Arsenal,Manchester City,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_LIV_WHU,2018-08-12,Liverpool,West Ham,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_SOU_BUR,2018-08-12,Southampton,Burnley,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_LIV_NOR,2019-08-09,Liverpool,Norwich,observed_epl_gap,home_rest_days,89.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_WHU_MCI,2019-08-10,West Ham,Manchester City,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_BOU_SHU,2019-08-10,Bournemouth,Sheffield United,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_BUR_SOU,2019-08-10,Burnley,Southampton,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_CRY_EVE,2019-08-10,Crystal Palace,Everton,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_WAT_BHA,2019-08-10,Watford,Brighton,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_TOT_AVL,2019-08-10,Tottenham,Aston Villa,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_LEI_WOL,2019-08-11,Leicester,Wolves,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_NEW_ARS,2019-08-11,Newcastle,Arsenal,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_MUN_CHE,2019-08-11,Manchester United,Chelsea,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_AVL_SHU,2020-06-17,Aston Villa,Sheffield United,observed_epl_gap,home_rest_days,100.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_MCI_ARS,2020-06-17,Manchester City,Arsenal,observed_epl_gap,home_rest_days,101.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_NOR_SOU,2020-06-19,Norwich,Southampton,observed_epl_gap,home_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_TOT_MUN,2020-06-19,Tottenham,Manchester United,observed_epl_gap,home_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_WAT_LEI,2020-06-20,Watford,Leicester,observed_epl_gap,home_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_BHA_ARS,2020-06-20,Brighton,Arsenal,observed_epl_gap,home_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_WHU_WOL,2020-06-20,West Ham,Wolves,observed_epl_gap,home_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_BOU_CRY,2020-06-20,Bournemouth,Crystal Palace,observed_epl_gap,home_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_NEW_SHU,2020-06-21,Newcastle,Sheffield United,observed_epl_gap,home_rest_days,106.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_EVE_LIV,2020-06-21,Everton,Liverpool,observed_epl_gap,home_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_FUL_ARS,2020-09-12,Fulham,Arsenal,observed_epl_gap,home_rest_days,489.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_CRY_SOU,2020-09-12,Crystal Palace,Southampton,observed_epl_gap,home_rest_days,48.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_LIV_LEE,2020-09-12,Liverpool,Leeds,observed_epl_gap,home_rest_days,48.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_WHU_NEW,2020-09-12,West Ham,Newcastle,observed_epl_gap,home_rest_days,48.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_WBA_LEI,2020-09-13,West Brom,Leicester,observed_epl_gap,home_rest_days,854.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_TOT_EVE,2020-09-13,Tottenham,Everton,observed_epl_gap,home_rest_days,49.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_SHU_WOL,2020-09-14,Sheffield United,Wolves,observed_epl_gap,home_rest_days,50.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_BHA_CHE,2020-09-14,Brighton,Chelsea,observed_epl_gap,home_rest_days,50.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_MUN_CRY,2020-09-19,Manchester United,Crystal Palace,observed_epl_gap,home_rest_days,55.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_AVL_SHU,2020-09-21,Aston Villa,Sheffield United,observed_epl_gap,home_rest_days,57.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_MUN_LEE,2021-08-14,Manchester United,Leeds,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_BUR_BHA,2021-08-14,Burnley,Brighton,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_CHE_CRY,2021-08-14,Chelsea,Crystal Palace,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_EVE_SOU,2021-08-14,Everton,Southampton,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_LEI_WOL,2021-08-14,Leicester,Wolves,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_WAT_AVL,2021-08-14,Watford,Aston Villa,observed_epl_gap,home_rest_days,384.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_NOR_LIV,2021-08-14,Norwich,Liverpool,observed_epl_gap,home_rest_days,384.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_NEW_WHU,2021-08-15,Newcastle,West Ham,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_TOT_MCI,2021-08-15,Tottenham,Manchester City,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_CRY_ARS,2022-08-05,Crystal Palace,Arsenal,observed_epl_gap,home_rest_days,75.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_FUL_LIV,2022-08-06,Fulham,Liverpool,observed_epl_gap,home_rest_days,440.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_BOU_AVL,2022-08-06,Bournemouth,Aston Villa,observed_epl_gap,home_rest_days,741.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_LEE_WOL,2022-08-06,Leeds,Wolves,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_NEW_NFO,2022-08-06,Newcastle,Nottingham Forest,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_TOT_SOU,2022-08-06,Tottenham,Southampton,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_EVE_CHE,2022-08-06,Everton,Chelsea,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_LEI_BRE,2022-08-07,Leicester,Brentford,observed_epl_gap,home_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_MUN_BHA,2022-08-07,Manchester United,Brighton,observed_epl_gap,home_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_WHU_MCI,2022-08-07,West Ham,Manchester City,observed_epl_gap,home_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_BRE_TOT,2022-12-26,Brentford,Tottenham,observed_epl_gap,home_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_CRY_FUL,2022-12-26,Crystal Palace,Fulham,observed_epl_gap,home_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_EVE_WOL,2022-12-26,Everton,Wolves,observed_epl_gap,home_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_LEI_NEW,2022-12-26,Leicester,Newcastle,observed_epl_gap,home_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_SOU_BHA,2022-12-26,Southampton,Brighton,observed_epl_gap,home_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_AVL_LIV,2022-12-26,Aston Villa,Liverpool,observed_epl_gap,home_rest_days,43.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_ARS_WHU,2022-12-26,Arsenal,West Ham,observed_epl_gap,home_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_CHE_BOU,2022-12-27,Chelsea,Bournemouth,observed_epl_gap,home_rest_days,45.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_MUN_NFO,2022-12-27,Manchester United,Nottingham Forest,observed_epl_gap,home_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_LEE_MCI,2022-12-28,Leeds,Manchester City,observed_epl_gap,home_rest_days,46.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_BUR_MCI,2023-08-11,Burnley,Manchester City,observed_epl_gap,home_rest_days,446.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_ARS_NFO,2023-08-12,Arsenal,Nottingham Forest,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_BHA_LUT,2023-08-12,Brighton,Luton,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_BOU_WHU,2023-08-12,Bournemouth,West Ham,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_EVE_FUL,2023-08-12,Everton,Fulham,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_SHU_CRY,2023-08-12,Sheffield United,Crystal Palace,observed_epl_gap,home_rest_days,811.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_NEW_AVL,2023-08-12,Newcastle,Aston Villa,observed_epl_gap,home_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_BRE_TOT,2023-08-13,Brentford,Tottenham,observed_epl_gap,home_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_CHE_LIV,2023-08-13,Chelsea,Liverpool,observed_epl_gap,home_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_MUN_WOL,2023-08-14,Manchester United,Wolves,observed_epl_gap,home_rest_days,78.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_MUN_FUL,2024-08-16,Manchester United,Fulham,observed_epl_gap,home_rest_days,89.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_IPS_LIV,2024-08-17,Ipswich,Liverpool,observed_epl_gap,home_rest_days,8134.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_ARS_WOL,2024-08-17,Arsenal,Wolves,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_EVE_BHA,2024-08-17,Everton,Brighton,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_NEW_SOU,2024-08-17,Newcastle,Southampton,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_NFO_BOU,2024-08-17,Nottingham Forest,Bournemouth,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_WHU_AVL,2024-08-17,West Ham,Aston Villa,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_BRE_CRY,2024-08-18,Brentford,Crystal Palace,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_CHE_MCI,2024-08-18,Chelsea,Manchester City,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_LEI_TOT,2024-08-19,Leicester,Tottenham,observed_epl_gap,home_rest_days,449.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_LIV_BOU,2025-08-15,Liverpool,Bournemouth,observed_epl_gap,home_rest_days,82.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_AVL_NEW,2025-08-16,Aston Villa,Newcastle,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_BHA_FUL,2025-08-16,Brighton,Fulham,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_SUN_WHU,2025-08-16,Sunderland,West Ham,observed_epl_gap,home_rest_days,3009.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_TOT_BUR,2025-08-16,Tottenham,Burnley,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_WOL_MCI,2025-08-16,Wolves,Manchester City,observed_epl_gap,home_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_CHE_CRY,2025-08-17,Chelsea,Crystal Palace,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_NFO_BRE,2025-08-17,Nottingham Forest,Brentford,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_MUN_ARS,2025-08-17,Manchester United,Arsenal,observed_epl_gap,home_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_LEE_EVE,2025-08-18,Leeds,Everton,observed_epl_gap,home_rest_days,813.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_ARS_COV,2026-08-21,Arsenal,Coventry,observed_epl_gap,home_rest_days,89.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_HUL_MUN,2026-08-22,Hull,Manchester United,observed_epl_gap,home_rest_days,3380.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_EVE_CRY,2026-08-22,Everton,Crystal Palace,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_IPS_SUN,2026-08-22,Ipswich,Sunderland,observed_epl_gap,home_rest_days,454.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_NFO_LEE,2026-08-22,Nottingham Forest,Leeds,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_BRE_TOT,2026-08-22,Brentford,Tottenham,observed_epl_gap,home_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_BHA_AVL,2026-08-23,Brighton,Aston Villa,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_MCI_BOU,2026-08-23,Manchester City,Bournemouth,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_NEW_LIV,2026-08-23,Newcastle,Liverpool,observed_epl_gap,home_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_FUL_CHE,2026-08-24,Fulham,Chelsea,observed_epl_gap,home_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_CHA_EVE,2001-08-18,Charlton,Everton,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_LEE_SOU,2001-08-18,Leeds,Southampton,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_LIV_WHU,2001-08-18,Liverpool,West Ham,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_MID_ARS,2001-08-18,Middlesbrough,Arsenal,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_SUN_IPS,2001-08-18,Sunderland,Ipswich,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_TOT_AVL,2001-08-18,Tottenham,Aston Villa,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2001_2002_CHE_NEW,2001-08-19,Chelsea,Newcastle,observed_epl_gap,away_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_BLB_SUN,2002-08-17,Blackburn,Sunderland,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_CHA_CHE,2002-08-17,Charlton,Chelsea,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_EVE_TOT,2002-08-17,Everton,Tottenham,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_FUL_BOL,2002-08-17,Fulham,Bolton,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_LEE_MCI,2002-08-17,Leeds,Manchester City,observed_epl_gap,away_rest_days,455.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_SOU_MID,2002-08-17,Southampton,Middlesbrough,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_AVL_LIV,2002-08-18,Aston Villa,Liverpool,observed_epl_gap,away_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2002_2003_NEW_WHU,2002-08-19,Newcastle,West Ham,observed_epl_gap,away_rest_days,100.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_ARS_EVE,2003-08-16,Arsenal,Everton,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_BIR_TOT,2003-08-16,Birmingham,Tottenham,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_FUL_MID,2003-08-16,Fulham,Middlesbrough,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_LEI_SOU,2003-08-16,Leicester,Southampton,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_MUN_BOL,2003-08-16,Manchester United,Bolton,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_POR_AVL,2003-08-16,Portsmouth,Aston Villa,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_CHA_MCI,2003-08-17,Charlton,Manchester City,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_LEE_NEW,2003-08-17,Leeds,Newcastle,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2003_2004_LIV_CHE,2003-08-17,Liverpool,Chelsea,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_AVL_SOU,2004-08-14,Aston Villa,Southampton,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_BLB_WBA,2004-08-14,Blackburn,West Brom,observed_epl_gap,away_rest_days,461.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_BOL_CHA,2004-08-14,Bolton,Charlton,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_MCI_FUL,2004-08-14,Manchester City,Fulham,observed_epl_gap,away_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_MID_NEW,2004-08-14,Middlesbrough,Newcastle,observed_epl_gap,away_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_POR_BIR,2004-08-14,Portsmouth,Birmingham,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_TOT_LIV,2004-08-14,Tottenham,Liverpool,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_CHE_MUN,2004-08-15,Chelsea,Manchester United,observed_epl_gap,away_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2004_2005_EVE_ARS,2004-08-15,Everton,Arsenal,observed_epl_gap,away_rest_days,103.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_AVL_BOL,2005-08-13,Aston Villa,Bolton,observed_epl_gap,away_rest_days,116.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_EVE_MUN,2005-08-13,Everton,Manchester United,observed_epl_gap,away_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_FUL_BIR,2005-08-13,Fulham,Birmingham,observed_epl_gap,away_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_MCI_WBA,2005-08-13,Manchester City,West Brom,observed_epl_gap,away_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_MID_LIV,2005-08-13,Middlesbrough,Liverpool,observed_epl_gap,away_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_POR_TOT,2005-08-13,Portsmouth,Tottenham,observed_epl_gap,away_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_SUN_CHA,2005-08-13,Sunderland,Charlton,observed_epl_gap,away_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_WHU_BLB,2005-08-13,West Ham,Blackburn,observed_epl_gap,away_rest_days,115.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_ARS_NEW,2005-08-14,Arsenal,Newcastle,observed_epl_gap,away_rest_days,116.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2005_2006_WIG_CHE,2005-08-14,Wigan,Chelsea,observed_epl_gap,away_rest_days,116.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_ARS_AVL,2006-08-19,Arsenal,Aston Villa,observed_epl_gap,away_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_BOL_TOT,2006-08-19,Bolton,Tottenham,observed_epl_gap,away_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_NEW_WIG,2006-08-19,Newcastle,Wigan,observed_epl_gap,away_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_POR_BLB,2006-08-19,Portsmouth,Blackburn,observed_epl_gap,away_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_REA_MID,2006-08-19,Reading,Middlesbrough,observed_epl_gap,away_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_SHU_LIV,2006-08-19,Sheffield United,Liverpool,observed_epl_gap,away_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_WHU_CHA,2006-08-19,West Ham,Charlton,observed_epl_gap,away_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_CHE_MCI,2006-08-20,Chelsea,Manchester City,observed_epl_gap,away_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2006_2007_MUN_FUL,2006-08-20,Manchester United,Fulham,observed_epl_gap,away_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_AVL_LIV,2007-08-11,Aston Villa,Liverpool,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_BOL_NEW,2007-08-11,Bolton,Newcastle,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_DER_POR,2007-08-11,Derby,Portsmouth,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_EVE_WIG,2007-08-11,Everton,Wigan,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_MID_BLB,2007-08-11,Middlesbrough,Blackburn,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_SUN_TOT,2007-08-11,Sunderland,Tottenham,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_WHU_MCI,2007-08-11,West Ham,Manchester City,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_ARS_FUL,2007-08-12,Arsenal,Fulham,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_CHE_BIR,2007-08-12,Chelsea,Birmingham,observed_epl_gap,away_rest_days,462.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2007_2008_MUN_REA,2007-08-12,Manchester United,Reading,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_ARS_WBA,2008-08-16,Arsenal,West Brom,observed_epl_gap,away_rest_days,832.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_EVE_BLB,2008-08-16,Everton,Blackburn,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_HUL_FUL,2008-08-16,Hull,Fulham,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_MID_TOT,2008-08-16,Middlesbrough,Tottenham,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_SUN_LIV,2008-08-16,Sunderland,Liverpool,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_WHU_WIG,2008-08-16,West Ham,Wigan,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_AVL_MCI,2008-08-17,Aston Villa,Manchester City,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_CHE_POR,2008-08-17,Chelsea,Portsmouth,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2008_2009_MUN_NEW,2008-08-17,Manchester United,Newcastle,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_AVL_WIG,2009-08-15,Aston Villa,Wigan,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_BLB_MCI,2009-08-15,Blackburn,Manchester City,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_BOL_SUN,2009-08-15,Bolton,Sunderland,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_CHE_HUL,2009-08-15,Chelsea,Hull,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_EVE_ARS,2009-08-15,Everton,Arsenal,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_POR_FUL,2009-08-15,Portsmouth,Fulham,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_WOL_WHU,2009-08-15,Wolves,West Ham,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_MUN_BIR,2009-08-16,Manchester United,Birmingham,observed_epl_gap,away_rest_days,462.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2009_2010_TOT_LIV,2009-08-16,Tottenham,Liverpool,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_AVL_WHU,2010-08-14,Aston Villa,West Ham,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_BLB_EVE,2010-08-14,Blackburn,Everton,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_BOL_FUL,2010-08-14,Bolton,Fulham,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_CHE_WBA,2010-08-14,Chelsea,West Brom,observed_epl_gap,away_rest_days,447.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_SUN_BIR,2010-08-14,Sunderland,Birmingham,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_TOT_MCI,2010-08-14,Tottenham,Manchester City,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_WOL_STK,2010-08-14,Wolves,Stoke,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_LIV_ARS,2010-08-15,Liverpool,Arsenal,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2010_2011_MUN_NEW,2010-08-16,Manchester United,Newcastle,observed_epl_gap,away_rest_days,449.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_BLB_WOL,2011-08-13,Blackburn,Wolves,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_FUL_AVL,2011-08-13,Fulham,Aston Villa,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_LIV_SUN,2011-08-13,Liverpool,Sunderland,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_NEW_ARS,2011-08-13,Newcastle,Arsenal,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_QPR_BOL,2011-08-13,QPR,Bolton,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_WIG_NOR,2011-08-13,Wigan,Norwich,observed_epl_gap,away_rest_days,2306.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_STK_CHE,2011-08-14,Stoke,Chelsea,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_WBA_MUN,2011-08-14,West Brom,Manchester United,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2011_2012_MUN_TOT,2011-08-22,Manchester United,Tottenham,observed_epl_gap,away_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_ARS_SUN,2012-08-18,Arsenal,Sunderland,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_FUL_NOR,2012-08-18,Fulham,Norwich,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_NEW_TOT,2012-08-18,Newcastle,Tottenham,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_QPR_SWA,2012-08-18,QPR,Swansea,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_REA_STK,2012-08-18,Reading,Stoke,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_WBA_LIV,2012-08-18,West Brom,Liverpool,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_WHU_AVL,2012-08-18,West Ham,Aston Villa,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_MCI_SOU,2012-08-19,Manchester City,Southampton,observed_epl_gap,away_rest_days,2679.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_WIG_CHE,2012-08-19,Wigan,Chelsea,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2012_2013_EVE_MUN,2012-08-20,Everton,Manchester United,observed_epl_gap,away_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_ARS_AVL,2013-08-17,Arsenal,Aston Villa,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_LIV_STK,2013-08-17,Liverpool,Stoke,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_NOR_EVE,2013-08-17,Norwich,Everton,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_SUN_FUL,2013-08-17,Sunderland,Fulham,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_SWA_MUN,2013-08-17,Swansea,Manchester United,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_WBA_SOU,2013-08-17,West Brom,Southampton,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_CHE_HUL,2013-08-18,Chelsea,Hull,observed_epl_gap,away_rest_days,1197.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_CRY_TOT,2013-08-18,Crystal Palace,Tottenham,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2013_2014_MCI_NEW,2013-08-19,Manchester City,Newcastle,observed_epl_gap,away_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_ARS_CRY,2014-08-16,Arsenal,Crystal Palace,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_LEI_EVE,2014-08-16,Leicester,Everton,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_MUN_SWA,2014-08-16,Manchester United,Swansea,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_QPR_HUL,2014-08-16,QPR,Hull,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_STK_AVL,2014-08-16,Stoke,Aston Villa,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_WBA_SUN,2014-08-16,West Brom,Sunderland,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_WHU_TOT,2014-08-16,West Ham,Tottenham,observed_epl_gap,away_rest_days,97.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_LIV_SOU,2014-08-17,Liverpool,Southampton,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_NEW_MCI,2014-08-17,Newcastle,Manchester City,observed_epl_gap,away_rest_days,98.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2014_2015_BUR_CHE,2014-08-18,Burnley,Chelsea,observed_epl_gap,away_rest_days,99.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_BOU_AVL,2015-08-08,Bournemouth,Aston Villa,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_CHE_SWA,2015-08-08,Chelsea,Swansea,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_EVE_WAT,2015-08-08,Everton,Watford,observed_epl_gap,away_rest_days,3009.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_LEI_SUN,2015-08-08,Leicester,Sunderland,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_MUN_TOT,2015-08-08,Manchester United,Tottenham,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_NOR_CRY,2015-08-08,Norwich,Crystal Palace,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_ARS_WHU,2015-08-09,Arsenal,West Ham,observed_epl_gap,away_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_NEW_SOU,2015-08-09,Newcastle,Southampton,observed_epl_gap,away_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_STK_LIV,2015-08-09,Stoke,Liverpool,observed_epl_gap,away_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2015_2016_WBA_MCI,2015-08-10,West Brom,Manchester City,observed_epl_gap,away_rest_days,78.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_BUR_SWA,2016-08-13,Burnley,Swansea,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_CRY_WBA,2016-08-13,Crystal Palace,West Brom,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_EVE_TOT,2016-08-13,Everton,Tottenham,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_HUL_LEI,2016-08-13,Hull,Leicester,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_MCI_SUN,2016-08-13,Manchester City,Sunderland,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_MID_STK,2016-08-13,Middlesbrough,Stoke,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_SOU_WAT,2016-08-13,Southampton,Watford,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_ARS_LIV,2016-08-14,Arsenal,Liverpool,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_BOU_MUN,2016-08-14,Bournemouth,Manchester United,observed_epl_gap,away_rest_days,89.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2016_2017_CHE_WHU,2016-08-15,Chelsea,West Ham,observed_epl_gap,away_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_ARS_LEI,2017-08-11,Arsenal,Leicester,observed_epl_gap,away_rest_days,82.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_BHA_MCI,2017-08-12,Brighton,Manchester City,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_CHE_BUR,2017-08-12,Chelsea,Burnley,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_EVE_STK,2017-08-12,Everton,Stoke,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_SOU_SWA,2017-08-12,Southampton,Swansea,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_WAT_LIV,2017-08-12,Watford,Liverpool,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_WBA_BOU,2017-08-12,West Brom,Bournemouth,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_MUN_WHU,2017-08-13,Manchester United,West Ham,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2017_2018_NEW_TOT,2017-08-13,Newcastle,Tottenham,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_MUN_LEI,2018-08-10,Manchester United,Leicester,observed_epl_gap,away_rest_days,89.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_BOU_CAR,2018-08-11,Bournemouth,Cardiff,observed_epl_gap,away_rest_days,1553.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_FUL_CRY,2018-08-11,Fulham,Crystal Palace,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_HUD_CHE,2018-08-11,Huddersfield,Chelsea,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_NEW_TOT,2018-08-11,Newcastle,Tottenham,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_WAT_BHA,2018-08-11,Watford,Brighton,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_WOL_EVE,2018-08-11,Wolves,Everton,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_ARS_MCI,2018-08-12,Arsenal,Manchester City,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_LIV_WHU,2018-08-12,Liverpool,West Ham,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2018_2019_SOU_BUR,2018-08-12,Southampton,Burnley,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_LIV_NOR,2019-08-09,Liverpool,Norwich,observed_epl_gap,away_rest_days,1181.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_WHU_MCI,2019-08-10,West Ham,Manchester City,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_BOU_SHU,2019-08-10,Bournemouth,Sheffield United,observed_epl_gap,away_rest_days,4472.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_BUR_SOU,2019-08-10,Burnley,Southampton,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_CRY_EVE,2019-08-10,Crystal Palace,Everton,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_WAT_BHA,2019-08-10,Watford,Brighton,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_TOT_AVL,2019-08-10,Tottenham,Aston Villa,observed_epl_gap,away_rest_days,1182.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_LEI_WOL,2019-08-11,Leicester,Wolves,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_NEW_ARS,2019-08-11,Newcastle,Arsenal,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_MUN_CHE,2019-08-11,Manchester United,Chelsea,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_AVL_SHU,2020-06-17,Aston Villa,Sheffield United,observed_epl_gap,away_rest_days,102.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_MCI_ARS,2020-06-17,Manchester City,Arsenal,observed_epl_gap,away_rest_days,102.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_NOR_SOU,2020-06-19,Norwich,Southampton,observed_epl_gap,away_rest_days,104.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_TOT_MUN,2020-06-19,Tottenham,Manchester United,observed_epl_gap,away_rest_days,103.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_WAT_LEI,2020-06-20,Watford,Leicester,observed_epl_gap,away_rest_days,103.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_WHU_WOL,2020-06-20,West Ham,Wolves,observed_epl_gap,away_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_BOU_CRY,2020-06-20,Bournemouth,Crystal Palace,observed_epl_gap,away_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_AVL_CHE,2020-06-21,Aston Villa,Chelsea,observed_epl_gap,away_rest_days,105.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_EVE_LIV,2020-06-21,Everton,Liverpool,observed_epl_gap,away_rest_days,106.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2019_2020_MCI_BUR,2020-06-22,Manchester City,Burnley,observed_epl_gap,away_rest_days,107.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_FUL_ARS,2020-09-12,Fulham,Arsenal,observed_epl_gap,away_rest_days,48.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_CRY_SOU,2020-09-12,Crystal Palace,Southampton,observed_epl_gap,away_rest_days,48.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_LIV_LEE,2020-09-12,Liverpool,Leeds,observed_epl_gap,away_rest_days,5971.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_WHU_NEW,2020-09-12,West Ham,Newcastle,observed_epl_gap,away_rest_days,48.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_WBA_LEI,2020-09-13,West Brom,Leicester,observed_epl_gap,away_rest_days,49.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_TOT_EVE,2020-09-13,Tottenham,Everton,observed_epl_gap,away_rest_days,49.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_SHU_WOL,2020-09-14,Sheffield United,Wolves,observed_epl_gap,away_rest_days,50.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_BHA_CHE,2020-09-14,Brighton,Chelsea,observed_epl_gap,away_rest_days,50.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_LEI_BUR,2020-09-20,Leicester,Burnley,observed_epl_gap,away_rest_days,56.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2020_2021_WOL_MCI,2020-09-21,Wolves,Manchester City,observed_epl_gap,away_rest_days,57.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_BRE_ARS,2021-08-13,Brentford,Arsenal,observed_epl_gap,away_rest_days,82.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_MUN_LEE,2021-08-14,Manchester United,Leeds,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_BUR_BHA,2021-08-14,Burnley,Brighton,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_CHE_CRY,2021-08-14,Chelsea,Crystal Palace,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_EVE_SOU,2021-08-14,Everton,Southampton,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_LEI_WOL,2021-08-14,Leicester,Wolves,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_WAT_AVL,2021-08-14,Watford,Aston Villa,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_NOR_LIV,2021-08-14,Norwich,Liverpool,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_NEW_WHU,2021-08-15,Newcastle,West Ham,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2021_2022_TOT_MCI,2021-08-15,Tottenham,Manchester City,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_CRY_ARS,2022-08-05,Crystal Palace,Arsenal,observed_epl_gap,away_rest_days,75.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_FUL_LIV,2022-08-06,Fulham,Liverpool,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_BOU_AVL,2022-08-06,Bournemouth,Aston Villa,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_LEE_WOL,2022-08-06,Leeds,Wolves,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_TOT_SOU,2022-08-06,Tottenham,Southampton,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_EVE_CHE,2022-08-06,Everton,Chelsea,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_LEI_BRE,2022-08-07,Leicester,Brentford,observed_epl_gap,away_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_MUN_BHA,2022-08-07,Manchester United,Brighton,observed_epl_gap,away_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_WHU_MCI,2022-08-07,West Ham,Manchester City,observed_epl_gap,away_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_BRE_TOT,2022-12-26,Brentford,Tottenham,observed_epl_gap,away_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_CRY_FUL,2022-12-26,Crystal Palace,Fulham,observed_epl_gap,away_rest_days,43.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_EVE_WOL,2022-12-26,Everton,Wolves,observed_epl_gap,away_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_LEI_NEW,2022-12-26,Leicester,Newcastle,observed_epl_gap,away_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_SOU_BHA,2022-12-26,Southampton,Brighton,observed_epl_gap,away_rest_days,43.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_AVL_LIV,2022-12-26,Aston Villa,Liverpool,observed_epl_gap,away_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_ARS_WHU,2022-12-26,Arsenal,West Ham,observed_epl_gap,away_rest_days,44.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_CHE_BOU,2022-12-27,Chelsea,Bournemouth,observed_epl_gap,away_rest_days,45.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_MUN_NFO,2022-12-27,Manchester United,Nottingham Forest,observed_epl_gap,away_rest_days,45.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2022_2023_LEE_MCI,2022-12-28,Leeds,Manchester City,observed_epl_gap,away_rest_days,46.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_BUR_MCI,2023-08-11,Burnley,Manchester City,observed_epl_gap,away_rest_days,75.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_ARS_NFO,2023-08-12,Arsenal,Nottingham Forest,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_BOU_WHU,2023-08-12,Bournemouth,West Ham,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_EVE_FUL,2023-08-12,Everton,Fulham,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_SHU_CRY,2023-08-12,Sheffield United,Crystal Palace,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_NEW_AVL,2023-08-12,Newcastle,Aston Villa,observed_epl_gap,away_rest_days,76.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_BRE_TOT,2023-08-13,Brentford,Tottenham,observed_epl_gap,away_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_CHE_LIV,2023-08-13,Chelsea,Liverpool,observed_epl_gap,away_rest_days,77.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2023_2024_MUN_WOL,2023-08-14,Manchester United,Wolves,observed_epl_gap,away_rest_days,78.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_MUN_FUL,2024-08-16,Manchester United,Fulham,observed_epl_gap,away_rest_days,89.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_IPS_LIV,2024-08-17,Ipswich,Liverpool,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_ARS_WOL,2024-08-17,Arsenal,Wolves,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_EVE_BHA,2024-08-17,Everton,Brighton,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_NEW_SOU,2024-08-17,Newcastle,Southampton,observed_epl_gap,away_rest_days,447.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_NFO_BOU,2024-08-17,Nottingham Forest,Bournemouth,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_WHU_AVL,2024-08-17,West Ham,Aston Villa,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_BRE_CRY,2024-08-18,Brentford,Crystal Palace,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_CHE_MCI,2024-08-18,Chelsea,Manchester City,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2024_2025_LEI_TOT,2024-08-19,Leicester,Tottenham,observed_epl_gap,away_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_LIV_BOU,2025-08-15,Liverpool,Bournemouth,observed_epl_gap,away_rest_days,82.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_AVL_NEW,2025-08-16,Aston Villa,Newcastle,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_BHA_FUL,2025-08-16,Brighton,Fulham,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_SUN_WHU,2025-08-16,Sunderland,West Ham,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_TOT_BUR,2025-08-16,Tottenham,Burnley,observed_epl_gap,away_rest_days,454.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_WOL_MCI,2025-08-16,Wolves,Manchester City,observed_epl_gap,away_rest_days,83.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_CHE_CRY,2025-08-17,Chelsea,Crystal Palace,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_NFO_BRE,2025-08-17,Nottingham Forest,Brentford,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_MUN_ARS,2025-08-17,Manchester United,Arsenal,observed_epl_gap,away_rest_days,84.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2025_2026_LEE_EVE,2025-08-18,Leeds,Everton,observed_epl_gap,away_rest_days,85.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_ARS_COV,2026-08-21,Arsenal,Coventry,observed_epl_gap,away_rest_days,9225.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_HUL_MUN,2026-08-22,Hull,Manchester United,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_EVE_CRY,2026-08-22,Everton,Crystal Palace,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_IPS_SUN,2026-08-22,Ipswich,Sunderland,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_NFO_LEE,2026-08-22,Nottingham Forest,Leeds,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_BRE_TOT,2026-08-22,Brentford,Tottenham,observed_epl_gap,away_rest_days,90.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_BHA_AVL,2026-08-23,Brighton,Aston Villa,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_MCI_BOU,2026-08-23,Manchester City,Bournemouth,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_NEW_LIV,2026-08-23,Newcastle,Liverpool,observed_epl_gap,away_rest_days,91.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."
+EPL_2026_2027_FUL_CHE,2026-08-24,Fulham,Chelsea,observed_epl_gap,away_rest_days,92.0,"Bao gồm nghỉ mùa, gián đoạn và thời gian chơi ngoài EPL; không diễn giải là ngày nghỉ thực tế."

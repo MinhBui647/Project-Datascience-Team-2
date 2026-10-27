@@ -1,0 +1,788 @@
+{
+  "created_at": "2026-10-26T22:39:46.385399+07:00",
+  "inputs": {
+    "matches": {
+      "path": "clean\\matches.csv",
+      "sha256": "3c122c5f6d5f7ff5aed498ae28499ca26e6a6e8d26639d52172876b2a668b81a",
+      "bytes": 3711613
+    },
+    "features": {
+      "path": "clean\\features.csv",
+      "sha256": "671192ed692d4a609ebf530dc9f161101f8c803271c4ad15dac27087bdb1ecdf",
+      "bytes": 7114584
+    }
+  },
+  "rows_matches": 9850,
+  "columns_matches": 106,
+  "rows_features": 9850,
+  "columns_features": 102,
+  "predictors_catalogued": 87,
+  "complete_seasons": [
+    "2000/01",
+    "2001/02",
+    "2002/03",
+    "2005/06",
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2014/15",
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "complete_season_matches": 9120,
+  "common_association_sample": 4408,
+  "libraries": {
+    "python": "3.13.3",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "matplotlib": "3.11.2"
+  },
+  "source_semantics": "origin/Data_itegration at eaef4cd: Data integration and preprocessing/features.py",
+  "audit_details": {
+    "matches_shape": [
+      9850,
+      106
+    ],
+    "features_shape": [
+      9850,
+      102
+    ],
+    "coverage_by_season": [
+      {
+        "season": "2000/01",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2000-08-19",
+        "last_date": "2001-05-19",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2001/02",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2001-08-18",
+        "last_date": "2002-05-11",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2002/03",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2002-08-17",
+        "last_date": "2003-05-11",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2003/04",
+        "matches": 335,
+        "clubs": 20,
+        "first_date": "2003-08-16",
+        "last_date": "2004-05-08",
+        "rows_season_complete": 0,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2004/05",
+        "matches": 335,
+        "clubs": 20,
+        "first_date": "2004-08-14",
+        "last_date": "2005-04-20",
+        "rows_season_complete": 0,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2005/06",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2005-08-13",
+        "last_date": "2006-05-07",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2006/07",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2006-08-19",
+        "last_date": "2007-05-13",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2007/08",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2007-08-11",
+        "last_date": "2008-05-11",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2008/09",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2008-08-16",
+        "last_date": "2009-05-24",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2009/10",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2009-08-15",
+        "last_date": "2010-05-09",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2010/11",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2010-08-14",
+        "last_date": "2011-05-22",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2011/12",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2011-08-13",
+        "last_date": "2012-05-13",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2012/13",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2012-08-18",
+        "last_date": "2013-05-19",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2013/14",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2013-08-17",
+        "last_date": "2014-05-11",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2014/15",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2014-08-16",
+        "last_date": "2015-05-24",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2015/16",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2015-08-08",
+        "last_date": "2016-05-17",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2016/17",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2016-08-13",
+        "last_date": "2017-05-21",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2017/18",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2017-08-11",
+        "last_date": "2018-05-13",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2018/19",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2018-08-10",
+        "last_date": "2019-05-12",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2019/20",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2019-08-09",
+        "last_date": "2020-07-26",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2020/21",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2020-09-12",
+        "last_date": "2021-05-23",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2021/22",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2021-08-13",
+        "last_date": "2022-05-22",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2022/23",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2022-08-05",
+        "last_date": "2023-05-28",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2023/24",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2023-08-11",
+        "last_date": "2024-05-19",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2024/25",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2024-08-16",
+        "last_date": "2025-05-25",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2025/26",
+        "matches": 380,
+        "clubs": 20,
+        "first_date": "2025-08-15",
+        "last_date": "2026-05-24",
+        "rows_season_complete": 380,
+        "expected_matches_double_round_robin": 380
+      },
+      {
+        "season": "2026/27",
+        "matches": 60,
+        "clubs": 20,
+        "first_date": "2026-08-21",
+        "last_date": "2026-10-12",
+        "rows_season_complete": 0,
+        "expected_matches_double_round_robin": 380
+      }
+    ],
+    "league_counts": {
+      "Premier League": 9850
+    },
+    "source_flags_counts": {
+      "FD+US+TM+FM": 4560,
+      "FD": 3821,
+      "FD+TM+FM": 760,
+      "FD+FM": 649,
+      "FD+US+FM": 60
+    },
+    "shared_field_mismatch_counts": {
+      "season": 0,
+      "date": 0,
+      "kickoff_time": 0,
+      "home_club_id": 0,
+      "home_team": 0,
+      "away_club_id": 0,
+      "away_team": 0,
+      "home_goals": 0,
+      "away_goals": 0,
+      "result": 0,
+      "status": 0,
+      "provisional": 0,
+      "postponed": 0,
+      "gameweek": 0
+    },
+    "missing_rate_matches": {
+      "match_id": 0.0,
+      "league": 0.0,
+      "league_code": 0.0,
+      "season": 0.0,
+      "season_start_year": 0.0,
+      "date": 0.0,
+      "kickoff_time": 0.7238578680203046,
+      "home_club_id": 0.0,
+      "home_team": 0.0,
+      "away_club_id": 0.0,
+      "away_team": 0.0,
+      "score": 0.0,
+      "home_goals": 0.0,
+      "away_goals": 0.0,
+      "result": 0.0,
+      "ht_score": 0.0,
+      "ht_home_goals": 0.0,
+      "ht_away_goals": 0.0,
+      "ht_result": 0.0,
+      "home_shots": 0.0002030456852791878,
+      "away_shots": 0.00030456852791878173,
+      "home_shots_on_target": 0.0002030456852791878,
+      "away_shots_on_target": 0.00030456852791878173,
+      "home_corners": 0.0,
+      "away_corners": 0.0,
+      "home_fouls": 0.0,
+      "away_fouls": 0.0,
+      "home_yellow_cards": 0.0,
+      "away_yellow_cards": 0.0,
+      "home_red_cards": 0.0,
+      "away_red_cards": 0.0,
+      "home_xg": 0.5309644670050762,
+      "away_xg": 0.5309644670050762,
+      "attendance": 0.38426395939086294,
+      "stadium": 0.45989847715736043,
+      "referee": 0.0,
+      "home_manager": 0.45989847715736043,
+      "away_manager": 0.45989847715736043,
+      "home_formation": 0.4984771573604061,
+      "home_formation_shape": 0.4984771573604061,
+      "away_formation": 0.4984771573604061,
+      "away_formation_shape": 0.4984771573604061,
+      "home_possession": 0.39076142131979696,
+      "away_possession": 0.39076142131979696,
+      "home_big_chances": 0.6019289340101522,
+      "away_big_chances": 0.6020304568527919,
+      "home_big_chances_missed": 0.6019289340101522,
+      "away_big_chances_missed": 0.6020304568527919,
+      "home_shots_inside_box": 0.6019289340101522,
+      "away_shots_inside_box": 0.6019289340101522,
+      "home_shots_outside_box": 0.6019289340101522,
+      "away_shots_outside_box": 0.6019289340101522,
+      "home_passes": 0.6019289340101522,
+      "away_passes": 0.6019289340101522,
+      "home_accurate_passes": 0.6019289340101522,
+      "away_accurate_passes": 0.6019289340101522,
+      "home_touches_opp_box": 0.7901522842639593,
+      "away_touches_opp_box": 0.7901522842639593,
+      "home_tackles": 0.6019289340101522,
+      "away_tackles": 0.6019289340101522,
+      "home_interceptions": 0.6019289340101522,
+      "away_interceptions": 0.6019289340101522,
+      "home_clearances": 0.6019289340101522,
+      "away_clearances": 0.6019289340101522,
+      "home_duels_won": 0.6019289340101522,
+      "away_duels_won": 0.6019289340101522,
+      "home_saves": 0.6019289340101522,
+      "away_saves": 0.6019289340101522,
+      "home_fm_xg": 0.7620304568527919,
+      "away_fm_xg": 0.7620304568527919,
+      "home_fm_npxg": 0.7620304568527919,
+      "away_fm_npxg": 0.7620304568527919,
+      "home_fm_xg_open_play": 0.7620304568527919,
+      "away_fm_xg_open_play": 0.7620304568527919,
+      "home_fm_xg_set_play": 0.7623350253807106,
+      "away_fm_xg_set_play": 0.7623350253807106,
+      "home_fm_xgot": 0.763248730964467,
+      "away_fm_xgot": 0.763248730964467,
+      "home_pass_accuracy": 0.6019289340101522,
+      "away_pass_accuracy": 0.6019289340101522,
+      "b365_home_odds": 0.07715736040609138,
+      "b365_draw_odds": 0.07715736040609138,
+      "b365_away_odds": 0.07715736040609138,
+      "pinnacle_home_odds": 0.47715736040609136,
+      "pinnacle_draw_odds": 0.47715736040609136,
+      "pinnacle_away_odds": 0.47715736040609136,
+      "avg_home_odds": 0.18375634517766498,
+      "avg_draw_odds": 0.18375634517766498,
+      "avg_away_odds": 0.18375634517766498,
+      "b365_close_home_odds": 0.7238578680203046,
+      "b365_close_draw_odds": 0.7238578680203046,
+      "b365_close_away_odds": 0.7238578680203046,
+      "pinnacle_close_home_odds": 0.47715736040609136,
+      "pinnacle_close_draw_odds": 0.47715736040609136,
+      "pinnacle_close_away_odds": 0.47715736040609136,
+      "avg_close_home_odds": 0.7238578680203046,
+      "avg_close_draw_odds": 0.7238578680203046,
+      "avg_close_away_odds": 0.7238578680203046,
+      "fm_match_id": 0.38791878172588834,
+      "source_flags": 0.0,
+      "attendance_imputed": 0.0,
+      "season_complete": 0.0,
+      "status": 0.0,
+      "provisional": 0.0,
+      "postponed": 0.0,
+      "gameweek": 0.9939086294416244
+    },
+    "missing_rate_features": {
+      "match_id": 0.0,
+      "season": 0.0,
+      "date": 0.0,
+      "kickoff_time": 0.7238578680203046,
+      "gameweek": 0.9939086294416244,
+      "home_club_id": 0.0,
+      "home_team": 0.0,
+      "away_club_id": 0.0,
+      "away_team": 0.0,
+      "status": 0.0,
+      "provisional": 0.0,
+      "postponed": 0.0,
+      "home_elo": 0.0,
+      "away_elo": 0.0,
+      "elo_diff": 0.0,
+      "elo_home_win_prob": 0.0,
+      "home_position": 0.027411167512690356,
+      "away_position": 0.027411167512690356,
+      "home_form": 0.0020304568527918783,
+      "home_wins5": 0.0020304568527918783,
+      "home_draws5": 0.0020304568527918783,
+      "home_losses5": 0.0020304568527918783,
+      "home_points5": 0.0020304568527918783,
+      "home_goals_for5": 0.0020304568527918783,
+      "home_goals_against5": 0.0020304568527918783,
+      "home_shots_on_target5": 0.0020304568527918783,
+      "home_xg5": 0.5327918781725889,
+      "home_xga5": 0.5327918781725889,
+      "home_opp_elo5": 0.0020304568527918783,
+      "home_perf_vs_elo5": 0.0020304568527918783,
+      "home_possession5": 0.383248730964467,
+      "home_pass_accuracy5": 0.5945177664974619,
+      "home_big_chances5": 0.5948223350253807,
+      "home_big_chances_against5": 0.5947208121827411,
+      "home_box_shots5": 0.5945177664974619,
+      "home_box_shots_against5": 0.5945177664974619,
+      "home_box_touches5": 0.762741116751269,
+      "home_box_touches_against5": 0.762741116751269,
+      "home_xgot5": 0.7622335025380711,
+      "home_xgot_against5": 0.7622335025380711,
+      "home_home_points5": 0.0046700507614213195,
+      "home_home_goals_for5": 0.0046700507614213195,
+      "home_home_goals_against5": 0.0046700507614213195,
+      "home_played": 0.0,
+      "home_ppg": 0.027411167512690356,
+      "home_goals_for_pg": 0.027411167512690356,
+      "home_goals_against_pg": 0.027411167512690356,
+      "home_rest_days": 0.0020304568527918783,
+      "away_form": 0.0026395939086294416,
+      "away_wins5": 0.0026395939086294416,
+      "away_draws5": 0.0026395939086294416,
+      "away_losses5": 0.0026395939086294416,
+      "away_points5": 0.0026395939086294416,
+      "away_goals_for5": 0.0026395939086294416,
+      "away_goals_against5": 0.0026395939086294416,
+      "away_shots_on_target5": 0.0026395939086294416,
+      "away_xg5": 0.5327918781725889,
+      "away_xga5": 0.5327918781725889,
+      "away_opp_elo5": 0.0026395939086294416,
+      "away_perf_vs_elo5": 0.0026395939086294416,
+      "away_possession5": 0.3838578680203046,
+      "away_pass_accuracy5": 0.594010152284264,
+      "away_big_chances5": 0.5942131979695432,
+      "away_big_chances_against5": 0.5943147208121827,
+      "away_box_shots5": 0.594010152284264,
+      "away_box_shots_against5": 0.594010152284264,
+      "away_box_touches5": 0.763248730964467,
+      "away_box_touches_against5": 0.763248730964467,
+      "away_xgot5": 0.7616243654822336,
+      "away_xgot_against5": 0.7616243654822336,
+      "away_away_points5": 0.0046700507614213195,
+      "away_away_goals_for5": 0.0046700507614213195,
+      "away_away_goals_against5": 0.0046700507614213195,
+      "away_played": 0.0,
+      "away_ppg": 0.027411167512690356,
+      "away_goals_for_pg": 0.027411167512690356,
+      "away_goals_against_pg": 0.027411167512690356,
+      "away_rest_days": 0.0026395939086294416,
+      "h2h_matches": 0.0,
+      "h2h_home_points": 0.08121827411167512,
+      "h2h_home_goal_diff": 0.08121827411167512,
+      "odds_home_prob": 0.07715736040609138,
+      "odds_draw_prob": 0.07715736040609138,
+      "odds_away_prob": 0.07715736040609138,
+      "position_diff": 0.027715736040609135,
+      "diff_points5": 0.003553299492385787,
+      "diff_goals_for5": 0.003553299492385787,
+      "diff_goals_against5": 0.003553299492385787,
+      "diff_shots_on_target5": 0.003553299492385787,
+      "diff_xg5": 0.5336040609137056,
+      "diff_xga5": 0.5336040609137056,
+      "diff_ppg": 0.027715736040609135,
+      "diff_perf_vs_elo5": 0.003553299492385787,
+      "diff_possession5": 0.38802030456852793,
+      "diff_big_chances5": 0.6060913705583756,
+      "diff_big_chances_against5": 0.6060913705583756,
+      "diff_box_touches5": 0.7796954314720812,
+      "diff_xgot5": 0.7645685279187817,
+      "diff_xgot_against5": 0.7645685279187817,
+      "home_goals": 0.0,
+      "away_goals": 0.0,
+      "result": 0.0
+    },
+    "numeric_predictor_complete_case_rows": 2035,
+    "all_column_complete_case_rows": 47,
+    "shot_components_exceed_total_unique_matches": 167,
+    "zero_shot_components_positive_total_unique_matches": 3,
+    "zero_shot_components_positive_total_side_counts": {
+      "home": 3,
+      "away": 3
+    },
+    "selected_temporal_features": {
+      "home_elo": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9850,
+        "mismatch_count": 0
+      },
+      "away_elo": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9850,
+        "mismatch_count": 0
+      },
+      "elo_diff": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9850,
+        "mismatch_count": 0
+      },
+      "elo_home_win_prob": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9850,
+        "mismatch_count": 0
+      },
+      "home_points5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9830,
+        "mismatch_count": 0
+      },
+      "home_goals_for5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9830,
+        "mismatch_count": 0
+      },
+      "home_goals_against5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9830,
+        "mismatch_count": 0
+      },
+      "home_shots_on_target5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9830,
+        "mismatch_count": 0
+      },
+      "home_xg5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 4602,
+        "mismatch_count": 0
+      },
+      "home_xga5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 4602,
+        "mismatch_count": 0
+      },
+      "home_form": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9830,
+        "mismatch_count": 0
+      },
+      "home_wins5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9830,
+        "mismatch_count": 0
+      },
+      "home_draws5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9830,
+        "mismatch_count": 0
+      },
+      "home_losses5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9830,
+        "mismatch_count": 0
+      },
+      "home_home_points5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9804,
+        "mismatch_count": 0
+      },
+      "home_home_goals_for5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9804,
+        "mismatch_count": 0
+      },
+      "home_home_goals_against5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9804,
+        "mismatch_count": 0
+      },
+      "home_played": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9850,
+        "mismatch_count": 0
+      },
+      "home_ppg": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9580,
+        "mismatch_count": 0
+      },
+      "home_goals_for_pg": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9580,
+        "mismatch_count": 0
+      },
+      "home_goals_against_pg": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9580,
+        "mismatch_count": 0
+      },
+      "home_rest_days": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9830,
+        "mismatch_count": 0
+      },
+      "away_points5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9824,
+        "mismatch_count": 0
+      },
+      "away_goals_for5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9824,
+        "mismatch_count": 0
+      },
+      "away_goals_against5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9824,
+        "mismatch_count": 0
+      },
+      "away_shots_on_target5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9824,
+        "mismatch_count": 0
+      },
+      "away_xg5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 4602,
+        "mismatch_count": 0
+      },
+      "away_xga5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 4602,
+        "mismatch_count": 0
+      },
+      "away_form": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9824,
+        "mismatch_count": 0
+      },
+      "away_wins5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9824,
+        "mismatch_count": 0
+      },
+      "away_draws5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9824,
+        "mismatch_count": 0
+      },
+      "away_losses5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9824,
+        "mismatch_count": 0
+      },
+      "away_away_points5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9804,
+        "mismatch_count": 0
+      },
+      "away_away_goals_for5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9804,
+        "mismatch_count": 0
+      },
+      "away_away_goals_against5": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9804,
+        "mismatch_count": 0
+      },
+      "away_played": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9850,
+        "mismatch_count": 0
+      },
+      "away_ppg": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9580,
+        "mismatch_count": 0
+      },
+      "away_goals_for_pg": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9580,
+        "mismatch_count": 0
+      },
+      "away_goals_against_pg": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9580,
+        "mismatch_count": 0
+      },
+      "away_rest_days": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9824,
+        "mismatch_count": 0
+      },
+      "h2h_matches": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9850,
+        "mismatch_count": 0
+      },
+      "h2h_home_points": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9050,
+        "mismatch_count": 0
+      },
+      "h2h_home_goal_diff": {
+        "rows_compared": 9850,
+        "nonnull_expected": 9050,
+        "mismatch_count": 0
+      }
+    },
+    "selected_temporal_feature_count": 43,
+    "selected_temporal_mismatch_count": 0,
+    "issue_rows": 1158,
+    "semantics_vi": {
+      "scope": "Kiểm toán thời gian chỉ gồm các cột được liệt kê; không xác nhận toàn bộ 87 đặc trưng hoặc thời điểm nhà cung cấp công bố dữ liệu.",
+      "rolling5": "Trung bình trong tối đa 5 trận EPL quan sát trước đó, bỏ qua NaN trong cửa sổ; có thể mang lịch sử qua mùa mới hoặc khoảng vắng EPL.",
+      "rest_days": "Chênh lệch ngày với trận EPL quan sát trước, không phải thời gian nghỉ giữa mọi giải đấu.",
+      "season_ppg": "Điểm và bàn trung bình từ các trận quan sát trước trong cùng mùa; mùa thiếu không tái tạo đầy đủ bảng xếp hạng thực tế.",
+      "h2h": "Tối đa 5 trận đối đầu quan sát trước; điểm và hiệu số quy về đội đang làm chủ nhà, bất kể sân trong trận cũ.",
+      "elo_home_win_prob": "Kỳ vọng điểm Elo với thắng=1, hòa=0.5, thua=0; không phải xác suất thắng sân nhà H đã hiệu chỉnh cho H/D/A.",
+      "attendance": "Giữ cờ attendance_imputed; các số 0 được điền trong giai đoạn COVID không là phép đo độc lập.",
+      "anomalies": "Các dòng cảnh báo cần kiểm tra nguồn; không tự động xóa hoặc sửa dữ liệu.",
+      "odds": "Odds chuẩn hóa có thể hỗ trợ dự đoán; cần xác nhận thời điểm lấy odds so với thời điểm chốt dự đoán."
+    }
+  },
+  "method": "Descriptive EDA only; no predictive models trained; inputs unchanged; seed 42 for season bootstrap."
+}

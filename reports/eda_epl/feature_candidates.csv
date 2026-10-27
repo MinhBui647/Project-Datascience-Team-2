@@ -1,0 +1,10 @@
+﻿feature,meaning,priority,coverage_recent_pct,home_win_high_minus_low_pp,note
+elo_diff,Sức mạnh trước trận,Cao,100.0,53.0,Có sẵn; cân nhắc trùng thông tin với home_elo/away_elo
+season_ppg_diff,Phong độ từ đầu mùa,Cao,97.3,43.7,Tính từ home_season_ppg - away_season_ppg
+points_diff,Phong độ 5 trận,Cao,99.9,35.5,Tính từ home_points_avg5 - away_points_avg5
+xg_diff,Chất lượng cơ hội 5 trận,Cao,99.6,38.7,Chỉ phù hợp các mùa có xG
+goals_form_diff,Ghi bàn gần đây,Trung bình,99.9,32.0,Tính từ trung bình bàn thắng 5 trận
+h2h_home_ppg,Đối đầu,Cần kiểm định,95.8,32.3,Có thể trùng tín hiệu với Elo và phong độ
+shots_on_target_diff,Tạo cơ hội gần đây,Cần kiểm định,99.9,,Tính từ sút trúng đích trung bình 5 trận
+rest_diff,Lịch thi đấu,Tạm hoãn,99.9,,Giá trị kéo dài qua mùa/vắng giải; cần tính lại ngày nghỉ thực tế
+squad_value_log_ratio,Giá trị đội hình,Tạm hoãn,9.1,,Thiếu nhiều và cần kiểm tra thời điểm định giá

@@ -1,0 +1,254 @@
+﻿check,status,count,detail_vi
+matches_shape,info,9850,"matches.csv: 9,850 dòng × 106 cột."
+features_shape,info,9850,"features.csv: 9,850 dòng × 102 cột."
+row_count_alignment,pass,0,Chênh lệch số dòng giữa hai bảng.
+matches_null_match_id,pass,0,Khóa trận phải duy nhất và không thiếu.
+matches_duplicate_match_id,pass,0,Khóa trận phải duy nhất và không thiếu.
+matches_duplicate_fixture,pass,0,"Trùng ngày, đội nhà và đội khách."
+matches_invalid_date,pass,0,Ngày trận phải đọc được.
+features_null_match_id,pass,0,Khóa trận phải duy nhất và không thiếu.
+features_duplicate_match_id,pass,0,Khóa trận phải duy nhất và không thiếu.
+features_duplicate_fixture,pass,0,"Trùng ngày, đội nhà và đội khách."
+features_invalid_date,pass,0,Ngày trận phải đọc được.
+match_id_set_alignment,pass,0,Số khóa chỉ xuất hiện ở một trong hai bảng.
+shared_season,pass,0,Đối chiếu season giữa hai bảng theo match_id.
+shared_date,pass,0,Đối chiếu date giữa hai bảng theo match_id.
+shared_kickoff_time,pass,0,Đối chiếu kickoff_time giữa hai bảng theo match_id.
+shared_home_club_id,pass,0,Đối chiếu home_club_id giữa hai bảng theo match_id.
+shared_home_team,pass,0,Đối chiếu home_team giữa hai bảng theo match_id.
+shared_away_club_id,pass,0,Đối chiếu away_club_id giữa hai bảng theo match_id.
+shared_away_team,pass,0,Đối chiếu away_team giữa hai bảng theo match_id.
+shared_home_goals,pass,0,Đối chiếu home_goals giữa hai bảng theo match_id.
+shared_away_goals,pass,0,Đối chiếu away_goals giữa hai bảng theo match_id.
+shared_result,pass,0,Đối chiếu result giữa hai bảng theo match_id.
+shared_status,pass,0,Đối chiếu status giữa hai bảng theo match_id.
+shared_provisional,pass,0,Đối chiếu provisional giữa hai bảng theo match_id.
+shared_postponed,pass,0,Đối chiếu postponed giữa hai bảng theo match_id.
+shared_gameweek,pass,0,Đối chiếu gameweek giữa hai bảng theo match_id.
+result_consistent_with_goals,pass,0,Nhãn H/D/A phải khớp tỷ số; trận đã đá phải có đủ bàn thắng.
+same_team_fixture,pass,0,Một trận cần hai đội khác nhau.
+score_string,pass,0,Chuỗi tỷ số phải khớp các cột số bàn.
+ht_score_string,pass,0,Chuỗi tỷ số phải khớp các cột số bàn.
+nonnegative_season_start_year,pass,0,Các cột số của matches.csv không được âm.
+finite_season_start_year,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_goals,pass,0,Các cột số của matches.csv không được âm.
+finite_home_goals,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_goals,pass,0,Các cột số của matches.csv không được âm.
+finite_away_goals,pass,0,Giá trị số phải hữu hạn.
+nonnegative_ht_home_goals,pass,0,Các cột số của matches.csv không được âm.
+finite_ht_home_goals,pass,0,Giá trị số phải hữu hạn.
+nonnegative_ht_away_goals,pass,0,Các cột số của matches.csv không được âm.
+finite_ht_away_goals,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_shots,pass,0,Các cột số của matches.csv không được âm.
+finite_home_shots,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_shots,pass,0,Các cột số của matches.csv không được âm.
+finite_away_shots,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_shots_on_target,pass,0,Các cột số của matches.csv không được âm.
+finite_home_shots_on_target,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_shots_on_target,pass,0,Các cột số của matches.csv không được âm.
+finite_away_shots_on_target,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_corners,pass,0,Các cột số của matches.csv không được âm.
+finite_home_corners,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_corners,pass,0,Các cột số của matches.csv không được âm.
+finite_away_corners,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_fouls,pass,0,Các cột số của matches.csv không được âm.
+finite_home_fouls,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_fouls,pass,0,Các cột số của matches.csv không được âm.
+finite_away_fouls,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_yellow_cards,pass,0,Các cột số của matches.csv không được âm.
+finite_home_yellow_cards,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_yellow_cards,pass,0,Các cột số của matches.csv không được âm.
+finite_away_yellow_cards,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_red_cards,pass,0,Các cột số của matches.csv không được âm.
+finite_home_red_cards,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_red_cards,pass,0,Các cột số của matches.csv không được âm.
+finite_away_red_cards,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_xg,pass,0,Các cột số của matches.csv không được âm.
+finite_home_xg,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_xg,pass,0,Các cột số của matches.csv không được âm.
+finite_away_xg,pass,0,Giá trị số phải hữu hạn.
+nonnegative_attendance,pass,0,Các cột số của matches.csv không được âm.
+finite_attendance,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_possession,pass,0,Các cột số của matches.csv không được âm.
+finite_home_possession,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_possession,pass,0,Các cột số của matches.csv không được âm.
+finite_away_possession,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_big_chances,pass,0,Các cột số của matches.csv không được âm.
+finite_home_big_chances,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_big_chances,pass,0,Các cột số của matches.csv không được âm.
+finite_away_big_chances,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_big_chances_missed,pass,0,Các cột số của matches.csv không được âm.
+finite_home_big_chances_missed,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_big_chances_missed,pass,0,Các cột số của matches.csv không được âm.
+finite_away_big_chances_missed,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_shots_inside_box,pass,0,Các cột số của matches.csv không được âm.
+finite_home_shots_inside_box,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_shots_inside_box,pass,0,Các cột số của matches.csv không được âm.
+finite_away_shots_inside_box,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_shots_outside_box,pass,0,Các cột số của matches.csv không được âm.
+finite_home_shots_outside_box,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_shots_outside_box,pass,0,Các cột số của matches.csv không được âm.
+finite_away_shots_outside_box,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_passes,pass,0,Các cột số của matches.csv không được âm.
+finite_home_passes,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_passes,pass,0,Các cột số của matches.csv không được âm.
+finite_away_passes,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_accurate_passes,pass,0,Các cột số của matches.csv không được âm.
+finite_home_accurate_passes,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_accurate_passes,pass,0,Các cột số của matches.csv không được âm.
+finite_away_accurate_passes,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_touches_opp_box,pass,0,Các cột số của matches.csv không được âm.
+finite_home_touches_opp_box,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_touches_opp_box,pass,0,Các cột số của matches.csv không được âm.
+finite_away_touches_opp_box,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_tackles,pass,0,Các cột số của matches.csv không được âm.
+finite_home_tackles,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_tackles,pass,0,Các cột số của matches.csv không được âm.
+finite_away_tackles,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_interceptions,pass,0,Các cột số của matches.csv không được âm.
+finite_home_interceptions,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_interceptions,pass,0,Các cột số của matches.csv không được âm.
+finite_away_interceptions,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_clearances,pass,0,Các cột số của matches.csv không được âm.
+finite_home_clearances,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_clearances,pass,0,Các cột số của matches.csv không được âm.
+finite_away_clearances,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_duels_won,pass,0,Các cột số của matches.csv không được âm.
+finite_home_duels_won,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_duels_won,pass,0,Các cột số của matches.csv không được âm.
+finite_away_duels_won,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_saves,pass,0,Các cột số của matches.csv không được âm.
+finite_home_saves,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_saves,pass,0,Các cột số của matches.csv không được âm.
+finite_away_saves,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_fm_xg,pass,0,Các cột số của matches.csv không được âm.
+finite_home_fm_xg,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_fm_xg,pass,0,Các cột số của matches.csv không được âm.
+finite_away_fm_xg,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_fm_npxg,pass,0,Các cột số của matches.csv không được âm.
+finite_home_fm_npxg,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_fm_npxg,pass,0,Các cột số của matches.csv không được âm.
+finite_away_fm_npxg,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_fm_xg_open_play,pass,0,Các cột số của matches.csv không được âm.
+finite_home_fm_xg_open_play,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_fm_xg_open_play,pass,0,Các cột số của matches.csv không được âm.
+finite_away_fm_xg_open_play,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_fm_xg_set_play,pass,0,Các cột số của matches.csv không được âm.
+finite_home_fm_xg_set_play,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_fm_xg_set_play,pass,0,Các cột số của matches.csv không được âm.
+finite_away_fm_xg_set_play,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_fm_xgot,pass,0,Các cột số của matches.csv không được âm.
+finite_home_fm_xgot,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_fm_xgot,pass,0,Các cột số của matches.csv không được âm.
+finite_away_fm_xgot,pass,0,Giá trị số phải hữu hạn.
+nonnegative_home_pass_accuracy,pass,0,Các cột số của matches.csv không được âm.
+finite_home_pass_accuracy,pass,0,Giá trị số phải hữu hạn.
+nonnegative_away_pass_accuracy,pass,0,Các cột số của matches.csv không được âm.
+finite_away_pass_accuracy,pass,0,Giá trị số phải hữu hạn.
+nonnegative_b365_home_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_b365_home_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_b365_draw_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_b365_draw_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_b365_away_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_b365_away_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_pinnacle_home_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_pinnacle_home_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_pinnacle_draw_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_pinnacle_draw_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_pinnacle_away_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_pinnacle_away_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_avg_home_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_avg_home_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_avg_draw_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_avg_draw_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_avg_away_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_avg_away_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_b365_close_home_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_b365_close_home_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_b365_close_draw_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_b365_close_draw_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_b365_close_away_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_b365_close_away_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_pinnacle_close_home_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_pinnacle_close_home_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_pinnacle_close_draw_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_pinnacle_close_draw_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_pinnacle_close_away_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_pinnacle_close_away_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_avg_close_home_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_avg_close_home_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_avg_close_draw_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_avg_close_draw_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_avg_close_away_odds,pass,0,Các cột số của matches.csv không được âm.
+finite_avg_close_away_odds,pass,0,Giá trị số phải hữu hạn.
+nonnegative_fm_match_id,pass,0,Các cột số của matches.csv không được âm.
+finite_fm_match_id,pass,0,Giá trị số phải hữu hạn.
+nonnegative_gameweek,pass,0,Các cột số của matches.csv không được âm.
+finite_gameweek,pass,0,Giá trị số phải hữu hạn.
+home_sot_le_shots,pass,0,Sút trúng đích lớn hơn tổng số cú sút.
+home_ht_le_ft,pass,0,Bàn hiệp một lớn hơn bàn cả trận.
+home_accurate_passes_le_passes,pass,0,Chuyền thành công lớn hơn tổng đường chuyền.
+home_missed_le_big_chances,pass,0,Cơ hội lớn bỏ lỡ lớn hơn tổng cơ hội lớn.
+range_home_possession,pass,0,"Tỷ lệ phần trăm phải nằm trong [0, 100]."
+range_home_pass_accuracy,pass,0,"Tỷ lệ phần trăm phải nằm trong [0, 100]."
+extreme_home_possession_under10,warn,1,Kiểm tra nguồn cho kiểm soát bóng dưới 10%; chưa kết luận là lỗi.
+home_shot_components_exceed_total,warn,90,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+home_zero_shot_components_positive_total,warn,3,"Cú sút trong và ngoài vòng cấm đều bằng 0 nhưng tổng sút FD dương; cần kiểm tra độ đầy đủ và định nghĩa dữ liệu FotMob/FD, chưa xác nhận là lỗi."
+away_sot_le_shots,pass,0,Sút trúng đích lớn hơn tổng số cú sút.
+away_ht_le_ft,pass,0,Bàn hiệp một lớn hơn bàn cả trận.
+away_accurate_passes_le_passes,pass,0,Chuyền thành công lớn hơn tổng đường chuyền.
+away_missed_le_big_chances,pass,0,Cơ hội lớn bỏ lỡ lớn hơn tổng cơ hội lớn.
+range_away_possession,pass,0,"Tỷ lệ phần trăm phải nằm trong [0, 100]."
+range_away_pass_accuracy,pass,0,"Tỷ lệ phần trăm phải nằm trong [0, 100]."
+extreme_away_possession_under10,pass,0,Kiểm tra nguồn cho kiểm soát bóng dưới 10%; chưa kết luận là lỗi.
+away_shot_components_exceed_total,warn,86,Tổng cú sút trong/ngoài vòng cấm vượt tổng sút; cần đối chiếu định nghĩa và nguồn FD/FotMob.
+away_zero_shot_components_positive_total,warn,3,"Cú sút trong và ngoài vòng cấm đều bằng 0 nhưng tổng sút FD dương; cần kiểm tra độ đầy đủ và định nghĩa dữ liệu FotMob/FD, chưa xác nhận là lỗi."
+possession_sum_100,pass,0,Tổng kiểm soát bóng hai đội sai khác quá 1 điểm phần trăm.
+attendance_imputed,info,441,Khán giả đã được điền bởi pipeline; không coi là phép đo độc lập.
+prior_observed_home_elo,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_elo,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_elo_diff,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_elo_home_win_prob,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_points5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_goals_for5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_goals_against5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_shots_on_target5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_xg5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_xga5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_form,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_wins5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_draws5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_losses5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_home_points5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_home_goals_for5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_home_goals_against5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_played,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_ppg,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_goals_for_pg,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_goals_against_pg,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_home_rest_days,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_points5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_goals_for5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_goals_against5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_shots_on_target5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_xg5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_xga5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_form,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_wins5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_draws5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_losses5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_away_points5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_away_goals_for5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_away_goals_against5,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_played,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_ppg,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_goals_for_pg,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_goals_against_pg,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_away_rest_days,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_h2h_matches,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_h2h_home_points,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+prior_observed_h2h_home_goal_diff,pass,0,Tính lại trước trận từ lịch sử EPL quan sát được; không dùng kết quả trận hiện tại.
+home_rest_days_gt30,warn,270,Khoảng cách tới trận EPL quan sát trước vượt 30 ngày; không đồng nhất với ngày nghỉ thực tế.
+away_rest_days_gt30,warn,264,Khoảng cách tới trận EPL quan sát trước vượt 30 ngày; không đồng nhất với ngày nghỉ thực tế.
+odds_prob_range,pass,0,"Các xác suất odds phải nằm trong [0, 1]."
+odds_prob_sum,pass,0,Ba xác suất odds đầy đủ phải cộng thành 1.
