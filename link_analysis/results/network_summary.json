@@ -1,0 +1,78 @@
+{
+ "n_teams": 46,
+ "n_matches": 9850,
+ "n_edges_undirected": 800,
+ "density": 0.7729,
+ "communities": [
+  {
+   "id": 0,
+   "size": 26,
+   "mean_seasons": 14.3,
+   "members": [
+    "Arsenal",
+    "Liverpool",
+    "Manchester United",
+    "Chelsea",
+    "Manchester City",
+    "Tottenham",
+    "Everton",
+    "Newcastle",
+    "West Ham",
+    "Southampton",
+    "Crystal Palace",
+    "Leicester",
+    "Wolves",
+    "Brighton",
+    "Bournemouth",
+    "Burnley",
+    "Leeds",
+    "Swansea",
+    "Watford",
+    "Brentford",
+    "Norwich",
+    "Nottingham Forest",
+    "Sheffield United",
+    "Cardiff",
+    "Huddersfield",
+    "Luton"
+   ]
+  },
+  {
+   "id": 1,
+   "size": 17,
+   "mean_seasons": 9.4,
+   "members": [
+    "Aston Villa",
+    "Fulham",
+    "Sunderland",
+    "West Brom",
+    "Blackburn",
+    "Bolton",
+    "Middlesbrough",
+    "Stoke",
+    "Wigan",
+    "Charlton",
+    "Birmingham",
+    "Portsmouth",
+    "Hull",
+    "Reading",
+    "QPR",
+    "Derby",
+    "Blackpool"
+   ]
+  },
+  {
+   "id": 2,
+   "size": 3,
+   "mean_seasons": 2.3,
+   "members": [
+    "Ipswich",
+    "Coventry",
+    "Bradford"
+   ]
+  }
+ ],
+ "modularity": 0.0425,
+ "spearman_mean": 0.9367,
+ "spearman_min": 0.806
+}

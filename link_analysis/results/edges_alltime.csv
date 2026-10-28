@@ -1,0 +1,801 @@
+team_a,club_id_a,team_b,club_id_b,meetings
+Manchester United,MUN,Tottenham,TOT,53
+Everton,EVE,Manchester United,MUN,53
+Arsenal,ARS,Chelsea,CHE,53
+Chelsea,CHE,Liverpool,LIV,52
+Liverpool,LIV,Tottenham,TOT,52
+Everton,EVE,Tottenham,TOT,52
+Arsenal,ARS,Manchester United,MUN,52
+Everton,EVE,Liverpool,LIV,52
+Liverpool,LIV,Manchester United,MUN,52
+Arsenal,ARS,Tottenham,TOT,51
+Liverpool,LIV,Manchester City,MCI,51
+Manchester City,MCI,Manchester United,MUN,51
+Chelsea,CHE,Tottenham,TOT,51
+Arsenal,ARS,Everton,EVE,51
+Chelsea,CHE,Everton,EVE,51
+Chelsea,CHE,Manchester United,MUN,51
+Arsenal,ARS,Manchester City,MCI,50
+Chelsea,CHE,Manchester City,MCI,50
+Arsenal,ARS,Liverpool,LIV,50
+Newcastle,NEW,Tottenham,TOT,49
+Manchester City,MCI,Tottenham,TOT,49
+Everton,EVE,Manchester City,MCI,49
+Liverpool,LIV,Newcastle,NEW,48
+Manchester United,MUN,Newcastle,NEW,47
+Chelsea,CHE,Newcastle,NEW,47
+Everton,EVE,Newcastle,NEW,47
+Arsenal,ARS,Aston Villa,AVL,47
+Arsenal,ARS,Newcastle,NEW,47
+Manchester United,MUN,West Ham,WHU,46
+Aston Villa,AVL,Everton,EVE,46
+Arsenal,ARS,West Ham,WHU,46
+Liverpool,LIV,West Ham,WHU,46
+Manchester City,MCI,Newcastle,NEW,46
+Chelsea,CHE,West Ham,WHU,46
+Tottenham,TOT,West Ham,WHU,46
+Everton,EVE,West Ham,WHU,46
+Aston Villa,AVL,Tottenham,TOT,46
+Aston Villa,AVL,Chelsea,CHE,45
+Aston Villa,AVL,Liverpool,LIV,45
+Aston Villa,AVL,Manchester United,MUN,45
+Aston Villa,AVL,Newcastle,NEW,44
+Manchester City,MCI,West Ham,WHU,44
+Aston Villa,AVL,Manchester City,MCI,42
+Newcastle,NEW,West Ham,WHU,42
+Aston Villa,AVL,West Ham,WHU,40
+Fulham,FUL,Manchester United,MUN,39
+Fulham,FUL,Tottenham,TOT,38
+Chelsea,CHE,Fulham,FUL,38
+Fulham,FUL,Liverpool,LIV,38
+Everton,EVE,Fulham,FUL,37
+Arsenal,ARS,Fulham,FUL,37
+Fulham,FUL,Manchester City,MCI,36
+Aston Villa,AVL,Fulham,FUL,36
+Fulham,FUL,Newcastle,NEW,35
+Arsenal,ARS,Southampton,SOU,34
+Southampton,SOU,Tottenham,TOT,34
+Liverpool,LIV,Southampton,SOU,34
+Everton,EVE,Southampton,SOU,34
+Chelsea,CHE,Southampton,SOU,34
+Manchester United,MUN,Southampton,SOU,33
+Fulham,FUL,West Ham,WHU,32
+Manchester City,MCI,Southampton,SOU,31
+Newcastle,NEW,Southampton,SOU,31
+Arsenal,ARS,Sunderland,SUN,31
+Southampton,SOU,West Ham,WHU,30
+Sunderland,SUN,Tottenham,TOT,30
+Everton,EVE,Sunderland,SUN,30
+Liverpool,LIV,Sunderland,SUN,30
+Chelsea,CHE,Sunderland,SUN,30
+Manchester United,MUN,Sunderland,SUN,30
+Crystal Palace,CRY,Manchester City,MCI,29
+Crystal Palace,CRY,Everton,EVE,29
+Manchester City,MCI,Sunderland,SUN,29
+Sunderland,SUN,West Ham,WHU,28
+Arsenal,ARS,Crystal Palace,CRY,28
+Crystal Palace,CRY,Tottenham,TOT,28
+Chelsea,CHE,Crystal Palace,CRY,28
+Crystal Palace,CRY,Manchester United,MUN,28
+Aston Villa,AVL,Sunderland,SUN,28
+Aston Villa,AVL,Southampton,SOU,28
+Crystal Palace,CRY,Liverpool,LIV,27
+Leicester,LEI,Southampton,SOU,26
+Everton,EVE,West Brom,WBA,26
+Tottenham,TOT,West Brom,WBA,26
+Chelsea,CHE,West Brom,WBA,26
+Manchester City,MCI,West Brom,WBA,26
+Leicester,LEI,Liverpool,LIV,26
+Leicester,LEI,Tottenham,TOT,26
+Crystal Palace,CRY,West Ham,WHU,26
+Chelsea,CHE,Leicester,LEI,26
+Liverpool,LIV,West Brom,WBA,26
+Everton,EVE,Leicester,LEI,26
+Newcastle,NEW,Sunderland,SUN,26
+Manchester United,MUN,West Brom,WBA,25
+Arsenal,ARS,Leicester,LEI,25
+Arsenal,ARS,West Brom,WBA,25
+Leicester,LEI,Manchester United,MUN,25
+Crystal Palace,CRY,Newcastle,NEW,25
+Leicester,LEI,Manchester City,MCI,24
+Leicester,LEI,Newcastle,NEW,24
+Leicester,LEI,West Ham,WHU,24
+Chelsea,CHE,Wolves,WOL,24
+Everton,EVE,Wolves,WOL,24
+Liverpool,LIV,Wolves,WOL,24
+Newcastle,NEW,West Brom,WBA,24
+Manchester United,MUN,Wolves,WOL,24
+Arsenal,ARS,Wolves,WOL,24
+Tottenham,TOT,Wolves,WOL,23
+Manchester City,MCI,Wolves,WOL,23
+Fulham,FUL,Sunderland,SUN,23
+Crystal Palace,CRY,Southampton,SOU,23
+Aston Villa,AVL,Crystal Palace,CRY,22
+Blackburn,BLB,Manchester United,MUN,22
+Arsenal,ARS,Blackburn,BLB,22
+Blackburn,BLB,Everton,EVE,22
+Aston Villa,AVL,West Brom,WBA,22
+Blackburn,BLB,Chelsea,CHE,22
+West Brom,WBA,West Ham,WHU,22
+Aston Villa,AVL,Blackburn,BLB,22
+Arsenal,ARS,Bolton,BOL,22
+Aston Villa,AVL,Wolves,WOL,22
+Blackburn,BLB,Bolton,BOL,22
+Bolton,BOL,Manchester United,MUN,22
+Bolton,BOL,Liverpool,LIV,22
+Bolton,BOL,Everton,EVE,21
+Newcastle,NEW,Wolves,WOL,21
+Blackburn,BLB,Liverpool,LIV,21
+Blackburn,BLB,Tottenham,TOT,21
+Bolton,BOL,Fulham,FUL,21
+Bolton,BOL,Chelsea,CHE,21
+Bolton,BOL,Tottenham,TOT,21
+Manchester United,MUN,Middlesbrough,MID,20
+Stoke,STK,Tottenham,TOT,20
+Manchester United,MUN,Stoke,STK,20
+Aston Villa,AVL,Bolton,BOL,20
+Arsenal,ARS,Stoke,STK,20
+Everton,EVE,Middlesbrough,MID,20
+Everton,EVE,Stoke,STK,20
+Fulham,FUL,Southampton,SOU,20
+Fulham,FUL,Wolves,WOL,20
+Blackburn,BLB,Fulham,FUL,20
+Aston Villa,AVL,Leicester,LEI,20
+Liverpool,LIV,Stoke,STK,20
+Manchester City,MCI,Stoke,STK,20
+Burnley,BUR,Manchester United,MUN,20
+Burnley,BUR,Manchester City,MCI,20
+Burnley,BUR,Liverpool,LIV,20
+Burnley,BUR,Tottenham,TOT,20
+Burnley,BUR,West Ham,WHU,20
+Chelsea,CHE,Stoke,STK,20
+Crystal Palace,CRY,Leicester,LEI,20
+Blackburn,BLB,Newcastle,NEW,20
+West Ham,WHU,Wolves,WOL,20
+Burnley,BUR,Everton,EVE,20
+Bolton,BOL,Manchester City,MCI,20
+Bolton,BOL,Newcastle,NEW,20
+Burnley,BUR,Chelsea,CHE,20
+Sunderland,SUN,West Brom,WBA,20
+Arsenal,ARS,Middlesbrough,MID,20
+Arsenal,ARS,Burnley,BUR,20
+Arsenal,ARS,Brighton,BHA,19
+Bournemouth,BOU,Liverpool,LIV,19
+Middlesbrough,MID,Tottenham,TOT,19
+Brighton,BHA,Chelsea,CHE,19
+Chelsea,CHE,Middlesbrough,MID,19
+Blackburn,BLB,Manchester City,MCI,19
+Bournemouth,BOU,Everton,EVE,19
+Bournemouth,BOU,Manchester City,MCI,19
+Bournemouth,BOU,Chelsea,CHE,19
+Liverpool,LIV,Middlesbrough,MID,19
+Arsenal,ARS,Bournemouth,BOU,18
+Bournemouth,BOU,West Ham,WHU,18
+Bournemouth,BOU,Tottenham,TOT,18
+Aston Villa,AVL,Middlesbrough,MID,18
+Bournemouth,BOU,Crystal Palace,CRY,18
+Brighton,BHA,Newcastle,NEW,18
+Fulham,FUL,West Brom,WBA,18
+Brighton,BHA,Crystal Palace,CRY,18
+Brighton,BHA,Manchester City,MCI,18
+Brighton,BHA,Manchester United,MUN,18
+Brighton,BHA,Everton,EVE,18
+Brighton,BHA,Liverpool,LIV,18
+Burnley,BUR,Crystal Palace,CRY,18
+Brighton,BHA,Tottenham,TOT,18
+Brighton,BHA,West Ham,WHU,18
+Bournemouth,BOU,Manchester United,MUN,18
+Stoke,STK,West Brom,WBA,18
+Stoke,STK,West Ham,WHU,18
+Stoke,STK,Sunderland,SUN,18
+Southampton,SOU,West Brom,WBA,18
+Bournemouth,BOU,Newcastle,NEW,17
+Crystal Palace,CRY,Fulham,FUL,17
+Manchester City,MCI,Middlesbrough,MID,17
+Middlesbrough,MID,Newcastle,NEW,17
+Leeds,LEE,Newcastle,NEW,17
+Bolton,BOL,West Ham,WHU,16
+Crystal Palace,CRY,Wolves,WOL,16
+Leeds,LEE,Tottenham,TOT,16
+Manchester City,MCI,Wigan,WIG,16
+Newcastle,NEW,Stoke,STK,16
+Middlesbrough,MID,West Ham,WHU,16
+Bolton,BOL,Middlesbrough,MID,16
+Tottenham,TOT,Wigan,WIG,16
+Aston Villa,AVL,Wigan,WIG,16
+Liverpool,LIV,Wigan,WIG,16
+Aston Villa,AVL,Leeds,LEE,16
+Brighton,BHA,Wolves,WOL,16
+Burnley,BUR,Newcastle,NEW,16
+Southampton,SOU,Sunderland,SUN,16
+Blackburn,BLB,Middlesbrough,MID,16
+Aston Villa,AVL,Stoke,STK,16
+Blackburn,BLB,Sunderland,SUN,16
+Blackburn,BLB,West Ham,WHU,16
+Arsenal,ARS,Wigan,WIG,16
+Manchester United,MUN,Wigan,WIG,16
+Fulham,FUL,Middlesbrough,MID,16
+Fulham,FUL,Wigan,WIG,16
+Leeds,LEE,Manchester United,MUN,16
+Leeds,LEE,Liverpool,LIV,16
+Everton,EVE,Wigan,WIG,16
+Chelsea,CHE,Wigan,WIG,16
+Arsenal,ARS,Leeds,LEE,16
+Bolton,BOL,Sunderland,SUN,16
+Chelsea,CHE,Leeds,LEE,15
+Everton,EVE,Leeds,LEE,15
+Aston Villa,AVL,Brighton,BHA,15
+Aston Villa,AVL,Charlton,CHA,14
+Aston Villa,AVL,Burnley,BUR,14
+Arsenal,ARS,Charlton,CHA,14
+Arsenal,ARS,Watford,WAT,14
+Leeds,LEE,Manchester City,MCI,14
+Fulham,FUL,Portsmouth,POR,14
+Chelsea,CHE,Portsmouth,POR,14
+Brighton,BHA,Leicester,LEI,14
+Manchester United,MUN,Norwich,NOR,14
+Brighton,BHA,Burnley,BUR,14
+Norwich,NOR,Tottenham,TOT,14
+Newcastle,NEW,Wigan,WIG,14
+Middlesbrough,MID,Sunderland,SUN,14
+Brighton,BHA,Southampton,SOU,14
+Manchester City,MCI,Watford,WAT,14
+Newcastle,NEW,Norwich,NOR,14
+Portsmouth,POR,Tottenham,TOT,14
+Aston Villa,AVL,Birmingham,BIR,14
+Arsenal,ARS,Swansea,SWA,14
+Arsenal,ARS,Norwich,NOR,14
+Everton,EVE,Norwich,NOR,14
+Everton,EVE,Watford,WAT,14
+Blackburn,BLB,Portsmouth,POR,14
+Blackburn,BLB,Wigan,WIG,14
+Charlton,CHA,Newcastle,NEW,14
+Everton,EVE,Portsmouth,POR,14
+Charlton,CHA,Middlesbrough,MID,14
+Charlton,CHA,Tottenham,TOT,14
+Chelsea,CHE,Watford,WAT,14
+Chelsea,CHE,Swansea,SWA,14
+Everton,EVE,Swansea,SWA,14
+Chelsea,CHE,Norwich,NOR,14
+Manchester United,MUN,Swansea,SWA,14
+Manchester United,MUN,Watford,WAT,14
+Birmingham,BIR,Chelsea,CHE,14
+Manchester City,MCI,Swansea,SWA,14
+Aston Villa,AVL,Norwich,NOR,14
+Birmingham,BIR,Bolton,BOL,14
+Aston Villa,AVL,Portsmouth,POR,14
+Manchester City,MCI,Norwich,NOR,14
+Liverpool,LIV,Norwich,NOR,14
+Liverpool,LIV,Portsmouth,POR,14
+Liverpool,LIV,Swansea,SWA,14
+Liverpool,LIV,Watford,WAT,14
+Leicester,LEI,Wolves,WOL,14
+Birmingham,BIR,Tottenham,TOT,14
+Birmingham,BIR,Manchester City,MCI,14
+Birmingham,BIR,Liverpool,LIV,14
+Charlton,CHA,Everton,EVE,14
+Burnley,BUR,Leicester,LEI,14
+Leeds,LEE,West Ham,WHU,14
+Burnley,BUR,Southampton,SOU,14
+Leeds,LEE,Southampton,SOU,14
+Birmingham,BIR,Fulham,FUL,14
+Burnley,BUR,Wolves,WOL,14
+Stoke,STK,Swansea,SWA,14
+Arsenal,ARS,Portsmouth,POR,14
+Swansea,SWA,West Brom,WBA,14
+Sunderland,SUN,Wigan,WIG,14
+Swansea,SWA,Tottenham,TOT,14
+Bournemouth,BOU,Southampton,SOU,14
+Crystal Palace,CRY,West Brom,WBA,14
+Tottenham,TOT,Watford,WAT,14
+Watford,WAT,West Ham,WHU,14
+West Ham,WHU,Wigan,WIG,14
+Bournemouth,BOU,Leicester,LEI,14
+Bolton,BOL,Wigan,WIG,14
+Bournemouth,BOU,Brighton,BHA,14
+Bolton,BOL,Portsmouth,POR,13
+Arsenal,ARS,Birmingham,BIR,13
+Charlton,CHA,Liverpool,LIV,13
+Birmingham,BIR,Manchester United,MUN,13
+Birmingham,BIR,Everton,EVE,13
+Charlton,CHA,Chelsea,CHE,13
+Manchester United,MUN,Portsmouth,POR,13
+Charlton,CHA,Manchester United,MUN,13
+Manchester City,MCI,Portsmouth,POR,13
+Southampton,SOU,Wolves,WOL,13
+Bournemouth,BOU,Burnley,BUR,12
+Bolton,BOL,West Brom,WBA,12
+Charlton,CHA,Fulham,FUL,12
+Blackburn,BLB,Charlton,CHA,12
+Bournemouth,BOU,Wolves,WOL,12
+Leicester,LEI,Watford,WAT,12
+Charlton,CHA,Manchester City,MCI,12
+Brighton,BHA,Fulham,FUL,12
+Fulham,FUL,Stoke,STK,12
+Newcastle,NEW,Portsmouth,POR,12
+Newcastle,NEW,Watford,WAT,12
+Aston Villa,AVL,Bournemouth,BOU,12
+Sunderland,SUN,Swansea,SWA,12
+Newcastle,NEW,Swansea,SWA,12
+Fulham,FUL,Leeds,LEE,12
+Southampton,SOU,Stoke,STK,12
+Birmingham,BIR,Blackburn,BLB,12
+Bolton,BOL,Charlton,CHA,12
+Swansea,SWA,West Ham,WHU,12
+Birmingham,BIR,Newcastle,NEW,12
+Southampton,SOU,Swansea,SWA,12
+Crystal Palace,CRY,Watford,WAT,12
+Southampton,SOU,Watford,WAT,12
+Hull,HUL,Manchester United,MUN,11
+Aston Villa,AVL,Brentford,BRE,11
+Blackburn,BLB,West Brom,WBA,11
+Middlesbrough,MID,Portsmouth,POR,11
+Fulham,FUL,Leicester,LEI,11
+Norwich,NOR,Southampton,SOU,11
+Brentford,BRE,Chelsea,CHE,11
+Everton,EVE,Hull,HUL,11
+Chelsea,CHE,Hull,HUL,11
+Brentford,BRE,Tottenham,TOT,11
+Leeds,LEE,Leicester,LEI,11
+Middlesbrough,MID,Southampton,SOU,11
+Portsmouth,POR,Wigan,WIG,10
+Brentford,BRE,Brighton,BHA,10
+West Brom,WBA,Wigan,WIG,10
+Portsmouth,POR,West Ham,WHU,10
+Arsenal,ARS,Brentford,BRE,10
+Charlton,CHA,West Ham,WHU,10
+Arsenal,ARS,Hull,HUL,10
+Brentford,BRE,Crystal Palace,CRY,10
+Brentford,BRE,Everton,EVE,10
+Crystal Palace,CRY,Sunderland,SUN,10
+Crystal Palace,CRY,Stoke,STK,10
+Bournemouth,BOU,Fulham,FUL,10
+Bournemouth,BOU,Watford,WAT,10
+Hull,HUL,Manchester City,MCI,10
+Hull,HUL,Stoke,STK,10
+Brentford,BRE,Liverpool,LIV,10
+Brentford,BRE,Manchester City,MCI,10
+Norwich,NOR,West Ham,WHU,10
+Norwich,NOR,West Brom,WBA,10
+Hull,HUL,Liverpool,LIV,10
+Hull,HUL,Sunderland,SUN,10
+Burnley,BUR,Fulham,FUL,10
+Birmingham,BIR,Middlesbrough,MID,10
+Burnley,BUR,Watford,WAT,10
+Hull,HUL,West Ham,WHU,10
+Hull,HUL,Tottenham,TOT,10
+Birmingham,BIR,West Ham,WHU,10
+Birmingham,BIR,Sunderland,SUN,10
+Stoke,STK,Wigan,WIG,10
+Leicester,LEI,West Brom,WBA,10
+Leeds,LEE,Wolves,WOL,10
+Aston Villa,AVL,Swansea,SWA,10
+Leicester,LEI,Sunderland,SUN,10
+Crystal Palace,CRY,Swansea,SWA,10
+Crystal Palace,CRY,Norwich,NOR,10
+Brentford,BRE,Newcastle,NEW,10
+Brentford,BRE,Manchester United,MUN,10
+Brentford,BRE,West Ham,WHU,10
+Brentford,BRE,Wolves,WOL,10
+Nottingham Forest,NFO,Tottenham,TOT,9
+Bournemouth,BOU,Brentford,BRE,9
+Aston Villa,AVL,Hull,HUL,9
+Birmingham,BIR,Portsmouth,POR,9
+Liverpool,LIV,Nottingham Forest,NFO,9
+Aston Villa,AVL,Nottingham Forest,NFO,9
+Crystal Palace,CRY,Leeds,LEE,9
+Middlesbrough,MID,West Brom,WBA,9
+Brighton,BHA,Leeds,LEE,9
+Crystal Palace,CRY,Nottingham Forest,NFO,9
+Charlton,CHA,Southampton,SOU,9
+Nottingham Forest,NFO,West Ham,WHU,8
+Nottingham Forest,NFO,Wolves,WOL,8
+Norwich,NOR,Swansea,SWA,8
+Bournemouth,BOU,Nottingham Forest,NFO,8
+Manchester City,MCI,Nottingham Forest,NFO,8
+Sheffield United,SHU,West Ham,WHU,8
+Sunderland,SUN,Wolves,WOL,8
+Aston Villa,AVL,Sheffield United,SHU,8
+Sheffield United,SHU,Tottenham,TOT,8
+Arsenal,ARS,Nottingham Forest,NFO,8
+Brighton,BHA,Watford,WAT,8
+Burnley,BUR,Sunderland,SUN,8
+Aston Villa,AVL,Watford,WAT,8
+Manchester City,MCI,Sheffield United,SHU,8
+Liverpool,LIV,Sheffield United,SHU,8
+Leicester,LEI,Swansea,SWA,8
+Leicester,LEI,Middlesbrough,MID,8
+Hull,HUL,West Brom,WBA,8
+Leeds,LEE,Middlesbrough,MID,8
+Leeds,LEE,Sunderland,SUN,8
+Charlton,CHA,Leeds,LEE,8
+Leicester,LEI,Stoke,STK,8
+Burnley,BUR,Stoke,STK,8
+Burnley,BUR,West Brom,WBA,8
+Birmingham,BIR,Wigan,WIG,8
+Birmingham,BIR,West Brom,WBA,8
+Chelsea,CHE,Sheffield United,SHU,8
+Fulham,FUL,Nottingham Forest,NFO,8
+Chelsea,CHE,Nottingham Forest,NFO,8
+Bolton,BOL,Southampton,SOU,8
+Brentford,BRE,Fulham,FUL,8
+Bolton,BOL,Stoke,STK,8
+Brentford,BRE,Nottingham Forest,NFO,8
+Newcastle,NEW,Nottingham Forest,NFO,8
+Norwich,NOR,Sunderland,SUN,8
+Norwich,NOR,Stoke,STK,8
+Brighton,BHA,Nottingham Forest,NFO,8
+Newcastle,NEW,Sheffield United,SHU,8
+Manchester United,MUN,Sheffield United,SHU,8
+Manchester United,MUN,Nottingham Forest,NFO,8
+Middlesbrough,MID,Wigan,WIG,8
+Charlton,CHA,Sunderland,SUN,8
+Blackburn,BLB,Stoke,STK,8
+Blackburn,BLB,Wolves,WOL,8
+Everton,EVE,Nottingham Forest,NFO,8
+Everton,EVE,Sheffield United,SHU,8
+Blackburn,BLB,Southampton,SOU,8
+Portsmouth,POR,Sunderland,SUN,8
+Arsenal,ARS,Sheffield United,SHU,8
+Brentford,BRE,Leeds,LEE,7
+Birmingham,BIR,Charlton,CHA,7
+Ipswich,IPS,Liverpool,LIV,7
+Bolton,BOL,Wolves,WOL,7
+Ipswich,IPS,Manchester United,MUN,7
+Hull,HUL,Newcastle,NEW,7
+Charlton,CHA,Portsmouth,POR,7
+Fulham,FUL,Norwich,NOR,7
+Everton,EVE,Ipswich,IPS,7
+QPR,QPR,Stoke,STK,6
+Arsenal,ARS,Reading,REA,6
+QPR,QPR,West Brom,WBA,6
+Watford,WAT,Wolves,WOL,6
+West Brom,WBA,Wolves,WOL,6
+QPR,QPR,Sunderland,SUN,6
+QPR,QPR,Swansea,SWA,6
+QPR,QPR,Tottenham,TOT,6
+Brentford,BRE,Southampton,SOU,6
+Derby,DER,Middlesbrough,MID,6
+Manchester City,MCI,Reading,REA,6
+Newcastle,NEW,QPR,QPR,6
+Newcastle,NEW,Reading,REA,6
+Manchester United,MUN,Reading,REA,6
+Manchester United,MUN,QPR,QPR,6
+Brentford,BRE,Leicester,LEI,6
+Derby,DER,Newcastle,NEW,6
+Manchester City,MCI,QPR,QPR,6
+Ipswich,IPS,Newcastle,NEW,6
+Ipswich,IPS,West Ham,WHU,6
+Charlton,CHA,West Brom,WBA,6
+Burnley,BUR,Leeds,LEE,6
+Bolton,BOL,Leeds,LEE,6
+Fulham,FUL,Sheffield United,SHU,6
+Fulham,FUL,Swansea,SWA,6
+Everton,EVE,QPR,QPR,6
+Derby,DER,Tottenham,TOT,6
+Derby,DER,Manchester United,MUN,6
+Aston Villa,AVL,Reading,REA,6
+Fulham,FUL,Reading,REA,6
+Derby,DER,West Ham,WHU,6
+Crystal Palace,CRY,Hull,HUL,6
+Brighton,BHA,Sheffield United,SHU,6
+Fulham,FUL,Hull,HUL,6
+Derby,DER,Everton,EVE,6
+Norwich,NOR,Wolves,WOL,6
+Norwich,NOR,Watford,WAT,6
+Arsenal,ARS,QPR,QPR,6
+Crystal Palace,CRY,Sheffield United,SHU,6
+Watford,WAT,West Brom,WBA,6
+Brentford,BRE,Burnley,BUR,6
+Liverpool,LIV,Reading,REA,6
+Arsenal,ARS,Ipswich,IPS,6
+Arsenal,ARS,Derby,DER,6
+Hull,HUL,Southampton,SOU,6
+Reading,REA,West Ham,WHU,6
+Birmingham,BIR,Wolves,WOL,6
+Birmingham,BIR,Southampton,SOU,6
+Hull,HUL,Swansea,SWA,6
+Reading,REA,Tottenham,TOT,6
+Stoke,STK,Watford,WAT,6
+Sheffield United,SHU,Wolves,WOL,6
+Stoke,STK,Wolves,WOL,6
+Wigan,WIG,Wolves,WOL,6
+Bournemouth,BOU,Stoke,STK,6
+Reading,REA,Wigan,WIG,6
+Swansea,SWA,Watford,WAT,6
+Burnley,BUR,Swansea,SWA,6
+Liverpool,LIV,QPR,QPR,6
+Bournemouth,BOU,Swansea,SWA,6
+Bournemouth,BOU,Sunderland,SUN,6
+Bournemouth,BOU,West Brom,WBA,6
+Aston Villa,AVL,Ipswich,IPS,6
+Aston Villa,AVL,Derby,DER,6
+Ipswich,IPS,Leicester,LEI,6
+Ipswich,IPS,Tottenham,TOT,6
+Chelsea,CHE,Reading,REA,6
+Chelsea,CHE,QPR,QPR,6
+Derby,DER,Liverpool,LIV,6
+Aston Villa,AVL,QPR,QPR,6
+Burnley,BUR,Hull,HUL,6
+Everton,EVE,Reading,REA,6
+Derby,DER,Sunderland,SUN,6
+Chelsea,CHE,Ipswich,IPS,6
+Ipswich,IPS,Southampton,SOU,6
+Leicester,LEI,Norwich,NOR,6
+Burnley,BUR,Sheffield United,SHU,6
+Chelsea,CHE,Derby,DER,6
+Charlton,CHA,Leicester,LEI,6
+Blackburn,BLB,Leeds,LEE,5
+Portsmouth,POR,West Brom,WBA,5
+Ipswich,IPS,Sunderland,SUN,5
+Leeds,LEE,Nottingham Forest,NFO,5
+Fulham,FUL,Ipswich,IPS,5
+Derby,DER,Southampton,SOU,4
+Middlesbrough,MID,Stoke,STK,4
+Middlesbrough,MID,Watford,WAT,4
+Norwich,NOR,QPR,QPR,4
+Brighton,BHA,Huddersfield,HUD,4
+Portsmouth,POR,Wolves,WOL,4
+QPR,QPR,Wigan,WIG,4
+Portsmouth,POR,Stoke,STK,4
+Bournemouth,BOU,Huddersfield,HUD,4
+Sunderland,SUN,Watford,WAT,4
+Middlesbrough,MID,Reading,REA,4
+Nottingham Forest,NFO,Southampton,SOU,4
+Portsmouth,POR,Reading,REA,4
+Crystal Palace,CRY,Middlesbrough,MID,4
+Derby,DER,Fulham,FUL,4
+QPR,QPR,West Ham,WHU,4
+Blackburn,BLB,Norwich,NOR,4
+Norwich,NOR,Wigan,WIG,4
+Blackburn,BLB,Reading,REA,4
+Bournemouth,BOU,Leeds,LEE,4
+QPR,QPR,Southampton,SOU,4
+Cardiff,CAR,Crystal Palace,CRY,4
+Cardiff,CAR,Chelsea,CHE,4
+Ipswich,IPS,Middlesbrough,MID,4
+Ipswich,IPS,Manchester City,MCI,4
+Huddersfield,HUD,Tottenham,TOT,4
+Derby,DER,Leicester,LEI,4
+Derby,DER,Leeds,LEE,4
+Charlton,CHA,Wigan,WIG,4
+Huddersfield,HUD,Southampton,SOU,4
+Huddersfield,HUD,Watford,WAT,4
+Huddersfield,HUD,West Ham,WHU,4
+Hull,HUL,Leicester,LEI,4
+Hull,HUL,Middlesbrough,MID,4
+Fulham,FUL,Watford,WAT,4
+Huddersfield,HUD,Leicester,LEI,4
+Derby,DER,Ipswich,IPS,4
+Huddersfield,HUD,Liverpool,LIV,4
+Huddersfield,HUD,Newcastle,NEW,4
+Huddersfield,HUD,Manchester United,MUN,4
+Huddersfield,HUD,Manchester City,MCI,4
+Bolton,BOL,Reading,REA,4
+Crystal Palace,CRY,Huddersfield,HUD,4
+Everton,EVE,Huddersfield,HUD,4
+Derby,DER,Manchester City,MCI,4
+Brighton,BHA,Norwich,NOR,4
+Burnley,BUR,Huddersfield,HUD,4
+Bolton,BOL,Leicester,LEI,4
+Bolton,BOL,Norwich,NOR,4
+Bolton,BOL,Derby,DER,4
+Bolton,BOL,Hull,HUL,4
+Fulham,FUL,QPR,QPR,4
+Chelsea,CHE,Huddersfield,HUD,4
+Birmingham,BIR,Stoke,STK,4
+Cardiff,CAR,West Ham,WHU,4
+Birmingham,BIR,Leeds,LEE,4
+Cardiff,CAR,Southampton,SOU,4
+Cardiff,CAR,Newcastle,NEW,4
+Charlton,CHA,Ipswich,IPS,4
+Charlton,CHA,Derby,DER,4
+Leicester,LEI,Sheffield United,SHU,4
+Burnley,BUR,Norwich,NOR,4
+Cardiff,CAR,Tottenham,TOT,4
+Blackburn,BLB,Hull,HUL,4
+Blackburn,BLB,Derby,DER,4
+Burnley,BUR,Nottingham Forest,NFO,4
+Brighton,BHA,West Brom,WBA,4
+Leeds,LEE,West Brom,WBA,4
+Leicester,LEI,Nottingham Forest,NFO,4
+Ipswich,IPS,Leeds,LEE,4
+Cardiff,CAR,Manchester United,MUN,4
+Cardiff,CAR,Liverpool,LIV,4
+Cardiff,CAR,Everton,EVE,4
+Cardiff,CAR,Fulham,FUL,4
+Cardiff,CAR,Manchester City,MCI,4
+Hull,HUL,Portsmouth,POR,4
+Hull,HUL,Wigan,WIG,4
+Reading,REA,Sunderland,SUN,4
+Swansea,SWA,Wigan,WIG,4
+Sheffield United,SHU,Southampton,SOU,4
+Sheffield United,SHU,Watford,WAT,4
+Bournemouth,BOU,Sheffield United,SHU,4
+Bournemouth,BOU,Norwich,NOR,4
+Arsenal,ARS,Cardiff,CAR,4
+Arsenal,ARS,Huddersfield,HUD,4
+Arsenal,ARS,Coventry,COV,3
+Portsmouth,POR,Southampton,SOU,3
+Brentford,BRE,Sunderland,SUN,3
+Coventry,COV,Manchester City,MCI,3
+Blackburn,BLB,Leicester,LEI,3
+Coventry,COV,Newcastle,NEW,3
+Crystal Palace,CRY,Ipswich,IPS,3
+Brighton,BHA,Sunderland,SUN,3
+Arsenal,ARS,Bradford,BRA,2
+Arsenal,ARS,Luton,LUT,2
+Bradford,BRA,Tottenham,TOT,2
+Bradford,BRA,West Ham,WHU,2
+Bradford,BRA,Manchester City,MCI,2
+Bradford,BRA,Manchester United,MUN,2
+Bradford,BRA,Middlesbrough,MID,2
+Bradford,BRA,Newcastle,NEW,2
+Bradford,BRA,Southampton,SOU,2
+Bradford,BRA,Sunderland,SUN,2
+Bradford,BRA,Leeds,LEE,2
+Bradford,BRA,Leicester,LEI,2
+Bradford,BRA,Liverpool,LIV,2
+Bournemouth,BOU,Cardiff,CAR,2
+Blackpool,BLP,Everton,EVE,2
+Blackpool,BLP,Fulham,FUL,2
+Blackpool,BLP,Liverpool,LIV,2
+Blackpool,BLP,Manchester City,MCI,2
+Blackpool,BLP,Manchester United,MUN,2
+Blackpool,BLP,Newcastle,NEW,2
+Blackpool,BLP,Stoke,STK,2
+Blackpool,BLP,Sunderland,SUN,2
+Sheffield United,SHU,West Brom,WBA,2
+Sheffield United,SHU,Wigan,WIG,2
+Southampton,SOU,Wigan,WIG,2
+Reading,REA,Southampton,SOU,2
+Reading,REA,Stoke,STK,2
+Reading,REA,Swansea,SWA,2
+Reading,REA,Watford,WAT,2
+Reading,REA,West Brom,WBA,2
+Swansea,SWA,Wolves,WOL,2
+Hull,HUL,QPR,QPR,2
+Hull,HUL,Watford,WAT,2
+Birmingham,BIR,Reading,REA,2
+Blackburn,BLB,Blackpool,BLP,2
+Blackburn,BLB,Burnley,BUR,2
+Bradford,BRA,Chelsea,CHE,2
+Bradford,BRA,Coventry,COV,2
+Bradford,BRA,Derby,DER,2
+Bradford,BRA,Everton,EVE,2
+Bradford,BRA,Ipswich,IPS,2
+Arsenal,ARS,Blackpool,BLP,2
+Birmingham,BIR,Hull,HUL,2
+Leeds,LEE,Sheffield United,SHU,2
+Leeds,LEE,Portsmouth,POR,2
+Leeds,LEE,Norwich,NOR,2
+Bolton,BOL,Watford,WAT,2
+Bolton,BOL,Swansea,SWA,2
+Cardiff,CAR,Wolves,WOL,2
+Birmingham,BIR,Leicester,LEI,2
+Cardiff,CAR,Watford,WAT,2
+Leicester,LEI,Portsmouth,POR,2
+Leicester,LEI,QPR,QPR,2
+Liverpool,LIV,Luton,LUT,2
+Cardiff,CAR,Norwich,NOR,2
+Cardiff,CAR,Stoke,STK,2
+Cardiff,CAR,Sunderland,SUN,2
+Cardiff,CAR,West Brom,WBA,2
+Blackburn,BLB,Ipswich,IPS,2
+Leeds,LEE,Watford,WAT,2
+Burnley,BUR,Portsmouth,POR,2
+Burnley,BUR,Middlesbrough,MID,2
+Burnley,BUR,QPR,QPR,2
+Burnley,BUR,Wigan,WIG,2
+Brighton,BHA,Swansea,SWA,2
+Burnley,BUR,Cardiff,CAR,2
+Charlton,CHA,Wolves,WOL,2
+Chelsea,CHE,Coventry,COV,2
+Chelsea,CHE,Luton,LUT,2
+Cardiff,CAR,Huddersfield,HUD,2
+Luton,LUT,Manchester City,MCI,2
+Luton,LUT,Manchester United,MUN,2
+Blackburn,BLB,Crystal Palace,CRY,2
+Charlton,CHA,Coventry,COV,2
+Ipswich,IPS,Wolves,WOL,2
+Hull,HUL,Wolves,WOL,2
+Blackpool,BLP,Bolton,BOL,2
+Hull,HUL,Norwich,NOR,2
+Huddersfield,HUD,Swansea,SWA,2
+Huddersfield,HUD,West Brom,WBA,2
+Huddersfield,HUD,Wolves,WOL,2
+Blackpool,BLP,Chelsea,CHE,2
+Fulham,FUL,Luton,LUT,2
+Burnley,BUR,Luton,LUT,2
+Bolton,BOL,Ipswich,IPS,2
+Bolton,BOL,QPR,QPR,2
+Brighton,BHA,Stoke,STK,2
+Blackpool,BLP,Tottenham,TOT,2
+Blackpool,BLP,West Brom,WBA,2
+Huddersfield,HUD,Stoke,STK,2
+Blackpool,BLP,West Ham,WHU,2
+Blackpool,BLP,Wigan,WIG,2
+Bolton,BOL,Burnley,BUR,2
+Blackpool,BLP,Wolves,WOL,2
+Aston Villa,AVL,Luton,LUT,2
+Birmingham,BIR,Blackpool,BLP,2
+Birmingham,BIR,Burnley,BUR,2
+Bolton,BOL,Crystal Palace,CRY,2
+Brighton,BHA,Luton,LUT,2
+Luton,LUT,Newcastle,NEW,2
+Luton,LUT,Sheffield United,SHU,2
+Luton,LUT,Nottingham Forest,NFO,2
+Cardiff,CAR,Hull,HUL,2
+Cardiff,CAR,Leicester,LEI,2
+Ipswich,IPS,Nottingham Forest,NFO,2
+Cardiff,CAR,Swansea,SWA,2
+Coventry,COV,West Ham,WHU,2
+Coventry,COV,Tottenham,TOT,2
+Coventry,COV,Sunderland,SUN,2
+Luton,LUT,Tottenham,TOT,2
+Charlton,CHA,Watford,WAT,2
+Crystal Palace,CRY,Luton,LUT,2
+Charlton,CHA,Reading,REA,2
+Fulham,FUL,Huddersfield,HUD,2
+Derby,DER,Reading,REA,2
+Blackburn,BLB,Swansea,SWA,2
+Blackburn,BLB,Watford,WAT,2
+Luton,LUT,West Ham,WHU,2
+Luton,LUT,Wolves,WOL,2
+Derby,DER,Wigan,WIG,2
+Everton,EVE,Luton,LUT,2
+Charlton,CHA,Sheffield United,SHU,2
+Norwich,NOR,Reading,REA,2
+Norwich,NOR,Sheffield United,SHU,2
+Middlesbrough,MID,Norwich,NOR,2
+Birmingham,BIR,Derby,DER,2
+Middlesbrough,MID,Sheffield United,SHU,2
+Middlesbrough,MID,Swansea,SWA,2
+Brentford,BRE,Watford,WAT,2
+Brighton,BHA,Cardiff,CAR,2
+Brighton,BHA,Ipswich,IPS,2
+Birmingham,BIR,Crystal Palace,CRY,2
+Bolton,BOL,Sheffield United,SHU,2
+Brentford,BRE,Ipswich,IPS,2
+Brentford,BRE,Luton,LUT,2
+Middlesbrough,MID,Wolves,WOL,2
+Norwich,NOR,Portsmouth,POR,2
+Derby,DER,Portsmouth,POR,2
+Nottingham Forest,NFO,Sunderland,SUN,2
+Nottingham Forest,NFO,Sheffield United,SHU,2
+Bradford,BRA,Charlton,CHA,2
+Portsmouth,POR,Sheffield United,SHU,2
+Blackburn,BLB,Sheffield United,SHU,2
+Coventry,COV,Ipswich,IPS,2
+Coventry,COV,Leeds,LEE,2
+Blackburn,BLB,QPR,QPR,2
+Coventry,COV,Leicester,LEI,2
+Coventry,COV,Liverpool,LIV,2
+Coventry,COV,Manchester United,MUN,2
+Coventry,COV,Middlesbrough,MID,2
+Crystal Palace,CRY,Portsmouth,POR,2
+Crystal Palace,CRY,QPR,QPR,2
+Coventry,COV,Derby,DER,2
+Coventry,COV,Everton,EVE,2
+Coventry,COV,Southampton,SOU,2
+Brentford,BRE,Norwich,NOR,2
+Brentford,BRE,Sheffield United,SHU,2
+Aston Villa,AVL,Blackpool,BLP,2
+Aston Villa,AVL,Bradford,BRA,2
+Aston Villa,AVL,Cardiff,CAR,2
+QPR,QPR,Reading,REA,2
+Bournemouth,BOU,Hull,HUL,2
+Bournemouth,BOU,Ipswich,IPS,2
+Bournemouth,BOU,Luton,LUT,2
+Bournemouth,BOU,Middlesbrough,MID,2
+Portsmouth,POR,Watford,WAT,2
+Watford,WAT,Wigan,WIG,2
+Aston Villa,AVL,Coventry,COV,2
+QPR,QPR,Wolves,WOL,2
+Reading,REA,Sheffield United,SHU,2
+Brighton,BHA,Coventry,COV,1
+Charlton,CHA,Crystal Palace,CRY,1
+Birmingham,BIR,Norwich,NOR,1
+Charlton,CHA,Norwich,NOR,1
+Coventry,COV,Hull,HUL,1
+Coventry,COV,Nottingham Forest,NFO,1
