@@ -881,48 +881,48 @@
   <tbody>
     <tr>
       <td>H1</td>
-      <td>Elo bổ sung khả năng dự đoán H/D/A so với tần suất nhãn lịch sử.</td>
-      <td>Mốc tần suất chỉ học từ train → logistic đa lớp có Elo.</td>
+      <td>Thêm chênh lệch điểm sức mạnh Elo có giúp dự đoán thắng, hòa, thua tốt hơn cách chỉ dựa vào tỷ lệ kết quả trước đây không?</td>
+      <td>So cách dự đoán theo tỷ lệ thắng, hòa, thua trong tập huấn luyện với mô hình logistic đa lớp có thêm Elo.</td>
     </tr>
     <tr>
       <td>H2</td>
-      <td>Phong độ điểm và bàn ghi/bàn thua gần đây bổ sung thông tin ngoài Elo.</td>
-      <td>Elo → Elo + nhóm phong độ.</td>
+      <td>Thêm phong độ điểm và bàn ghi, bàn thua gần đây có giúp dự đoán tốt hơn mô hình chỉ dùng Elo không?</td>
+      <td>So mô hình chỉ có Elo với mô hình có thêm phong độ điểm và bàn ghi, bàn thua.</td>
     </tr>
     <tr>
       <td>H3</td>
-      <td>Phong độ xG/xGA bổ sung thông tin ngoài Elo và phong độ bàn thắng.</td>
-      <td>Elo + phong độ bàn → thêm xG/xGA.</td>
+      <td>Thêm bàn thắng kỳ vọng (xG) tạo ra và phải chịu gần đây có giúp dự đoán tốt hơn khi đã có Elo và phong độ bàn ghi, bàn thua không?</td>
+      <td>So mô hình có Elo và phong độ bàn ghi, bàn thua với mô hình thêm xG tạo ra và phải chịu.</td>
     </tr>
     <tr>
       <td>H4</td>
-      <td>Đối đầu bổ sung thông tin sau khi đã xét Elo và phong độ.</td>
-      <td>Elo + phong độ → thêm nhóm H2H.</td>
+      <td>Lịch sử đối đầu của hai đội có giúp dự đoán tốt hơn sau khi đã xét Elo và phong độ gần đây không?</td>
+      <td>So mô hình có Elo và phong độ gần đây với mô hình thêm lịch sử đối đầu.</td>
     </tr>
     <tr>
       <td>H5</td>
-      <td>Lợi thế sân nhà biến đổi theo thời kỳ.</td>
-      <td>Hệ số sân nhà cố định → hệ số học trên quá khứ theo thời kỳ.</td>
+      <td>Lợi thế sân nhà có thay đổi theo giai đoạn, và việc tính riêng từng giai đoạn có giúp dự đoán tốt hơn không?</td>
+      <td>So mô hình dùng lợi thế sân nhà cố định với mô hình ước lượng mức này từ dữ liệu quá khứ theo từng giai đoạn.</td>
     </tr>
     <tr>
       <td>H6</td>
-      <td>Phong độ đúng sân bổ sung cho phong độ tổng.</td>
-      <td>Phong độ tổng → thêm nhóm phong độ sân.</td>
+      <td>Phong độ sân nhà của đội chủ nhà và sân khách của đội khách có giúp dự đoán tốt hơn phong độ chung không?</td>
+      <td>So mô hình dùng phong độ chung với mô hình thêm phong độ theo sân của từng đội.</td>
     </tr>
     <tr>
       <td>H7</td>
-      <td>Độ mới của lịch sử hoặc khoảng nghỉ được định nghĩa đúng có ích.</td>
-      <td>Elo + phong độ → thêm cờ gián đoạn; kiểm tra lịch nghỉ thực riêng.</td>
+      <td>Biết lịch sử thi đấu của một đội đã cũ có giúp dự đoán tốt hơn sau khi đã xét Elo và phong độ không?</td>
+      <td>So mô hình có Elo và phong độ với mô hình thêm dấu hiệu lịch sử đã cũ; thử riêng số ngày nghỉ thực nếu có lịch mọi giải.</td>
     </tr>
     <tr>
       <td>H8</td>
-      <td>Chỉ số lối chơi FotMob bổ sung thông tin ngoài nhóm cơ bản.</td>
-      <td>Elo + phong độ + xG → thêm từng nhóm FotMob.</td>
+      <td>Thống kê các trận trước từ FotMob có giúp dự đoán tốt hơn khi mô hình đã có Elo, phong độ và xG không?</td>
+      <td>So mô hình có Elo, phong độ và xG với mô hình thêm lần lượt từng nhóm thống kê FotMob.</td>
     </tr>
     <tr>
       <td>H9</td>
-      <td>Odds đúng thời điểm cung cấp mốc tham chiếu hoặc thông tin bổ sung.</td>
-      <td>Tách kịch bản chỉ bóng đá / có odds; so trên cùng mẫu.</td>
+      <td>Nếu tỷ lệ cược (odds) đã có trước lúc dự đoán, xác suất suy ra từ đó có giúp dự đoán tốt hơn không?</td>
+      <td>Trên cùng các trận, so mô hình chỉ dùng dữ liệu bóng đá với mô hình thêm xác suất từ odds; đánh giá riêng các xác suất này làm mốc.</td>
     </tr>
   </tbody>
 </table></div>

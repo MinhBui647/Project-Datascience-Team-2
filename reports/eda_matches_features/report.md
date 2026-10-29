@@ -308,15 +308,15 @@ Hình 14. Biểu đồ mô tả xác suất suy từ odds trong bộ dữ liệu
 
 | Mã | Giả thuyết | So sánh đề xuất |
 |---|---|---|
-| H1 | Elo bổ sung khả năng dự đoán H/D/A so với tần suất nhãn lịch sử. | Mốc tần suất chỉ học từ train → logistic đa lớp có Elo. |
-| H2 | Phong độ điểm và bàn ghi/bàn thua gần đây bổ sung thông tin ngoài Elo. | Elo → Elo + nhóm phong độ. |
-| H3 | Phong độ xG/xGA bổ sung thông tin ngoài Elo và phong độ bàn thắng. | Elo + phong độ bàn → thêm xG/xGA. |
-| H4 | Đối đầu bổ sung thông tin sau khi đã xét Elo và phong độ. | Elo + phong độ → thêm nhóm H2H. |
-| H5 | Lợi thế sân nhà biến đổi theo thời kỳ. | Hệ số sân nhà cố định → hệ số học trên quá khứ theo thời kỳ. |
-| H6 | Phong độ đúng sân bổ sung cho phong độ tổng. | Phong độ tổng → thêm nhóm phong độ sân. |
-| H7 | Độ mới của lịch sử hoặc khoảng nghỉ được định nghĩa đúng có ích. | Elo + phong độ → thêm cờ gián đoạn; kiểm tra lịch nghỉ thực riêng. |
-| H8 | Chỉ số lối chơi FotMob bổ sung thông tin ngoài nhóm cơ bản. | Elo + phong độ + xG → thêm từng nhóm FotMob. |
-| H9 | Odds đúng thời điểm cung cấp mốc tham chiếu hoặc thông tin bổ sung. | Tách kịch bản chỉ bóng đá / có odds; so trên cùng mẫu. |
+| H1 | Thêm chênh lệch điểm sức mạnh Elo có giúp dự đoán thắng, hòa, thua tốt hơn cách chỉ dựa vào tỷ lệ kết quả trước đây không? | So cách dự đoán theo tỷ lệ thắng, hòa, thua trong tập huấn luyện với mô hình logistic đa lớp có thêm Elo. |
+| H2 | Thêm phong độ điểm và bàn ghi, bàn thua gần đây có giúp dự đoán tốt hơn mô hình chỉ dùng Elo không? | So mô hình chỉ có Elo với mô hình có thêm phong độ điểm và bàn ghi, bàn thua. |
+| H3 | Thêm bàn thắng kỳ vọng (xG) tạo ra và phải chịu gần đây có giúp dự đoán tốt hơn khi đã có Elo và phong độ bàn ghi, bàn thua không? | So mô hình có Elo và phong độ bàn ghi, bàn thua với mô hình thêm xG tạo ra và phải chịu. |
+| H4 | Lịch sử đối đầu của hai đội có giúp dự đoán tốt hơn sau khi đã xét Elo và phong độ gần đây không? | So mô hình có Elo và phong độ gần đây với mô hình thêm lịch sử đối đầu. |
+| H5 | Lợi thế sân nhà có thay đổi theo giai đoạn, và việc tính riêng từng giai đoạn có giúp dự đoán tốt hơn không? | So mô hình dùng lợi thế sân nhà cố định với mô hình ước lượng mức này từ dữ liệu quá khứ theo từng giai đoạn. |
+| H6 | Phong độ sân nhà của đội chủ nhà và sân khách của đội khách có giúp dự đoán tốt hơn phong độ chung không? | So mô hình dùng phong độ chung với mô hình thêm phong độ theo sân của từng đội. |
+| H7 | Biết lịch sử thi đấu của một đội đã cũ có giúp dự đoán tốt hơn sau khi đã xét Elo và phong độ không? | So mô hình có Elo và phong độ với mô hình thêm dấu hiệu lịch sử đã cũ; thử riêng số ngày nghỉ thực nếu có lịch mọi giải. |
+| H8 | Thống kê các trận trước từ FotMob có giúp dự đoán tốt hơn khi mô hình đã có Elo, phong độ và xG không? | So mô hình có Elo, phong độ và xG với mô hình thêm lần lượt từng nhóm thống kê FotMob. |
+| H9 | Nếu tỷ lệ cược (odds) đã có trước lúc dự đoán, xác suất suy ra từ đó có giúp dự đoán tốt hơn không? | Trên cùng các trận, so mô hình chỉ dùng dữ liệu bóng đá với mô hình thêm xác suất từ odds; đánh giá riêng các xác suất này làm mốc. |
 
 [Chi tiết giả thuyết, tập dữ liệu, tiêu chí và lưu ý](hypotheses.csv)
 
