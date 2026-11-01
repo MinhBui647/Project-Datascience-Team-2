@@ -42,7 +42,7 @@ Log loss càng thấp càng tốt. Logistic Regression cho cùng kết luận (0
 | ![PageRank so với bảng xếp hạng](figures/2_pagerank_vs_bxh.png) | ![Mùa 2015/16](figures/3_vi_du_mua_2015_16.png) |
 | **PageRank so với bảng xếp hạng.** Khớp cao ở mọi mùa đủ trận; đội vô địch xếp hạng 1 theo PageRank ở 19/24 mùa và luôn trong top 3. | **Ví dụ 2015/16.** Leicester vô địch, nhưng Tottenham đứng đầu PageRank: PageRank tính cả cách biệt tỷ số, và Tottenham thắng cách biệt từ 3 bàn 9 trận (Leicester 4). |
 
-## Các khâu khác dùng gì
+## Kết quả bàn giao
 
 | Khâu | File | Cách dùng |
 |---|---|---|
